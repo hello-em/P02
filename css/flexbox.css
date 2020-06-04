@@ -1,0 +1,53 @@
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+.box{
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+
+    -webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+
+.box-item{
+    -webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0.5rem 1rem;
+}
+
+.box-item-nav{
+    -webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0.2rem 0.5rem;
+}
+
+.box-left{
+    -webkit-flex: 2 1 auto;
+	-ms-flex: 2 1 auto;
+    flex: 2 1 auto;
+    margin: 0.5rem 1rem;
+}
+
+.box-right{
+    -webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0.5rem 1rem;
+}
+
+.box-grid-item{
+    -webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+    flex: 1 1 20%;
+    margin: 0.5rem 1rem;
+}
