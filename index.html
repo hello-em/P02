@@ -54,14 +54,14 @@
 
 				<li>Call to action button <button class="btn">Shop now</button> 
 					<samp>
-						Call to action button &lt;button class="btn"&gt;Shop now&lt;/button&gt; 
+						&lt;button class="btn"&gt;Shop now&lt;/button&gt; 
 					</samp>
 				</li>
 				
 
 				<li>Submit button for form <button type="submit" class="btn submit-btn">Submit</button>
 					<samp>
-						Submit button for form &lt;button type="submit" class="btn submit-btn"&gt;Submit&lt;/button&gt;
+						&lt;button type="submit" class="btn submit-btn"&gt;Submit&lt;/button&gt;
 					</samp>
 				</li>
 				
@@ -71,7 +71,6 @@
 					<input type="text" id="address-input" placeholder="Delivery address">
 
 					<samp>
-						<br>
 						&lt;label for="address-input"&gt;Address:&lt;/label&gt;
 						<br>
 						&lt;input type="text" id="address-input" placeholder="Delivery address"&gt;
@@ -89,12 +88,11 @@
 
 					<samp>
 						&lt;div class="box"&gt; 
-							<br>
-							&lt;div class="box-item white-swatch"&gt;White: #FFFFFF&lt;/div&gt;
-							&lt;div class="box-item yellow-swatch"&gt;Yellow: #FFDD50&lt;/div&gt;
-							&lt;div class="box-item green-swatch"&gt;Green: #63B146&lt;/div&gt;
-							&lt;div class="box-item orange-swatch"&gt;Orange: #F36B25&lt;/div&gt;
-							<br>
+							<div class="indent">
+							&lt;div class="box-item white-swatch"&gt;White: #FFFFFF&lt;/div&gt;</div>
+							<div class="indent">&lt;div class="box-item yellow-swatch"&gt;Yellow: #FFDD50&lt;/div&gt;</div>
+							<div class="indent">&lt;div class="box-item green-swatch"&gt;Green: #63B146&lt;/div&gt;</div>
+							<div class="indent">&lt;div class="box-item orange-swatch"&gt;Orange: #F36B25&lt;/div&gt;</div>
 						&lt;/div>
 					</samp>
 				</li>
@@ -110,9 +108,9 @@
 					<h3>Your address 1</h3>
 
 					<samp>
-						&lt;h1&gt;Account setting&lt;/h1&gt;
-						&lt;h2&gt;Address&lt;/h2&gt;
-						&lt;h3&gt;Your address 1&lt;/h3&gt;
+						&lt;h1&gt;Account setting&lt;/h1&gt;<br>
+						&lt;h2&gt;Address&lt;/h2&gt;<br>
+						&lt;h3&gt;Your address 1&lt;/h3&gt;<br>
 					</samp>
 				</li>
 				
@@ -141,9 +139,11 @@
 
 					<samp>
 						&lt;ul&gt;
-							&lt;li>Veggies&lt;/li&gt;
-							&lt;li>Fruits&lt;/li&gt;
-							&lt;li>Combos&lt;/li&gt;
+							<div class="indent"> &lt;li>Veggies&lt;/li&gt;</div>
+
+							<div class="indent">&lt;li>Fruits&lt;/li&gt;</div>
+
+							<div class="indent">&lt;li>Combos&lt;/li&gt;</div>
 						&lt;/ul&gt;
 					</samp>
 				</li>
@@ -158,9 +158,11 @@
 
 					<samp>
 						&lt;ol class="sample-list"&gt;
-							&lt;li&gt;Select the person you want to delivery to, and fill the name&lt;li&gt;
-							&lt;li&gt;Fill the address of this delivery&lt;/li&gt;
-							&lt;li&gt;Pay the order, then it's ready to go&lt;/li&gt;
+							<div class="indent">&lt;li&gt;Select the person you want to delivery to, and fill the name&lt;li&gt;</div>
+
+							<div class="indent">&lt;li&gt;Fill the address of this delivery&lt;/li&gt;</div>
+
+							<div class="indent">&lt;li&gt;Pay the order, then it's ready to go&lt;/li&gt;<br></div>
 						&lt;/ol&gt;	
 					</samp>
 				</li>
@@ -191,19 +193,21 @@
 		
 		<samp>
 			&lt;nav&gt;
-				<br>
-				&lt;p&gt;
-				&lt;span id="header-grocery"&gt;Grocery&lt;/span&gt; &lt;span id="header-Vancouver"&gt;Vancouver&lt;/span&gt;
+				
+				<div class="indent">&lt;p&gt;
+					<div class="indent">&lt;span id="header-grocery"&gt;Grocery&lt;/span&gt;</div>
+					<div class="indent">&lt;span id="header-Vancouver"&gt;Vancouver&lt;/span&gt;</div>
 				&lt;/p&gt;
-				&lt;ul class="box nav-btn"&gt;
-				&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
-				&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;
-				&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;Account&lt;/a&gt;&lt;/li&gt;
-				&lt;li class="box-item-nav"&gt;
-				&lt;a href="#" id="cart-btn">Cart&lt;/a&gt;
-						&lt;/li&gt;
-						&lt;ul&gt;
-				<br>
+				</div>
+
+				<div class="indent">&lt;ul class="box nav-btn"&gt;
+					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;</div>
+					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;</div>
+					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;Account&lt;/a&gt;&lt;/li&gt;</div>
+					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#" id="cart-btn">Cart&lt;/a&gt;&lt;/li&gt;</div>
+
+				&lt;ul&gt;
+				</div>
 			&lt;/nav&gt;
 		</samp>
 

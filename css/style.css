@@ -48,6 +48,18 @@ nav li{
 	list-style: none;
 }
 
+/* Code samples stylization to differentiate from regular text*/
+code, samp{
+	display: block;
+	background-color: rgb(230,230,230);
+	padding: 0.5rem;
+}
+
+.indent{
+	padding-left: 1em;
+}
+
+
 #header-grocery{
 	color: #63B146;
 	font-weight: bold;
