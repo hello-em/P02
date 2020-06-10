@@ -67,7 +67,8 @@ nav li{
 
 #header-Vancouver{
 	font-weight: lighter;
-	color: #F36B25;
+	color: black;
+	padding-left: 0;
 }
 
 @media (max-width: 1000px){
@@ -126,7 +127,6 @@ nav li{
 	border-bottom: 0.01rem solid black;
 }
  /* end - add more styling to styleguide page-nav*/
-
 
 
 /* start of product list */
