@@ -90,15 +90,6 @@ nav li{
 	}
 }
 
-
-
-/* float:right makes content float to the right of container*/
-.nav-btn{
-	margin: 0;
-	font-size: 1.0rem;
-	justify-content: flex-end;
-}
-
 /* Search bar css*/
 .search-btn{
 	font-size: 1.0rem;

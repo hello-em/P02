@@ -183,7 +183,7 @@
 					<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
 				</div>
 				<!-- Cleaned up the nav to use flexbox rather than <ul> and <li> -->	
-				<div class="nav-box-right nav-btn box">
+				<div class="nav-box-right box">
 
 					<form class="box-item-nav">
 						<input type="search" name="site-search"id="site-search" placeholder="Search">
@@ -195,14 +195,13 @@
 					<a href="#" class="box-item-nav">ABOUT</a>
 					<a href="#" class="box-item-nav">ACCOUNT</a>
 					<a href="#" class=" cart-btn">CART</a>
-					
 				</div>
 			</nav>
 		
 		<samp>
 			&lt;nav class="box"&gt;
 				<div class="indent">
-					&lt;div class="header-logo box-left"&gt;
+					&lt;div class="header-logo nav-box-left"&gt;
 					<div class="indent">
 						&lt;img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo" class="logo"&gt;
 					</div>
@@ -210,31 +209,39 @@
 				</div>
 
 				<div class="indent">
-					&lt;div class="box-right"&gt;
-					<div class="indent">
-						&lt;div class="nav-btn"&gt;
+					&lt;div class="nav-box-right box"&gt;
 						<div class="indent">
-							&lt;a href="#" class="box-item-nav"&gt;Products&lt;/a&gt;
+							&lt;form class="box-item-nav"&gt;
+								<div class="indent">
+									&lt;input type="search" name="site-search"id="site-search" placeholder="Search"&gt;<br>
+									&lt;button type="submit" class="search-btn"&gt;
+									<div class="indent">
+										&lt;img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon"&gt;
+									</div>
+									&lt;/button&gt;
+								</div>
+							&lt;/form&gt;
+							
 						</div>
 						<div class="indent">
-							&lt;a href="#" class="box-item-nav"&gt;About Us&lt;/a&gt;
+							&lt;a href="#" class="box-item-nav"&gt;PRODUCT&lt;/a&gt;
 						</div>
 						<div class="indent">
-							&lt;a href="#" class="box-item-nav"&gt;Account&lt;/a&gt;
+							&lt;a href="#" class="box-item-nav"&gt;ABOUT&lt;/a&gt;
 						</div>
 						<div class="indent">
-							&lt;a href="#" class="box-item-nav cart-btn&gt;Cart&lt;/a&gt;
+							&lt;a href="#" class="box-item-nav"&gt;ACCOUNT&lt;/a&gt;
 						</div>
-						&lt;/div&gt;
-					</div>
-					
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav cart-btn&gt;CART&lt;/a&gt;
+						</div>
 					&lt;/div&gt;
 				</div>
 			&lt;/nav&gt;
 		</samp>
 
 	<div class="container">
-			<h3>Product list</h3>
+			<h3>Product detail list</h3>
 			<div>
 				<a href="">Veggies</a>
 				<span>></span>
