@@ -157,13 +157,38 @@ input[type=search]{
 
 /* start of product list */
 .product-list{
-	background-color: rgb(240, 240, 240);
 	padding: 1rem 0.5rem;
+	border-radius: 0.5em;
 }
 .product-left{
 	width: 30%;
 }
 
+.product-nav a{
+	color: #63B146;
+}
+
+.product-nav{
+	margin: 0em 1em;
+}
+
+/*Reference boz-shadow by https://css-tricks.com/almanac/properties/b/box-shadow/ */
+/* used this plugin (https://brumm.af/shadows) to get the style of shadow wanted*/
+.shadow {
+	-webkit-box-shadow: 
+	0 -1px 5.2px rgba(0, 0, 0, 0.027),
+	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
+	0 58px 80px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 
+	0 -1px 5.2px rgba(0, 0, 0, 0.027),
+	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
+	0 58px 80px rgba(0, 0, 0, 0.08);
+	box-shadow:
+	0 -1px 5.2px rgba(0, 0, 0, 0.027),
+	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
+	0 58px 80px rgba(0, 0, 0, 0.08);
+
+}
 /* end of product list */
 
 .container{
