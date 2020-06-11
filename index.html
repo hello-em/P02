@@ -34,7 +34,7 @@
 		<br>
 		
 		<h2>Web mockup</h2>
-		<img src="images/mock up.png" alt="">
+		<img src="images/home-page-mock-up.png" alt="">
 	</section>
 
 		<h2>Style guide</h2>
@@ -177,60 +177,91 @@
 		<h3>Module pattern</h3>
 
 		<h4>Nav bar</h4>
-			<nav>
-				<p>
-					<span id="header-grocery">Grocery</span> <span id="header-Vancouver">Vancouver</span>
-				</p>
-				<ul class="box nav-btn">
-					<li class="box-item-nav"><a href="#">Products</a></li>
-					<li class="box-item-nav"><a href="#">About Us</a></li>
-					<li class="box-item-nav"><a href="#">Account</a></li>
-					<li class="box-item-nav">
-					<a href="#" id="cart-btn">Cart</a>
-					</li>
-				</ul>
+			<nav class="box">
+				<div class="header-logo nav-box-left">
+					<!-- srcset svg is for browsers that can open the svg file if not it will open the png -->
+					<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
+				</div>
+				<!-- Cleaned up the nav to use flexbox rather than <ul> and <li> -->	
+				<div class="nav-box-right box">
+
+					<form class="box-item-nav">
+						<input type="search" name="site-search"id="site-search" placeholder="Search">
+						<button type="submit" class="search-btn">
+							<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon">
+						</button>
+					</form>
+					<a href="#" class="box-item-nav">PRODUCT</a>
+					<a href="#" class="box-item-nav">ABOUT</a>
+					<a href="#" class="box-item-nav">ACCOUNT</a>
+					<a href="#" class=" cart-btn">CART</a>
+				</div>
 			</nav>
 		
 		<samp>
-			&lt;nav&gt;
-				
-				<div class="indent">&lt;p&gt;
-					<div class="indent">&lt;span id="header-grocery"&gt;Grocery&lt;/span&gt;</div>
-					<div class="indent">&lt;span id="header-Vancouver"&gt;Vancouver&lt;/span&gt;</div>
-				&lt;/p&gt;
+			&lt;nav class="box"&gt;
+				<div class="indent">
+					&lt;div class="header-logo nav-box-left"&gt;
+					<div class="indent">
+						&lt;img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo" class="logo"&gt;
+					</div>
+					&lt;/div&gt;
 				</div>
 
-				<div class="indent">&lt;ul class="box nav-btn"&gt;
-					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;</div>
-					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;</div>
-					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;Account&lt;/a&gt;&lt;/li&gt;</div>
-					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#" id="cart-btn">Cart&lt;/a&gt;&lt;/li&gt;</div>
-
-				&lt;ul&gt;
+				<div class="indent">
+					&lt;div class="nav-box-right box"&gt;
+						<div class="indent">
+							&lt;form class="box-item-nav"&gt;
+								<div class="indent">
+									&lt;input type="search" name="site-search"id="site-search" placeholder="Search"&gt;<br>
+									&lt;button type="submit" class="search-btn"&gt;
+									<div class="indent">
+										&lt;img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon"&gt;
+									</div>
+									&lt;/button&gt;
+								</div>
+							&lt;/form&gt;
+							
+						</div>
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav"&gt;PRODUCT&lt;/a&gt;
+						</div>
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav"&gt;ABOUT&lt;/a&gt;
+						</div>
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav"&gt;ACCOUNT&lt;/a&gt;
+						</div>
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav cart-btn&gt;CART&lt;/a&gt;
+						</div>
+					&lt;/div&gt;
 				</div>
 			&lt;/nav&gt;
 		</samp>
 
 	<div class="container">
-			<h3>Product list</h3>
-			<div>
-				<a href="">Veggies</a>
-				<span>></span>
-				<a href="">Greens</a>
-			</div>
+			<h3>Product detail list</h3>
 
-			<section class="product-list box">
-
-				<img src="images/product image.png" alt="" class="product-left box-left">
-
-				<div class="product-right box-right">
-					<h3>Carrots</h3>
-					<p class="price">$0.86</p>
-					<label for="product-quantity">Quantity:</label>
-					<input type="number" id="product-quantity">
-					<button class="btn">Add to cart</button>
-					<button class="btn">View to cart</button>
+			<section class="product-list shadow">
+				<div class="product-nav">
+					<a href="">Veggies</a>
+					<span>></span>
+					<a href="">Greens</a>
 				</div>
+				<div class="box">
+					<img src="images/product image.png" alt="" class="product-left box-left">
+
+					<div class="product-right box-right">
+						<h3>Carrots</h3>
+						<p class="price">$0.86</p>
+						<label for="product-quantity">Quantity:</label>
+						<input type="number" id="product-quantity">
+						<button class="btn">Add to cart</button>
+						<button class="btn">View to cart</button>
+					</div>
+				</div>
+				
 			</section>
 
 		<!-- Start of products grid structure -->

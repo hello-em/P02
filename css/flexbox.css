@@ -24,13 +24,6 @@
     margin: 0.5rem 1rem;
 }
 
-.box-item-nav{
-    -webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    margin: 0.2rem 0.5rem;
-}
-
 .box-left{
     -webkit-flex: 2 1 auto;
 	-ms-flex: 2 1 auto;
@@ -50,4 +43,24 @@
 	-ms-flex: 1 1 auto;
     flex: 1 1 20%;
     margin: 0.5rem 1rem;
+}
+
+/* Grid for specifically nav bar: Logo on left, btn on right*/
+.nav-box-left{
+    -webkit-flex: 3 1 auto;
+    -ms-flex: 3 1 auto;
+    flex: 3 1 auto;
+    margin: 0.5rem 1rem;
+}
+
+.nav-box-right{
+    -webkit-flex: 2 1 auto;
+    -ms-flex: 2 1 auto;
+    flex: 2 1 auto;
+    margin: 0.5rem 1rem;
+}
+
+.box-item-nav{
+    flex: 1 1 auto;
+    align-self: center;
 }

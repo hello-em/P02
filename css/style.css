@@ -60,6 +60,15 @@ nav li{
 	list-style: none;
 }
 
+.header-logo img{
+	max-width: 12rem;
+
+}
+/* align-self overrides align-items notes from friend and it work to align the logo */
+.header-logo{
+	align-self: center;
+}
+
 #header-grocery{
 	color: #63B146;
 	font-weight: bold;
@@ -67,7 +76,8 @@ nav li{
 
 #header-Vancouver{
 	font-weight: lighter;
-	color: #F36B25;
+	color: black;
+	padding-left: 0;
 }
 
 @media (max-width: 1000px){
@@ -80,20 +90,37 @@ nav li{
 	}
 }
 
-
-.nav-btn{
-	width: 60%;
-	margin: 0;
+/* Search bar css*/
+.search-btn{
 	font-size: 1.0rem;
-	float: right;
+	color: white;
+	background-color: #63B146;
+	padding: 0.5em 0.5em;
+	border-radius: 4px;
+	border-style: none;
+	display: inline;
+}
+input[type=search]{
+	width: 60%;
+	padding: 0.5em 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1.0rem;
 }
 
-#cart-btn{
+.search-btn img{
+	width: 1em;
+	height: 1em;
+}
+/* end Search bar css*/
+
+.cart-btn{
 	font-size: 1.0rem;
 	color: white;
 	background-color: #63B146;
 	padding: 0.8em 1.8em;
 	border-radius: 0.6rem;
+	align-self: center;
 }
 
 /* end of nav bar */
@@ -128,16 +155,40 @@ nav li{
  /* end - add more styling to styleguide page-nav*/
 
 
-
 /* start of product list */
 .product-list{
-	background-color: rgb(240, 240, 240);
 	padding: 1rem 0.5rem;
+	border-radius: 0.5em;
 }
 .product-left{
 	width: 30%;
 }
 
+.product-nav a{
+	color: #63B146;
+}
+
+.product-nav{
+	margin: 0em 1em;
+}
+
+/*Reference boz-shadow by https://css-tricks.com/almanac/properties/b/box-shadow/ */
+/* used this plugin (https://brumm.af/shadows) to get the style of shadow wanted*/
+.shadow {
+	-webkit-box-shadow: 
+	0 -1px 5.2px rgba(0, 0, 0, 0.027),
+	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
+	0 58px 80px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 
+	0 -1px 5.2px rgba(0, 0, 0, 0.027),
+	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
+	0 58px 80px rgba(0, 0, 0, 0.08);
+	box-shadow:
+	0 -1px 5.2px rgba(0, 0, 0, 0.027),
+	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
+	0 58px 80px rgba(0, 0, 0, 0.08);
+
+}
 /* end of product list */
 
 .container{
@@ -181,7 +232,6 @@ input[type=text]{
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-sizing: border-box;
 	font-size: 1.0rem;
 }
 
@@ -192,9 +242,9 @@ input[type=number]{
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-sizing: border-box;
 	font-size: 1.0rem;
 }
+
 
 .white-swatch{
 	padding: 30px;
@@ -328,6 +378,11 @@ input[type=number]{
 
 .wireframes img{
 	width: 100%;
+}
+
+.mockup img{
+	width: 40%;
+	margin: 0.3em 0.3em;
 }
 
 .wireframes ol{
