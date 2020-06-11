@@ -177,38 +177,58 @@
 		<h3>Module pattern</h3>
 
 		<h4>Nav bar</h4>
-			<nav>
-				<div class="header-logo">
+			<nav class="box">
+				<div class="header-logo nav-box-left">
 					<!-- srcset svg is for browsers that can open the svg file if not it will open the png -->
-					<img src="/images/logo.png"  alt="Grocery Vancouver" id="logo" width="185" height="85">
+					<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
+				</div>
+				<!-- Cleaned up the nav to use flexbox rather than <ul> and <li> -->	
+				<div class="nav-box-right nav-btn box">
+
+					<form class="box-item-nav">
+						<input type="search" name="site-search"id="site-search" placeholder="Search">
+						<button type="submit" class="search-btn">
+							<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon">
+						</button>
+					</form>
+					<a href="#" class="box-item-nav">Products</a>
+					<a href="#" class="box-item-nav">About Us</a>
+					<a href="#" class="box-item-nav">Account</a>
+					<a href="#" class=" cart-btn">Cart</a>
 					
 				</div>
-				<ul class="box nav-btn">
-					<li class="box-item-nav"><a href="#">Products</a></li>
-					<li class="box-item-nav"><a href="#">About Us</a></li>
-					<li class="box-item-nav"><a href="#">Account</a></li>
-					<li class="box-item-nav">
-					<a href="#" id="cart-btn">Cart</a>
-					</li>
-				</ul>
 			</nav>
 		
 		<samp>
-			&lt;nav&gt;
-				
-				<div class="indent">&lt;p&gt;
-					<div class="indent">&lt;span id="header-grocery"&gt;Grocery&lt;/span&gt;</div>
-					<div class="indent">&lt;span id="header-Vancouver"&gt;Vancouver&lt;/span&gt;</div>
-				&lt;/p&gt;
+			&lt;nav class="box"&gt;
+				<div class="indent">
+					&lt;div class="header-logo box-left"&gt;
+					<div class="indent">
+						&lt;img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo" class="logo"&gt;
+					</div>
+					&lt;/div&gt;
 				</div>
 
-				<div class="indent">&lt;ul class="box nav-btn"&gt;
-					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;</div>
-					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;About Us&lt;/a&gt;&lt;/li&gt;</div>
-					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#"&gt;Account&lt;/a&gt;&lt;/li&gt;</div>
-					<div class="indent">&lt;li class="box-item-nav"&gt;&lt;a href="#" id="cart-btn">Cart&lt;/a&gt;&lt;/li&gt;</div>
-
-				&lt;ul&gt;
+				<div class="indent">
+					&lt;div class="box-right"&gt;
+					<div class="indent">
+						&lt;div class="nav-btn"&gt;
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav"&gt;Products&lt;/a&gt;
+						</div>
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav"&gt;About Us&lt;/a&gt;
+						</div>
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav"&gt;Account&lt;/a&gt;
+						</div>
+						<div class="indent">
+							&lt;a href="#" class="box-item-nav cart-btn&gt;Cart&lt;/a&gt;
+						</div>
+						&lt;/div&gt;
+					</div>
+					
+					&lt;/div&gt;
 				</div>
 			&lt;/nav&gt;
 		</samp>
