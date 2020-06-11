@@ -60,6 +60,15 @@ nav li{
 	list-style: none;
 }
 
+.header-logo img{
+	max-width: 12rem;
+
+}
+/* align-self overrides align-items notes from friend and it work to align the logo */
+.header-logo{
+	align-self: center;
+}
+
 #header-grocery{
 	color: #63B146;
 	font-weight: bold;
@@ -67,7 +76,8 @@ nav li{
 
 #header-Vancouver{
 	font-weight: lighter;
-	color: #F36B25;
+	color: black;
+	padding-left: 0;
 }
 
 @media (max-width: 1000px){
@@ -81,19 +91,45 @@ nav li{
 }
 
 
+
+/* float:right makes content float to the right of container*/
 .nav-btn{
-	width: 60%;
 	margin: 0;
 	font-size: 1.0rem;
-	float: right;
+	justify-content: flex-end;
 }
 
-#cart-btn{
+/* Search bar css*/
+.search-btn{
+	font-size: 1.0rem;
+	color: white;
+	background-color: #63B146;
+	padding: 0.5em 0.5em;
+	border-radius: 4px;
+	border-style: none;
+	display: inline;
+}
+input[type=search]{
+	width: 60%;
+	padding: 0.5em 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1.0rem;
+}
+
+.search-btn img{
+	width: 1em;
+	height: 1em;
+}
+/* end Search bar css*/
+
+.cart-btn{
 	font-size: 1.0rem;
 	color: white;
 	background-color: #63B146;
 	padding: 0.8em 1.8em;
 	border-radius: 0.6rem;
+	align-self: center;
 }
 
 /* end of nav bar */
@@ -126,7 +162,6 @@ nav li{
 	border-bottom: 0.01rem solid black;
 }
  /* end - add more styling to styleguide page-nav*/
-
 
 
 /* start of product list */
@@ -181,7 +216,6 @@ input[type=text]{
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-sizing: border-box;
 	font-size: 1.0rem;
 }
 
@@ -192,9 +226,9 @@ input[type=number]{
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	box-sizing: border-box;
 	font-size: 1.0rem;
 }
+
 
 .white-swatch{
 	padding: 30px;
