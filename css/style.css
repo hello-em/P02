@@ -380,6 +380,11 @@ input[type=number]{
 	width: 100%;
 }
 
+.mockup img{
+	width: 40%;
+	margin: 0.3em 0.3em;
+}
+
 .wireframes ol{
 	list-style: none;
 }
