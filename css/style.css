@@ -155,10 +155,16 @@ input[type=search]{
  /* end - add more styling to styleguide page-nav*/
 
 
+
 /* start of product list */
 .product-list{
-	padding: 1rem 0.5rem;
+	padding: 1rem 2rem;
 	border-radius: 0.5em;
+}
+
+.product-info{
+	padding-bottom: 1rem;
+	border-bottom: 1px solid rgb(129, 129, 129);
 }
 .product-left{
 	width: 30%;
@@ -189,6 +195,28 @@ input[type=search]{
 	0 58px 80px rgba(0, 0, 0, 0.08);
 
 }
+
+/* start of buy with products */
+.buy-with-item img h3{
+	display: block;
+}
+
+.buy-with-item img{
+	width: 60%;
+	display: block;
+}
+
+.total{
+	font-size: 1.8rem;
+}
+
+.buy-with-item button{
+	display: inline;
+}
+
+/* end of buy with products */
+
+
 /* end of product list */
 
 .container{
@@ -356,12 +384,10 @@ input[type=number]{
 	color: rgb(228, 36, 36);
 }
 
-.total{
-	margin: 6em 1em;
-}
 
 .total-price{
-	color: #F36B25;
+	color: #63B146;
+	font-size: 2rem;
 }
 
 .check-out-btn{
