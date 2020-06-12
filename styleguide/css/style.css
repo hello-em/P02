@@ -7,7 +7,8 @@ body{
 }
 
 img{
-	width: 80%;
+	height: auto;
+	max-width: 100%;
 }
 
 a{
@@ -168,6 +169,7 @@ input[type=search]{
 }
 .product-left{
 	width: 30%;
+	height: auto;
 }
 
 .product-nav a{
@@ -334,6 +336,7 @@ input[type=number]{
 .product-grid img{
 	min-width: 8rem;
 	max-width: 16rem;
+	width: 60%;
 }
 
 .product-grid h3{
