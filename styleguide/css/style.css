@@ -247,6 +247,12 @@ input[type=search]{
 .container{
 	margin: 5% 10%;
 }
+
+@media(max-width: 1000px){
+	.container{
+		margin: 3% 5%;
+	}
+}
  
 .in-text-link{
 	font-weight: bold;
@@ -353,13 +359,17 @@ input[type=number]{
 
 .product-grid h3,p{
 	margin-bottom: 0;
-	margin-top: 0.2em;
+	margin-top: 0.2em; 
 }
 
 .product-grid img{
-	min-width: 8rem;
+	min-width: 6rem;
 	max-width: 16rem;
 	width: 60%;
+}
+
+.product-grid button{
+	min-width: 10rem;
 }
 
 .product-grid h3{
