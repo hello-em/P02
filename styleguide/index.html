@@ -179,7 +179,7 @@
 		<h4>Nav bar</h4>
 			<nav class="box">
 				<div class="header-logo nav-box-left">
-					<!-- srcset svg is for browsers that can open the svg file if not it will open the png -->
+					<!-- srcset svg is for browsers that c an open the svg file if not it will open the png -->
 					<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
 				</div>
 				<!-- Cleaned up the nav to use flexbox rather than <ul> and <li> -->	
@@ -193,8 +193,18 @@
 					</form>
 					<a href="#" class="box-item-nav">PRODUCT</a>
 					<a href="#" class="box-item-nav">ABOUT</a>
-					<a href="#" class="box-item-nav">ACCOUNT</a>
-					<a href="#" class=" cart-btn">CART</a>
+					
+					<!-- <a href="#" class="box-item-nav">ACCOUNT</a>
+						<span>CART</span>
+						<img src="images/cart.png" srcset="images/cart.svg" alt="">	
+					</a> -->
+					
+					<!--change cart button to image-->
+
+					<a href="#">
+						<img src="images/cart-btn.svg" alt="">
+					</a>
+
 				</div>
 			</nav>
 		
@@ -413,6 +423,25 @@
 
 			
 	</div>
+
+	<!--contact section-->
+	<section class="contact-section">
+		<h2>Contact Us</h2>
+		<span class="phone-number">778-123-4567</span>
+		<form action="">
+			<label for="">Send us an email if you have any question</label>
+			<input type="text">
+			<button type="submit" class="submit-btn">Submit</button>
+		</form>
+	</section>
+
+	<footer>
+		<div class="footer-link">
+			<a href="#">Help</a>
+			<a href="#">Privacy</a>
+			<a href="#">Term</a>
+		</div>
+	</footer>
 	
 	<script src="main.js"></script>
 

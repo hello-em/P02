@@ -63,7 +63,6 @@ nav li{
 
 .header-logo img{
 	max-width: 12rem;
-
 }
 /* align-self overrides align-items notes from friend and it work to align the logo */
 .header-logo{
@@ -123,6 +122,13 @@ input[type=search]{
 	border-radius: 0.6rem;
 	align-self: center;
 }
+
+.cart-btn span{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+
 
 /* end of nav bar */
 
@@ -274,6 +280,11 @@ input[type=search]{
 .submit-btn{
 	background-color: #FFDD50;
 	color: black;
+	padding: 0.6em 1.6em;
+	margin: 1em 0em;
+	font-size: 1.2rem;
+	border-radius: 0.3em;
+	border: none;
 }
 
 /* end of btn section */
@@ -383,10 +394,10 @@ input[type=number]{
 /* end of product grid section */
 
 .cart{
-	float: left;
 	width: 60%;
 	padding: 1em 3em 1em 3em;
 	background-color: rgb(247, 247, 247);
+	display: block;
 }
 
 @media (max-width: 60rem){
@@ -437,6 +448,61 @@ input[type=number]{
 }
 
 /* end of cart style */
+
+/* start of contact section */
+
+.contact-section{
+	border-top: 1px rgb(182, 182, 182) solid;
+	text-align: center;
+	margin-top: 10rem;
+	display: block;
+}
+
+.contact-section label{
+	display: block;
+}
+
+.contact-section button{
+	margin: auto;
+}
+
+.contact-section form{
+	margin-top: 3rem;
+}
+
+.contact-section input{
+	max-width: 30rem;
+	margin-bottom: 2rem;
+}
+
+.phone-number{
+	font-size: 2rem;
+	color: #63B146;
+}
+
+/* end of contact section */
+
+/* start of footer */
+
+footer{
+	padding: 2rem 3rem;
+	margin-top: 2rem;
+	background-color: #EFEFEF;
+	position: relative;
+}
+
+footer a{
+	font-size: 1rem;
+	margin-right: 3rem;
+
+}
+
+.footer-link{
+	position: absolute;
+	top: 50%;
+	right: 2rem;
+	transform: translateY(-50%);
+}
 
 .wireframes img{
 	width: 100%;
