@@ -48,7 +48,7 @@ nav{
 	margin: 0;
 	background-color: #FFDD50;
 	font-weight: bold;
-	padding: 2em 0.5em;
+	padding: 1em 0.5em;
 }
 
 nav p{
@@ -100,6 +100,8 @@ nav li{
 	border-style: none;
 	display: inline;
 }
+
+
 input[type=search]{
 	width: 60%;
 	padding: 0.5em 0.5em;
@@ -494,7 +496,15 @@ footer{
 footer a{
 	font-size: 1rem;
 	margin-right: 3rem;
+	font-weight: bolder;
+}
 
+footer img{
+	position: absolute;
+	left: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 14rem;
 }
 
 .footer-link{
@@ -503,6 +513,8 @@ footer a{
 	right: 2rem;
 	transform: translateY(-50%);
 }
+
+/* end of footer section */
 
 .wireframes img{
 	width: 100%;
