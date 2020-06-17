@@ -175,11 +175,11 @@ input[type=search]{
     left: 0;
     width: 100%;
     height: 100%;
-    /* This version below makes a gradient */
+    /* makes a gradient */
     background: linear-gradient(90deg, rgba(2,0,36,0) 29%, rgba(0,0,0,1) 65%), url("../images/hero-cta.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
    
    	
 }
@@ -223,8 +223,18 @@ input[type=search]{
 
 /* END - Hero CTA */
 
+/* Select Store */
+select { 
+	font-size: 1.17em;
+	color: #63B146;
+	border: none;
+	margin: 0 0.5rem;
+	align-items: center;
+	font-family: 'Lato', sans-serif;
+}
 
 
+/* END Select Store */
 
 /* start of product list */
 
