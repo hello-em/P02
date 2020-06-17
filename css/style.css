@@ -155,11 +155,73 @@ input[type=search]{
 	border-bottom: 0.01rem solid black;
 }
 /* end Used in styleguide and site nav*/
+ /* end - add more styling to styleguide page-nav*/
 
 /* Hero CTA */
+.hero-image img {
+    width: 100%;
+}
 
+/* END - Hero CTA */
 
-/* End - Hero CTA */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Testing Hero CTA banner https://www.developerdrive.com/full-page-hero-image-html-css/ */
+/* use ::before to add a brightness level to photo and not everything in the .hero div box (text etc.)*/
+.hero::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/hero-cta.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-text{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.hero-btn {
+    background-color: #63B146;
+    color: white;
+    border: 1px solid #cb376a;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    background-color: #63B146;
+    border: 1px solid #db7598;
+}
+
 
 /* start of product list */
 
