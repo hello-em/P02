@@ -209,12 +209,14 @@ input[type=search]{
     border: 1px solid #257F29;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    padding: 0.9375rem 1.875rem;
-    font-size: 1.125rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
     font-weight: 200;
     cursor: pointer;
+    border-radius: 0.3rem;
 }
-.hero-btn:hover {
+
+.hero-btn:hover, .hero-btn:focus {
     background-color: #9AE07E;
     border: 1px solid #257F29;
 }
