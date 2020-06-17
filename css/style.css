@@ -4,6 +4,7 @@ body{
 	/* Lato font from Google fonts */
 	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
+	margin: 0;
 }
 
 img{
@@ -135,33 +136,91 @@ input[type=search]{
 /* end of nav bar */
 
 .page-nav{
-	padding: 1rem 1rem;
+	padding: 2rem 2rem;
 	margin-top: 2rem;
 	margin-bottom: 3rem;
+	font-size: 1.25rem;
 }
 .page-nav ul{
 	margin: 0;
 }
- /* add more styling to styleguide page-nav*/
-.page-nav-item{
-	padding: 0.5rem;
-	margin: 0.5rem;
-	font-size: 1.25rem;
-	color: black;
-	display: block;
-	text-decoration: none;
-}
 
-
-.page-nav-item:hover, .page-nav-item:focus{
+/* Used in styleguide and site nav*/
+.page-nav-item span:hover, .page-nav-item span:focus{
 	border-bottom: 0.01rem solid black;
 	transition: color 0.5s;
 }
 
-.active{
+.active span{
 	border-bottom: 0.01rem solid black;
 }
- /* end - add more styling to styleguide page-nav*/
+ 
+/* Hero CTA */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+/* Testing Hero CTA banner https://www.developerdrive.com/full-page-hero-image-html-css/ */
+/* use ::before to add a brightness level to photo and not everything in the .hero div box (text etc.)*/
+.hero::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* This version below makes a gradient */
+    background: linear-gradient(90deg, rgba(2,0,36,0) 29%, rgba(0,0,0,1) 65%), url("../images/hero-cta.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   
+   	
+}
+.hero-content {
+    position: relative;
+    left: 25%;
+    color: white;
+    text-align: left;
+    margin: 0.625rem;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-text{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    max-width: 20rem;
+}
+
+.hero-btn {
+    background-color: #63B146;
+    color: white;
+    border: 1px solid #257F29;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 0.9375rem 1.875rem;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    background-color: #9AE07E;
+    border: 1px solid #257F29;
+}
+
+/* END - Hero CTA */
+
 
 
 
