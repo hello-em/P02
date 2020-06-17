@@ -52,44 +52,34 @@
 	<section class="selection box">
 		<form class="box">
 			<label for="select-store" class="select-store"><h3>Select Store</h3></label>
-			<select name="store" id="store">
-				<option value="walmart">
-
-					Walmart
-
-				</option>
-				<option value="superstore">Superstore</option>
-				<option value="costco">Costco</option>
-				<option value="t&t">T&T</option>
+			<select name="store" id="store"  onchange="location = this.value">
+				<option value="#">Walmart</option>
+				<option value="#">Superstore</option>
+				<option value="#">Costco</option>
+				<option value="#">T&T</option>
+				<option value="store.html">More Locations...</option>
 			</select>
 		</form>
-		<div class="delivery-address">
-			<h3>Delivery</h3>
-			<h3 id="text" style="display:none">Checkbox is CHECKED!</h3>
-			<div class="dropdown-content">
-				<label for="myCheck">Checkbox:</label> 
-<input type="checkbox" id="myCheck" onclick="myFunction()">
-				<label for="myCheck">Checkbox:</label> 
-<input type="checkbox" id="myCheck" onclick="myFunction()">
-			</div>
-		</div>
+
 		<form class="box">
-			<label for="select-store" class="select-store"><h3>Select Store</h3></label>
-			<select name="store" id="store">
-				<option value="walmart">
-
-					Walmart
-
-				</option>
-				<option value="superstore">Superstore</option>
-				<option value="costco">Costco</option>
-				<option value="t&t">T&T</option>
+			<label for="delivery-address"><h3>Delivery to</h3></label>
+			<select name="address" id="address" onchange="location = this.value">
+				<option value="#">1234 University Ave, City Province</option>
+				<option value="#">1234 home street, city province</option>
+				<option value="#">Add new address</option>
 			</select>
 		</form>
 	</section>
 
 
 	<!-- End of store and delivery module -->
+	<script>
+		function addressFunction() {
+			var text = document.getElementById("address").value;
+			document.getElementById("address-output").innerHTML = text;
+			console.log(text)
+		}
+	</script>
 </body>
 </html>
 
