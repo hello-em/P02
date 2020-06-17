@@ -476,42 +476,46 @@
 			</div>
 
 			<div class="cart-deliver">
-				<img src="images/carrot.png" alt="">
+				<img src="images/walmart logo.png" alt="">
 				<span>Walmart</span>
-				<span>Delivery to:
-					<a href="#">1234 Glen drive</a>
-					(h1)
-				</span>
-			</div>
-
-			<div class="cart-item box">
-				<img src="images/broccoli.png" alt="" class="box-item">
-
-				<div class="box-item">
-					<h3>Broccoli</h3>
-					<label for="quantity">Quantity:</label>
-					<input type="number" placeholder="2" id="quantity">
-					<a href="#" class="delete-btn">Delete</a>
-					<p class="cart-price">2.98</p>
+				<div class="cart-deliver-info">
+					<span>Delivery to:
+						<a href="#">1234 Glen drive (h1)</a>		
+					</span>
 				</div>
 			</div>
 
-			<div class="cart-item box">
-				<img src="images/product image.png" alt="" class="box-item">
-				<div class="box-item">
-					<h3>Choi</h3>
-					<label for="delete">Quantity:</label>
-					<input type="number" placeholder="1" id="delete">
-					<a href="#" class="delete-btn">Delete</a>
-					<p class="cart-price">5.98</p>
-				</div>
-			</div>
+			<div class="cart-item-container">
+				<div class="cart-item">
+					<img src="images/broccoli.png" alt="">
+					<span class="item-title">Broccoli</span>
 
-			<div class="total">
-				<h3>Total:</h3>
-				<span class="cart-price total-price">$8.98</span>
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div class="cart-item">
+					<img src="images/product image.png" alt="">
+					<span class="item-title">Choi</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div style="height: 4rem"></div>
+
+				<span class="total">Total:</span>
+				<span class="total-price">$8.98</span>
+				<button class="check-out-btn">Check out</button>
 			</div>
-			<button class="check-out-btn">Check out</button>
 
 		</section>
 		<!-- Shopping cart <samp> -->
