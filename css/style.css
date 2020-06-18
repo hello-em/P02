@@ -334,7 +334,7 @@ select {
 /* end of product list */
 
 .container{
-	margin: 5% 7%;
+	margin: 3% 6%;
 	/* width: 90%;
 	height: 90%; */
 	position: relative;
@@ -786,3 +786,14 @@ footer img{
 	font-size: 1.4rem;
 }
 /* end of product grid section */
+
+
+/* start of store section */
+
+.store-item{
+	max-width: 10rem;
+	text-align: center;
+}
+
+
+
