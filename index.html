@@ -52,44 +52,116 @@
 	<section class="selection box">
 		<form class="box">
 			<label for="select-store" class="select-store"><h3>Select Store</h3></label>
-			<select name="store" id="store">
-				<option value="walmart">
-
-					Walmart
-
-				</option>
-				<option value="superstore">Superstore</option>
-				<option value="costco">Costco</option>
-				<option value="t&t">T&T</option>
+			<select name="store" id="store"  onchange="location = this.value">
+				<option value="#">Walmart</option>
+				<option value="#">Superstore</option>
+				<option value="#">Costco</option>
+				<option value="#">T&T</option>
+				<option value="store.html">More Locations...</option>
 			</select>
 		</form>
-		<div class="delivery-address">
-			<h3>Delivery</h3>
-			<h3 id="text" style="display:none">Checkbox is CHECKED!</h3>
-			<div class="dropdown-content">
-				<label for="myCheck">Checkbox:</label> 
-<input type="checkbox" id="myCheck" onclick="myFunction()">
-				<label for="myCheck">Checkbox:</label> 
-<input type="checkbox" id="myCheck" onclick="myFunction()">
-			</div>
-		</div>
+
 		<form class="box">
-			<label for="select-store" class="select-store"><h3>Select Store</h3></label>
-			<select name="store" id="store">
-				<option value="walmart">
-
-					Walmart
-
-				</option>
-				<option value="superstore">Superstore</option>
-				<option value="costco">Costco</option>
-				<option value="t&t">T&T</option>
+			<label for="delivery-address"><h3>Delivery to</h3></label>
+			<select name="address" id="address" onchange="location = this.value">
+				<option value="#">1234 University Ave, City Province</option>
+				<option value="#">1234 home street, city province</option>
+				<option value="#">Add new address</option>
 			</select>
 		</form>
 	</section>
-
-
 	<!-- End of store and delivery module -->
+
+	<!-- Start of products grid structure -->
+	<div class="container">
+		<section class="box">
+			<section class="product-grid box-grid-item">
+				<img src="images/broccoli.png" alt="">
+				<h3>Broccoli</h3>
+				<p>200g each</p>
+				<p class="grid-price">$6.99</p>
+				<button class="btn">Add to cart</button>
+			</section>
+
+				<section class="product-grid box-grid-item">
+					<img src="images/carrot.png" alt="">
+					<h3>Broccoli</h3>
+					<p>200g each</p>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid box-grid-item">
+					<img src="images/bean.png" alt="">
+					<h3>Broccoli</h3>
+					<p>200g each</p>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+
+				<section class="product-grid box-grid-item">
+					<img src="images/onion.png" alt="">
+					<h3>Broccoli</h3>
+					<p>200g each</p>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid box-grid-item">
+					<img src="images/lettues.png" alt="">
+					<h3>Broccoli</h3>
+					<p>200g each</p>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid box-grid-item">
+					<img src="images/tomato.png" alt="">
+					<h3>Broccoli</h3>
+					<p>200g each</p>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid box-grid-item">
+					<img src="images/choi.png" alt="">
+					<h3>Broccoli</h3>
+					<p>200g each</p>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+				<section class="product-grid box-grid-item">
+					<img src="images/choi.png" alt="">
+					<h3>Broccoli</h3>
+					<p>200g each</p>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+			</section>
+		</div>
+			<!-- End of products grid structure -->
+
+	<!--contact section-->
+	<section class="contact-section" id="contact-section">
+		<h2>Contact Us</h2>
+		<span class="phone-number">778-123-4567</span>
+		<form action="">
+			<label for="" placeholder>Send us an email if you have any question</label>
+			<input type="text">
+			<button type="submit" class="submit-btn">Submit</button>
+		</form>
+	</section>
+	<!-- Footer  -->
+	<footer>
+		<img src="images/logo-greyscale.svg" alt="">
+		<div class="footer-link">
+			<a href="#">Help</a>
+			<a href="#">Privacy</a>
+			<a href="#">Term</a>
+		</div>
+	</footer>
+	
 </body>
 </html>
 
