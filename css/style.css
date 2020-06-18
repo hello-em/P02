@@ -598,7 +598,8 @@ input[type=number]{
 .contact-section{
 	border-top: 1px rgb(182, 182, 182) solid;
 	text-align: center;
-	margin-top: 10rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
 	display: block;
 }
 
@@ -630,10 +631,10 @@ input[type=number]{
 
 footer{
 	padding: 2rem 3rem;
-	margin-top: 2rem;
 	background-color: #EFEFEF;
 	position: relative;
 }
+
 
 footer a{
 	font-size: 1rem;
@@ -657,6 +658,59 @@ footer img{
 }
 
 /* end of footer section */
+
+/* about page css*/
+.cta-block{
+	color: white;
+	position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.colour1{
+	background-color: #676767;
+}
+.colour2{
+	background-color: #949494;
+}
+
+
+.cta-block-inner-left{
+	max-width: 30em;
+    text-align: left;
+    margin:0 0.625em;
+	padding:3em 2em 3.5em;
+	position: relative;
+}
+
+.cta-block-inner-right{
+	max-width: 30em;
+    text-align: left;
+    margin:0 0.625em;
+	padding:3em 2em 3.5em;
+	position: relative;	
+}
+
+.cta-block-header h1{
+	font-size: 1.5rem;
+}
+
+.cta-block-body{
+	line-height:1.2;
+}
+
+.cta-block-action{
+	display:inline-block;
+	color: white;
+	font-size: 1.25em;
+	text-decoration: none;
+	margin-top: 0.5em;
+	padding-bottom: 0.2em;
+	border-bottom: 0.1em solid white;
+}
+
+
+/* about page css*/
 
 .wireframes img{
 	width: 100%;
