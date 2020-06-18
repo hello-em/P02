@@ -233,6 +233,10 @@ select {
 	font-family: 'Lato', sans-serif;
 }
 
+.selection{
+	border-bottom: 0.05rem solid #636363;
+}
+
 
 /* END Select Store */
 
