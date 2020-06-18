@@ -26,7 +26,7 @@
 
 			<!-- need to check with Paul on the needs to have both svg and png files -->
 
-			<a href="#">
+			<a href="#" id="cart-btn">
 				<img src="images/cart-btn.svg" alt="Cart Button">
 			</a>
 		</div>
@@ -70,9 +70,66 @@
 			</select>
 		</form>
 	</section>
-	<!-- End of store and delivery module -->
 
 	
+	<!--Start of shopping cart-->
+	<section class="cart">
+		<div class="cart-headline">
+			<h2>Cart</h2>
+			<div class="close-cart">+</div>
+		</div>
+
+		<div class="cart-deliver">
+			<img src="styleguide/images/walmart logo.png" alt="">
+			<span>Walmart</span>
+			<div class="cart-deliver-info">
+				<span>Delivery to:
+					<a href="#">1234 Glen drive (h1)</a>		
+				</span>
+			</div>
+		</div>
+
+
+			<div class="cart-item-container">
+				<div class="cart-item">
+					<img src="styleguide/images/broccoli.png" alt="">
+					<span class="item-title">Broccoli</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div class="cart-item">
+					<img src="styleguide/images/product image.png" alt="">
+					<span class="item-title">Choi</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div style="height: 4rem"></div>
+
+				<span class="total">Total:</span>
+				<span class="total-price">$8.98</span>
+				<form action="check-out.html">
+					<button class="check-out-btn" action>Check out</button>
+				</form>
+		</div>
+
+	</section>
+
+
+	<!-- End of store and delivery module -->
+	
+	<a href="styleguide/index.html" style="color: #63B146; font-weight: bold; margin: 3rem">A temporary link to the styleguide</a>
 
 	<!--contact section-->
 	<section class="contact-section" id="contact-section">
@@ -93,6 +150,8 @@
 			<a href="#">Term</a>
 		</div>
 	</footer>
+
+	<script src="main.js"></script>
 	
 </body>
 </html>
