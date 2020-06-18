@@ -598,7 +598,8 @@ input[type=number]{
 .contact-section{
 	border-top: 1px rgb(182, 182, 182) solid;
 	text-align: center;
-	margin-top: 10rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
 	display: block;
 }
 
