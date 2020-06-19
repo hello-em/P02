@@ -117,19 +117,19 @@ input[type=search]{
 }
 /* end Search bar css*/
 
-/* .cart-btn{
-	font-size: 1.0rem;
-	color: white;
-	background-color: #63B146;
-	padding: 0.8em 1.8em;
-	border-radius: 0.6rem;
-	align-self: center;
+.cart-btn{
+	vertical-align: middle;
+	position: relative;
+	padding: 2rem 2rem;
 }
 
 .cart-btn span{
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-} */
+}
+
+
+
 
 
 
@@ -810,6 +810,18 @@ footer img{
 }
 
 /* end of categories section */
+
+/* start of store section */
+
+.store-item{
+	max-width: 10rem;
+	text-align: center;
+}
+
+
+
+
+
 
 /* start of store section */
 
