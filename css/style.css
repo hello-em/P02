@@ -48,7 +48,7 @@ code, samp{
 nav{
 	margin: 0;
 	background-color: #FFDD50;
-	font-weight: bold;
+	/* font-weight: bold; */
 	padding: 0.3em 0.5em;
 }
 
@@ -116,20 +116,6 @@ input[type=search]{
 	height: 1em;
 }
 /* end Search bar css*/
-
-.cart-btn{
-	vertical-align: middle;
-	position: relative;
-	padding: 2rem 2rem;
-}
-
-.cart-btn span{
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-
-
-
 
 
 
@@ -615,7 +601,7 @@ input[type=number]{
 
 footer{
 	padding: 2rem 3rem;
-	margin-top: 2rem;
+	margin-top: 4rem;
 	background-color: #EFEFEF;
 	position: relative;
 }
@@ -813,22 +799,56 @@ footer img{
 
 /* start of store section */
 
-.store-item{
-	max-width: 10rem;
+.store-section{
+	margin: 2rem 4rem;
+}
+
+.store{
+	max-width: 14rem;
 	text-align: center;
+	margin: 2rem 2rem;
+}
+
+.store img{
+	max-width: 8rem;
+}
+
+
+.store h3{
+	font-size: 1.4rem;
+	margin-top: 0.8rem;
+}
+
+.store span{
+	/* border: 2px rgb(167, 167, 167) solid; */
+	background-color: rgb(228, 228, 228);
+	padding: 0.5rem 1rem;
+	color: rgb(102, 102, 102);
+}
+
+@media(max-width: 800px){
+	.store-section{
+		margin: 1rem 0rem;
+	}
+	.store{
+		max-width: 10rem;
+		margin: 1.5rem 1rem;
+	}
+	.store img{
+		max-width: 6rem;
+	}
+
+	.store span{
+		/* border: 2px rgb(167, 167, 167) solid; */
+		background-color: rgb(228, 228, 228);
+		padding: 0.5rem 0.5rem;
+		color: rgb(102, 102, 102);
+	}
 }
 
 
 
 
-
-
-/* start of store section */
-
-.store-item{
-	max-width: 10rem;
-	text-align: center;
-}
 
 
 

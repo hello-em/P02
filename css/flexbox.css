@@ -14,7 +14,7 @@
 
     -webkit-justify-content: space-around;
 	-ms-justify-content: space-around;
-	justify-content: space-around;
+	justify-content: flex-start;
 }
 
 .box-item{
@@ -64,3 +64,6 @@
     flex: 1 1 auto;
     align-self: center;
 }
+
+/* Flexbox for store page */
+
