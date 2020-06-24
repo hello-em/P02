@@ -14,7 +14,7 @@
 
     -webkit-justify-content: space-around;
 	-ms-justify-content: space-around;
-	justify-content: flex-start;
+	justify-content: space-around;
 }
 
 .box-item{
@@ -65,5 +65,18 @@
     align-self: center;
 }
 
-/* Flexbox for store page */
+/* flexbox for store section */
 
+.store-flexbox{
+    display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+
+    -webkit-justify-content: flex-start;
+	-ms-justify-content: flex-start;
+	justify-content: flex-start;
+}

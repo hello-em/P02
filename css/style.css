@@ -48,7 +48,7 @@ code, samp{
 nav{
 	margin: 0;
 	background-color: #FFDD50;
-	/* font-weight: bold; */
+	font-weight: bold;
 	padding: 0.3em 0.5em;
 }
 
@@ -102,7 +102,6 @@ nav li{
 	display: inline;
 }
 
-
 input[type=search]{
 	width: 60%;
 	padding: 0.5em 0.5em;
@@ -116,6 +115,20 @@ input[type=search]{
 	height: 1em;
 }
 /* end Search bar css*/
+
+/* .cart-btn{
+	font-size: 1.0rem;
+	color: white;
+	background-color: #63B146;
+	padding: 0.8em 1.8em;
+	border-radius: 0.6rem;
+	align-self: center;
+}
+
+.cart-btn span{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+} */
 
 
 
@@ -601,7 +614,7 @@ input[type=number]{
 
 footer{
 	padding: 2rem 3rem;
-	margin-top: 4rem;
+	margin-top: 2rem;
 	background-color: #EFEFEF;
 	position: relative;
 }
@@ -845,10 +858,6 @@ footer img{
 		color: rgb(102, 102, 102);
 	}
 }
-
-
-
-
 
 
 
