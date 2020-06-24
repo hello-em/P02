@@ -101,131 +101,218 @@
 		<!--Start of product filter section-->
 		<section class="product-filter filter-flex-item">
 			<h3>Filter</h3>
-			<span>408 results from<a href="#">all groceries</a>
+			<span>408 results from<a href="#"> all groceries</a>
 			</span>
-			<button href="#" class="clear-filter-btn">Clear filter</button>
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+			<!-- Placed everything into form so reset button actually works -->
+			<form id="filter">
+				<button href="#" type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
+				<h3>Categories</h3>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Veggies</label>
+				</div>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Fruits</label>
+				</div>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Herbs</label>
+				</div>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Seasonal</label>
+				</div>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="divider-line"></div>
+				<h3>Brands</h3>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Store Brand</label>
+				</div>
 
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Farmer's Market</label>
+				</div>
+
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Legunord</label>
+				</div>
+
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Dole</label>
+				</div>
+
+				<div class="divider-line"></div>
+
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Organic</label>
+				</div>
+
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Frozen</label>
+				</div>
+
+				
+			</form>
 		</section>
 	
 	<!-- -->
 		<section class="product-grid ">
-			<div class="box">
+			<div class="box product-title">
 				<h1 class="box-left-align">All Groceries</h1>
-				
-				<form class="sort-by box-right-align">
+
+				<form class="sort-by box-right-align">				
 					<label for="sort" class="sort"><h3>Sort By:</h3></label>
 					<select name="sort" id="sort">
 						<option>High to Low</option>
 						<option>Low to High</option>
 						<option>Popularity</option>
 					</select>
-				</form>
 
+				</form>
 			</div>
 
 			<!--Start of product grid-->
-			<section class=" box-flex-start product-flex-item" id="js-trial">
-				
-				
-
+			<section class=" box-flex-start product-flex-item">
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/broccoli.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
+					<a href="product-detail-broccoli.html">
+						<img src="styleguide/images/broccoli.png" alt="">
+						<h3>Broccoli</h3>
+						<span class="product-weight">200g each</span>
+						<p class="grid-price">$2.97</p>
+					</a>
 					<button class="btn">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
 					<img src="styleguide/images/carrot.png" alt="">
+					<h3>Carrot</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/bean.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+		
+
+
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/onion.png" alt="">
 					<h3>Broccoli</h3>
 					<span class="product-weight">200g each</span>
 					<p class="grid-price">$6.99</p>
 					<button class="btn">Add to cart</button>
 				</section>
 
-					<section class="product-grid-item box-grid-item">
-						<img src="styleguide/images/bean.png" alt="">
-						<h3>Broccoli</h3>
-						<span class="product-weight">200g each</span>
-						<p class="grid-price">$6.99</p>
-						<button class="btn">Add to cart</button>
-					</section>
-			
-
-
-					<section class="product-grid-item box-grid-item">
-						<img src="styleguide/images/onion.png" alt="">
-						<h3>Broccoli</h3>
-						<span class="product-weight">200g each</span>
-						<p class="grid-price">$6.99</p>
-						<button class="btn">Add to cart</button>
-					</section>
-
-					<section class="product-grid-item box-grid-item">
-						<img src="styleguide/images/lettues.png" alt="">
-						<h3>Broccoli</h3>
-						<span class="product-weight">200g each</span>
-						<p class="grid-price">$6.99</p>
-						<button class="btn">Add to cart</button>
-					</section>
-
-					<section class="product-grid-item box-grid-item">
-						<img src="styleguide/images/tomato.png" alt="">
-						<h3>Broccoli</h3>
-						<span class="product-weight">200g each</span>
-						<p class="grid-price">$6.99</p>
-						<button class="btn">Add to cart</button>
-					</section>
-
-					<section class="product-grid-item box-grid-item">
-						<img src="styleguide/images/product image.png" alt="">
-						<h3>Broccoli</h3>
-						<span class="product-weight">200g each</span>
-						<p class="grid-price">$6.99</p>
-						<button class="btn">Add to cart</button>
-					</section>
-					<section class="product-grid-item box-grid-item">
-						<img src="styleguide/images/product image.png" alt="">
-						<h3>Broccoli</h3>
-						<span class="product-weight">200g each</span>
-						<p class="grid-price">$6.99</p>
-						<button class="btn">Add to cart</button>
-					</section>
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/lettues.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
 				</section>
 
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/tomato.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/product image.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/product image.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/lettues.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/tomato.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/product image.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+				
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/product image.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/product image.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+				
+				<section class="product-grid-item box-grid-item">
+					<img src="styleguide/images/product image.png" alt="">
+					<h3>Broccoli</h3>
+					<span class="product-weight">200g each</span>
+					<p class="grid-price">$6.99</p>
+					<button class="btn">Add to cart</button>
+				</section>
+
+				<!-- 2 empty ones to help with the grid flex, -->
+				<section class="product-grid-item box-grid-item">
+					
+				</section>
+				
+				<section class="product-grid-item box-grid-item">
+					
+				</section>
 			</section>
-		<!-- -->
+			<!--End of product grid-->
+			</section>
+		<!-- end of Left of Filter grid -->
 
 
 
@@ -300,7 +387,7 @@
 		</div>
 	</footer>
 
-	<script src="js/product-list.js"></script>
+	
 
 </body>
 </html>

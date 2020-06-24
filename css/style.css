@@ -354,13 +354,17 @@ select {
 /* start of btn section */
 
 .btn{
-	padding: 0.6em 1.6em;
-	margin: 1em 0em;
+	display: block;
+	width: 100%;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	margin: 1em auto;
 	font-size: 1.2rem;
 	color: white;
 	background-color: #63B146;
 	border-radius: 0.3em;
 	border: none;
+	justify-content: center;
 }
 
 .submit-btn{
@@ -781,7 +785,7 @@ footer img{
 }
 
 .grid-price{
-	margin-left: 40%;
+	text-align: right;
 	margin-top: 1rem;
 	font-size: 1.4rem;
 }
