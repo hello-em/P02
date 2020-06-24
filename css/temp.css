@@ -1,0 +1,29 @@
+.box-left-align{
+    -webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0.5rem 1rem;
+}
+
+.box-right-align{
+    -webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0.5rem 1rem;
+
+    text-align: right;
+}
+
+.sort-by select { 
+	font-size: 1.17em;
+	color: #63B146;
+	border: none;
+	margin: 0rem;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+}
+
+.sort-by h3 { 
+	margin: 0rem;
+	display: inline-block;
+}
