@@ -1,8 +1,138 @@
 
-.form-input{
-    display: block;
+
+.checkout-address{
+    margin-left: 5%;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 40rem;
+    background-color: white;
 }
 
-.payment-form{
-    margin-top: 8rem;
+.checkout-address h3{
+    margin-left: 0.7rem;
 }
+
+.checkout-address input{
+    margin-top: 1.2rem;
+    display: block;
+    padding: 1rem 1rem;
+}
+
+.checkout-address label{
+    font-weight: bold;
+    display: block;
+    margin-top: 2rem;
+
+}
+
+.checkout-address select{
+    font-size: 1em;
+	color: #63B146;
+    padding: 1rem 0rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+#delivery-instruction{
+    margin-top: 2rem;
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#instruction{
+    padding: 1rem 5rem 3rem 1rem;
+    border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* end of delivery adress styling */
+
+
+
+.payment{
+    margin-left: 5%;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 40rem;
+    background-color: white;
+}
+
+.payment input{
+    margin-top: 1.2rem;
+    display: block;
+    padding: 1rem 1rem;
+}
+
+.payment h3{
+    margin-left: 0.7rem;
+}
+
+.order-btn{
+    margin-top: 7rem;
+    width: 100%;
+}
+
+
+/* start of order summary styling */
+
+.order-summary{
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 20rem;
+    height: 36rem;
+    background-color: white;
+    position: relative;
+    align-items: center;
+}
+
+.order-summary h3{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+
+}
+
+.order-summary button{
+    margin-bottom: 2rem;
+
+}
+
+.price-line{
+    margin-top: 1rem;
+    color: grey;
+}
+
+.total-price-line{
+    margin-top: 1rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.total-price{
+    position: absolute;
+    right: 1rem;
+
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.price{
+    font-weight: normal;
+    font-size: 1rem;
+    position: absolute;
+    right: 2rem;
+}
+
+#promo-code{
+    color: black;
+    margin-top: 2rem;
+}
+
+#promo-code input{
+    margin-left: 0rem;
+}
+

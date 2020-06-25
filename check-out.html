@@ -3,7 +3,8 @@
 <head>
 	<title>Home | Grocery Vancouver</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/check-out.css">
+	<link rel="stylesheet" type="text/css" href="css/check-out.css">
+	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,61 +34,96 @@
 		</div>
 	</nav>
 
-    <div class="container">
-        <h2>Check out</h2>
-        <form action="">
-            <h3>Delivery address</h3>
+	<section class="box checkout-flex">
+		<section class="">
 
-            <div class="form-input">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-            </div>
+			<div class="checkout-address">
+				<form action="">
+					<h3>Add delivery address</h3>
+					
+					<input type="text" id="name" placeholder="First Name">
+					<input type="text" id="name" placeholder="Last Name">
+					<input type="text" id="address-line-1" placeholder="Address line 1">
+					<input type="text" id="address-line-2" placeholder="Address line 2">
+					<input type="text" id="phone" placeholder="Phone number">
+			
+					<div class="box-flex-start">
+						<select name="City" id="city" class="box-item">
+							<option value="vancouver">Vancouver</option>
+							<option value="burnaby">Burnaby</option>
+							<option value="coquitlam">Coquitlam</option>
+							<option value="surrey">Surrey</option>
+							<option value="richmond">Richmond</option>
+						</select>
 
-            <div class="form-input">
-                <label for="address-line-1">Address line 1</label>
-                <input type="text" id="address-line-1">
-            </div>
+						<input type="text" id="postal-code" placeholder="Postal code" class="box-item">
+					</div>
 
-            <div class="form-input">
-                <label for="address-line-2">Address line 2</label>
-                <input type="text" id="address-line-2">
-            </div>
+					<!-- <label for="instruction" id="delivery-instruction">Instruction for delivery</label> -->
+					<input type="text" id="instruction" placeholder="Deliver instruction (optional)">
+				
+				</form>
+				
+			</div>
+			<!--end of address info section-->
 
-            <div class="form-input">
-                <label for="postal-code">Postal code</label>
-                <input type="text" id="postal-code">
-            </div>
 
-            <div class="form-input">
-                <label for="postal-code">Instruction for delivery</label>
-                <input type="text" id="postal-code">
-            </div>
-        </form>
+			<div class="payment">
+				<form action="">
+					<h3>Payment method</h3>
 
-        <form action="" class="payment-form">
-            <h3>Payment method</h3>
+					<input type="text" id="payment-name" placeholder="Name of the card holder">
+					<input type="number" id="card-number" placeholder="Card number">
+					<input type="number" id="POV" placeholder="CVVs">
+					<input type="text" id="card-number" placeholder="Billing address">
+				
+				</form>
+				
+				<!-- <button class="btn">Place order</button>      -->
+			</div>  
 
-            <div class="form-input">
-                <label for="payment-name">Name</label>
-                <input type="text" id="payment-name">
-            </div>
+		</section>	
 
-            <div class="form-input">
-                <label for="card-number">Card number</label>
-                <input type="number" id="card-number">
-            </div>
 
-            <div class="form-input">
-                <label for="POV">POV</label>
-                <input type="number" id="POV">
-            </div>
+		<!--Order summary section-->
+		<section class="order-summary">
+			<h3>Order summary</h3>
 
-        </form>
+			<div class="price-line">
+				<span>Subtotal</span>
+				<span class="price">$21.89</span>
+			</div>
 
-        <button class="btn">Check out</button>
-        
-    </div>  
+			<div class="price-line">
+				<span>Delivery fee</span>
+				<span class="price">$6.89</span>
+			</div>
 
+			<div class="price-line">
+				<span>Service fee</span>
+				<span class="price">$2.89</span>
+			</div>
+
+			<div class="price-line border-bottom">
+				<span>Delivery tips</span>
+				<span class="price">$1.89</span>
+			</div>
+
+			<div class="price-line" id="promo-code">
+				<span class="text-green">Add promo code</span>
+				<input type="text">
+			</div>
+
+			<div class="total-price-line">
+				<span>Total:</span>
+				<span class="total-price">$32.89</span>
+			</div>
+			<form action="payment-made.html">
+				<button class="btn order-btn">Place order</button>     
+			</form>
+		</section>
+
+	</section>
 
 
 

@@ -111,3 +111,10 @@
 	-ms-flex: 1 1 auto; */
     flex: 1 5 70%;
 }
+
+
+/* check out page flexbox */
+
+/* .checkout-flex{
+    justify-content: flex-start;
+} */
