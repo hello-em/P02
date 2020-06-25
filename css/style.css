@@ -5,6 +5,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
 	margin: 0;
+	background-color: rgb(240, 240, 240);
 }
 
 img{
@@ -234,7 +235,7 @@ select {
 }
 
 .selection{
-	border-bottom: 0.05rem solid #636363;
+	border-bottom: 1px solid #c2c2c2;
 }
 
 
@@ -616,7 +617,7 @@ input[type=number]{
 footer{
 	padding: 2rem 3rem;
 	margin-top: 2rem;
-	background-color: #EFEFEF;
+	background-color: rgb(219, 219, 219);
 	position: relative;
 }
 
@@ -755,6 +756,8 @@ footer img{
 .product-grid-item{
 	width: 20rem;
 	cursor: pointer;
+	max-width: 12rem;
+	position: relative;
 }
 
 .product-grid-item h3,p{
@@ -764,16 +767,18 @@ footer img{
 
 .product-grid-item img{
 	min-width: 6rem;
-	max-width: 8rem;
-	width: 60%;
+	max-width: 10rem;
+	width: 90%;
 }
 
 .product-grid-item button{
 	min-width: 10rem;
+	margin: 0.5rem 0;
 }
 
 .product-grid-item h3{
-	font-size: 1.2rem;
+	font-size: 1rem;
+	font-weight: normal;
 }
 
 .product-weight{
@@ -782,8 +787,8 @@ footer img{
 
 .grid-price{
 	margin-left: 40%;
-	margin-top: 1rem;
-	font-size: 1.4rem;
+	margin-top: 0.3rem;
+	font-size: 1.2rem;
 }
 /* end of product grid section */
 
@@ -869,3 +874,80 @@ footer img{
 
 
 
+
+
+
+/* start of category products */
+
+.category-section{
+	background-color:white;
+	position: relative;
+	padding: 1rem 2rem 2rem 2rem;
+	margin: 3rem 3% 0 3%;
+	
+	border-radius: 6px;
+	/* border-bottom: 1px solid rgb(163, 163, 163); */
+}
+
+@media(max-width: 800px){
+	.category-section{
+		padding: 0.5rem 1rem;
+		margin: 0 3%;
+	}
+}
+
+.category-section-title{
+	display: block;
+	margin: 1rem;
+	font-size: 1.4rem;
+	/* font-weight: bold; */
+	color: rgb(73, 73, 73);
+}
+
+.category-section a{
+	position: absolute;
+	top: 2rem;
+	right: 8%
+}
+
+.category-section button{
+	padding: 0.6em 0.8em;
+	margin: 0.3em 0em;
+	font-size: 1rem;
+	color: white;
+	background-color: #63B146;
+	border-radius: 0.3em;
+	border: none;
+}
+
+.price-section{
+	display: block;
+	margin-top: 0.2rem;
+}
+
+.sale-price{
+	float: right;
+	margin-right: 0.2em;
+	margin-bottom: 0.5rem;
+
+	color: rgb(238, 28, 28);
+	font-size: 1.2rem;
+}
+
+.original-price{
+	float: right;
+	margin-right: 2rem;
+
+	color: grey;
+	font-size: 1.2rem;
+	text-decoration: line-through;
+}
+
+.seasonal-tag{
+	position: absolute;
+	top: 0rem;
+
+	background-color: #F36B25;
+	color: white;
+	padding: 0.1rem 0.8rem;
+}
