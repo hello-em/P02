@@ -279,7 +279,7 @@ select {
 	border-bottom: 1px solid rgb(129, 129, 129);
 }
 .product-left{
-	width: 30%;
+	width: 10%;
 	height: auto;
 }
 
@@ -310,12 +310,13 @@ select {
 }
 
 /* start of buy with products */
-.buy-with-item img h3{
+.buy-with-item h3{
 	display: block;
 }
 
 .buy-with-item img{
 	width: 60%;
+	height: auto;
 	display: block;
 }
 
@@ -396,13 +397,14 @@ input[type=text]{
 }
 
 input[type=number]{
-	width: 60%;
-	padding: 12px 10px;
-	margin: 8px 10px;
+	width: 20%;
+	padding: 0.5em 0.5em;
+	margin: 0.5em 0.5em;
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	font-size: 1.0rem;
+	text-align: center;
 }
 
 
