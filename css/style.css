@@ -175,13 +175,11 @@ input[type=search]{
     left: 0;
     width: 100%;
     height: 100%;
-    /* makes a gradient */
+    /* makes a gradient https://cssgradient.io/ */
     background: linear-gradient(90deg, rgba(2,0,36,0) 29%, rgba(0,0,0,1) 65%), url("../images/hero-cta.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-   
-   	
+    background-position: center;	
 }
 .hero-content {
     position: relative;
@@ -270,10 +268,6 @@ select {
 .product-info{
 	padding-bottom: 1rem;
 	border-bottom: 1px solid rgb(129, 129, 129);
-}
-.product-left{
-	width: 10%;
-	height: auto;
 }
 
 .product-nav a{
@@ -670,57 +664,7 @@ footer img{
 
 /* end of footer section */
 
-/* about page css*/
-.cta-block{
-	color: white;
-	position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-.colour1{
-	background-color: #676767;
-}
-.colour2{
-	background-color: #949494;
-}
 
-
-.cta-block-inner-left{
-	max-width: 30em;
-    text-align: left;
-    margin:0 0.625em;
-	padding:3em 2em 3.5em;
-	position: relative;
-}
-
-.cta-block-inner-right{
-	max-width: 30em;
-    text-align: left;
-    margin:0 0.625em;
-	padding:3em 2em 3.5em;
-	position: relative;	
-}
-
-.cta-block-header h1{
-	font-size: 1.5rem;
-}
-
-.cta-block-body{
-	line-height:1.2;
-}
-
-.cta-block-action{
-	display:inline-block;
-	color: white;
-	font-size: 1.25em;
-	text-decoration: none;
-	margin-top: 0.5em;
-	padding-bottom: 0.2em;
-	border-bottom: 0.1em solid white;
-}
-
-/* about page css*/
 
 /* wireframe styling */
 .wireframes img{
@@ -737,7 +681,6 @@ footer img{
 }
 
 /* end of wireframe styling */
-
 
 /* Start of product filter sections */
 
@@ -962,14 +905,9 @@ footer img{
 	right: 8%
 }
 
-.category-section button{
-	padding: 0.6em 0.8em;
-	margin: 0.3em 0em;
-	font-size: 1rem;
-	color: white;
-	background-color: #63B146;
-	border-radius: 0.3em;
-	border: none;
+/* the a href to the detail html */
+.product-grid-item a{
+	position: initial;
 }
 
 .price-section{
