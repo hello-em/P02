@@ -82,17 +82,21 @@
 	font-size: 1.5rem;
 }
 
-.form-button{
-	color: white;
-	background-color: #908888;
+.form-btn{
+	background-color: #63B146;
+    color: white;
 	padding: 0.5rem 1.5rem;
 	margin-left: 0.25rem;
 	border:none;
+	font-size: 1rem;
+    font-weight: 200;
+    cursor: pointer;
+    border-radius: 0.3rem;
 
 }
 
-.form-button:hover, .form-button:focus{
-	background-color: #ADA5A5;
+.form-btn:hover, .form-btn:focus{
+	background-color: #9AE07E;
 	transition: background-color 0.5s;
 }
 
@@ -104,9 +108,6 @@
 
 }
 
-.textbox{
-	margin-top: 0.5rem;
-}
 
 textarea {
 	font-family: 'Lato', sans-serif;
@@ -161,7 +162,7 @@ textarea {
 .right-align{
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 1em;
+	margin-top: 0.5em;
 }
 
 .comments h3{
@@ -191,12 +192,11 @@ textarea {
 
 
 .review{
-
+	border-radius: 0.3rem;
 	background-color: white;
 	padding: 1em;
 	margin: 0;
 	flex: 1 0 5rem;
-	
 }
 
 
