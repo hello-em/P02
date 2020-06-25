@@ -27,7 +27,7 @@
 
 			<!-- need to check with Paul on the needs to have both svg and png files -->
 
-			<a href="#">
+			<a href="#" id="cart-btn">
 				<img src="images/cart-btn.svg" alt="Cart Button">
 			</a>
 		</div>
@@ -93,6 +93,61 @@
 		</section>
 	</div>
 	<!-- END of Category selection -->
+
+	<!--Start of shopping cart-->
+	<section class="cart shadow">
+		<div class="cart-headline">
+			<h2>Cart</h2>
+			<div class="close-cart">+</div>
+		</div>
+
+		<div class="cart-deliver">
+			<img src="styleguide/images/walmart logo.png" alt="">
+			<span>Walmart</span>
+			<div class="cart-deliver-info">
+				<span>Delivery to:
+					<a href="#">1234 Glen drive (h1)</a>		
+				</span>
+			</div>
+		</div>
+
+
+			<div class="cart-item-container">
+				<div class="cart-item">
+					<img src="styleguide/images/broccoli.png" alt="">
+					<span class="item-title">Broccoli</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div class="cart-item">
+					<img src="styleguide/images/product image.png" alt="">
+					<span class="item-title">Choi</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div style="height: 4rem"></div>
+
+				<span class="total">Total:</span>
+				<span class="total-price">$8.98</span>
+				<form action="check-out.html">
+					<button class="check-out-btn" action>Check out</button>
+				</form>
+		</div>
+
+	</section>
+	<!--End of shopping cart-->
 
 	<!--Start of Product Grid and fliter-->
 
@@ -165,6 +220,7 @@
 				
 			</form>
 		</section>
+		<!--End of product filter section-->
 	
 	<!-- -->
 		<section class="product-grid ">
@@ -192,7 +248,7 @@
 						<span class="product-weight">200g each</span>
 						<p class="grid-price">$2.97</p>
 					</a>
-					<button class="btn">Add to cart</button>
+					<button class="btn" id="cart-btn">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -269,112 +325,26 @@
 					<button class="btn">Add to cart</button>
 				</section>
 
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
-				
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
-
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
-				
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
-
-				<!-- 2 empty ones to help with the grid flex, -->
-				<section class="product-grid-item box-grid-item">
-					
-				</section>
-				
-				<section class="product-grid-item box-grid-item">
-					
-				</section>
 			</section>
 			<!--End of product grid-->
 			</section>
-		<!-- end of Left of Filter grid -->
-
-
-
-
-
-	<!--Start of product list-->
-	<div class="bg-modal">
-		<section class="product-list shadow modal-content">
-			<div id="close-popup">+</div>
-			<div class="product-info">
-				<div class="product-nav">
-					<a href="">Veggies</a>
-					<span>></span>
-					<a href="">Greens</a>
-				</div>
-				<div class="box">
-					<img src="styleguide/images/product image.png" alt="" class="product-left box-left">
-
-					<div class="product-right box-right">
-						<h3>Carrots</h3>
-						<span>200g</span>
-						<p class="price">$0.86</p>
-						<label for="product-quantity">Quantity:</label>
-						<input type="number" id="product-quantity">
-						<button class="btn">Add to cart</button>
-						<button class="btn">View to cart</button>
-					</div>
-				</div>
-			</div>
-
-			<h3>Often buy with</h3>
-			<div class="product-buy-with box">
-				<div class="buy-with-item box-grid-item">
-					<img src="styleguide/images/lettues.png" alt="">
-					<input type="checkbox" id="lettues">
-					<label for="lettues">Lettues</label>
-					<p class="price">$0.99</p>
-				</div>
-
-				<div class="buy-with-item box-grid-item">
-					<img src="styleguide/images/onion.png" alt="">
-					<input type="checkbox" id="onion">
-					<label for="onion">Onion</label>
-					<p class="price">$0.99</p>
-				</div>
-
-				<div class="buy-with-item box-grid-item">
-					<img src="styleguide/images/broccoli.png" alt="">
-					<input type="checkbox" id="broccoli" size="3">
-					<label for="broccoli">Broccoli</label>
-					<p class="price">$0.99</p>
-				</div>
-			</div>
-			<span class="total">Total:</span>
-			<span class="total-price">$8.98</span>
-			<button class="btn">Add to cart</button>	
-		</section>
-	</div>
+			<!--End of right side-->
+		
 
 
 	</div>
-	<!--Start of Product Grid and fliter-->
+	<!--ENd of Product Grid and fliter-->
+
+	<!--contact section-->
+	<section class="contact-section" id="contact-section">
+		<h2>Contact Us</h2>
+		<span class="phone-number">778-123-4567</span>
+		<form action="">
+			<label for="" placeholder>Send us an email if you have any question</label>
+			<input type="text">
+			<button type="submit" class="submit-btn">Submit</button>
+		</form>
+	</section>
 
 
 	<!-- Footer  -->
@@ -388,6 +358,6 @@
 	</footer>
 
 	
-
+	<script src="js/main.js"></script>
 </body>
 </html>
