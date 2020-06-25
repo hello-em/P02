@@ -1,0 +1,115 @@
+.about {
+    position: relative; 
+}
+
+/* Testing Hero CTA banner https://www.developerdrive.com/full-page-hero-image-html-css/ */
+/* use ::before to add a brightness level to photo and not everything in the .hero div box (text etc.)*/
+.about::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* makes a gradient https://cssgradient.io/ */
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 50%, rgba(2,0,36,0) 89%), url("../images/about-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;	
+}
+
+.covid-news {
+    position: relative; 
+}
+
+.covid-news::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* makes a gradient https://cssgradient.io/ */
+    background: linear-gradient(270deg, rgba(0,0,0,0.8) 50%, rgba(2,0,36,0) 89%), url("../images/covid-news.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.third-banner {
+    position: relative; 
+}
+
+.third-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* makes a gradient https://cssgradient.io/ */
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 50%, rgba(2,0,36,0) 89%), url("../images/wash-hands.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 75%;    
+}
+
+/* about page css*/
+.cta-block{
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.colour1{
+    background-color: #676767;
+}
+.colour2{
+    background-color: #949494;
+}
+
+
+.cta-block-inner-left{
+    max-width: 30em;
+    text-align: left;
+    margin:0 0.625em;
+    padding:3em 2em 3.5em;
+    position: relative;
+}
+
+.cta-block-inner-right{
+    max-width: 30em;
+    text-align: left;
+    margin:0 0.625em;
+    padding:3em 2em 3.5em;
+    position: relative; 
+}
+
+.cta-block-header h1{
+    font-size: 1.5rem;
+}
+
+.cta-block-body{
+    line-height:1.2;
+}
+
+.cta-block-action{
+    display:inline-block;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+    margin-top: 0.5em;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid white;
+}
+
+/* about page css*/
+
+
+
+.contact-section{
+    text-align: center;
+    margin-top: 0;
+    display: block;
+}
