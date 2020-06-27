@@ -286,7 +286,7 @@
 					<a href="">Greens</a>
 				</div>
 				<div class="box">
-					<img src="images/product image.png" alt="" class="product-left box-left">
+					<img src="../images/product-image.png" alt="" class="product-left box-left">
 
 					<div class="product-right box-right">
 						<h3>Carrots</h3>
@@ -303,21 +303,21 @@
 			<h3>Often buy with</h3>
 			<div class="product-buy-with box">
 				<div class="buy-with-item box-grid-item">
-					<img src="images/lettues.png" alt="">
+					<img src="../images/lettues.png" alt="">
 					<input type="checkbox" id="lettues">
 					<label for="lettues">Lettues</label>
 					<p class="price">$0.99</p>
 				</div>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/onion.png" alt="">
+					<img src="../images/onion.png" alt="">
 					<input type="checkbox" id="onion">
 					<label for="onion">Onion</label>
 					<p class="price">$0.99</p>
 				</div>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/broccoli.png" alt="">
+					<img src="../images/bean.png" alt="">
 					<input type="checkbox" id="broccoli" size="3">
 					<label for="broccoli">Broccoli</label>
 					<p class="price">$0.99</p>
@@ -373,7 +373,7 @@
 		<h3>Grid system</h3>
 		<section class="box">
 			<section class="product-grid box-grid-item">
-				<img src="images/broccoli.png" alt="">
+				<img src="../images/bean.png" alt="">
 				<h3>Broccoli</h3>
 				<span class="product-weight">200g each</span>
 				<p class="grid-price">$6.99</p>
@@ -381,7 +381,7 @@
 			</section>
 
 				<section class="product-grid box-grid-item">
-					<img src="images/carrot.png" alt="">
+					<img src="../images/carrot.png" alt="">
 					<h3>Broccoli</h3>
 					<span class="product-weight">200g each</span>
 					<p class="grid-price">$6.99</p>
@@ -389,7 +389,7 @@
 				</section>
 
 				<section class="product-grid box-grid-item">
-					<img src="images/bean.png" alt="">
+					<img src="../images/bean.png" alt="">
 					<h3>Broccoli</h3>
 					<span class="product-weight">200g each</span>
 					<p class="grid-price">$6.99</p>
@@ -398,7 +398,7 @@
 
 
 				<section class="product-grid box-grid-item">
-					<img src="images/onion.png" alt="">
+					<img src="../images/onion.png" alt="">
 					<h3>Broccoli</h3>
 					<span class="product-weight">200g each</span>
 					<p class="grid-price">$6.99</p>
@@ -406,7 +406,7 @@
 				</section>
 
 				<section class="product-grid box-grid-item">
-					<img src="images/lettues.png" alt="">
+					<img src="../images/lettues.png" alt="">
 					<h3>Broccoli</h3>
 					<span class="product-weight">200g each</span>
 					<p class="grid-price">$6.99</p>
@@ -414,7 +414,7 @@
 				</section>
 
 				<section class="product-grid box-grid-item">
-					<img src="images/tomato.png" alt="">
+					<img src="../images/tomato.png" alt="">
 					<h3>Broccoli</h3>
 					<span class="product-weight">200g each</span>
 					<p class="grid-price">$6.99</p>
@@ -422,14 +422,14 @@
 				</section>
 
 				<section class="product-grid box-grid-item">
-					<img src="images/product image.png" alt="">
+					<img src="../images/product-image.png" alt="">
 					<h3>Broccoli</h3>
 					<span class="product-weight">200g each</span>
 					<p class="grid-price">$6.99</p>
 					<button class="btn" onclick="location='cart.html'">Add to cart</button>
 				</section>
 				<section class="product-grid box-grid-item">
-					<img src="images/product image.png" alt="">
+					<img src="../images/product-image.png" alt="">
 					<h3>Broccoli</h3>
 					<span class="product-weight">200g each</span>
 					<p class="grid-price">$6.99</p>
@@ -466,7 +466,7 @@
 			</samp>
 			<!-- end of <samp> products grid structure -->
 				
-		<!--Start of shopping cart-->
+		<!--Start of old JS version SHopping cart -->
 
 		<h3>Shopping cart menu</h3>
 		<section class="cart">
@@ -487,7 +487,7 @@
 
 			<div class="cart-item-container">
 				<div class="cart-item">
-					<img src="images/broccoli.png" alt="">
+					<img src="../images/bean.png" alt="">
 					<span class="item-title">Broccoli</span>
 
 					<div class="item-quantity">
@@ -499,7 +499,7 @@
 				</div>
 
 				<div class="cart-item">
-					<img src="images/product image.png" alt="">
+					<img src="../images/product-image.png" alt="">
 					<span class="item-title">Choi</span>
 
 					<div class="item-quantity">
@@ -518,6 +518,62 @@
 			</div>
 
 		</section>
+		<!--End of old JS version SHopping cart -->
+
+		<!--Start of shopping cart -->
+		<section class="container shadow">
+			<h2 class="cart-headline">Cart</h2>
+
+			<div class="cart-deliver box-space-between">
+				<div>
+					<img src="images/walmart logo.png" alt="">
+					<span>Walmart</span>
+				</div>
+
+				<div class="cart-deliver-info">
+					<span>Delivery to:</span>
+					<a href="#" class="text-green">1234 Glen drive (h1)</a>		
+				</div>
+			</div>
+
+
+			<div class="cart-item-container">
+				<div class="cart-item">
+					<img src="../images/broccoli.png" alt="">
+					<span class="item-title">Broccoli</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div class="cart-item">
+					<img src="../images/product-image.png" alt="">
+					<span class="item-title">Choi</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div style="height: 4rem"></div>
+
+				<span class="total">Total:</span>
+				<span class="total-price">$8.98</span>
+				<form action="check-out.html">
+					<button class="check-out-btn" action>Check out</button>
+				</form>
+			</div>
+
+		</section>
+		<!--End of shopping cart-->
+
 		<!-- Shopping cart <samp> -->
 		<samp>
 			&lt;section class="cart"&gt;
@@ -582,6 +638,7 @@
 	<footer>
 		<img src="images/logo-greyscale.svg" alt="">
 		<div class="footer-link">
+			<a href="styleguide/index.html">Styleguide</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>
