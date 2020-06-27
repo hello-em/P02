@@ -17,20 +17,19 @@
 			</a>
 		</div>
 		<div class="nav-box-right box">
-			<form class="box-item-nav">
+			<form class="box-item-nav search">
 				<input type="search" name="site-search"id="site-search" placeholder="Search">
 				<button type="submit" class="search-btn">
-					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon">
+					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
 				</button>
 			</form>
-			<a href="product.html" class="box-item-nav page-nav-item"><span>PRODUCT</span></a>
-			<a href="about.html" class="box-item-nav page-nav-item"><span>ABOUT</span></a>
+			<a href="product.html" class="box-item-nav"><span class="line-hover">PRODUCT</span></a>
+			<a href="about.html" class="box-item-nav"><span class="line-hover">ABOUT</span></a>
 
-			<!-- need to check with Paul on the needs to have both svg and png files -->
-
-			<a href="#" id="cart-btn">
-				<img src="images/cart-btn.svg" alt="Cart Button">
-			</a>
+			<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
+				<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
+				<span>CART</span>
+			</button>
 		</div>
 	</nav>
 
