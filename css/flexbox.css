@@ -31,6 +31,20 @@
     justify-content: flex-start;
 }
 
+.box-space-between{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
 .box-item{
     -webkit-flex: 1 1 auto;
 	-ms-flex: 1 1 auto;
@@ -140,11 +154,3 @@
 }
 
 /* End of product page flexbox */
-
-
-
-/* check out page flexbox */
-
-/* .checkout-flex{
-    justify-content: flex-start;
-} */
