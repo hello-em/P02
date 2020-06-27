@@ -24,22 +24,42 @@
 
 }
 
+.write-form{
+	margin-right: 2em;
+}
+
+/* to override the main input in style.css*/
+.write-form input{
+	width: 100%;
+	padding: 0.5em 0.5em;
+	margin:0 ;
+	margin-right: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 0.3rem;
+	font-size: 1.0rem;
+	
+}
 
 textarea {
 	font-family: 'Lato', sans-serif;
-	width: 100%;
-	padding: 12px 10px;
-	margin: 8px 10px;
+	min-height: 5em;
+	width: 25rem;
+	padding: 0.5em 0.5em;
+	margin-top: 0.5em;
 	border: 1px solid #ccc;
 	border-radius: 0.3rem;
 	font-size: 1.0rem;
 	resize: vertical;
 }
-
+/* Smaller text area for devices ipad pro and smaller*/
+@media (max-width: 1024px){
+	textarea{
+		width: 100%;
+	}
+}
 
 .rate {
-    height: auto;
-    padding: 0.7rem 1rem;
+    padding: 0.7em 0;
 }
 /* This the checks, they are hidden off browser. Comment them out and you can see them*/
 .rate:not(:checked) > input {
@@ -60,20 +80,17 @@ textarea {
 .rate:not(:checked) > label:before {
     content: '\2605 ';
 }
+
+/* checked colour */
 .rate > input:checked ~ label {
-    color: #ffc700;    
+    color: #FFDD50;    
 }
+/* Not checked items can hover*/
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+    color: #ffc700;  
 }
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #FFDD50;
-}
+
 
 .right-align{
 	display: flex;
@@ -81,14 +98,11 @@ textarea {
 	margin-top: 0.5em;
 }
 
-.comments h3{
-	margin: 0;
-}
-
 .comments{
-	margin-top: 2em;
-	padding-top: 2em; 
-	border-top: 0.05rem solid #636363;
+	margin: 0em 0em;
+	padding: 0em 0em; 
+	padding-left: 2em;
+	border-left: 0.05rem solid #636363;
 }
 
 .review{
@@ -96,21 +110,18 @@ textarea {
 	background-color: white;
 	padding: 1em 0.5em;
 	margin: 0;
-	flex: 1 0 5rem;
+	margin-bottom: 2em;
+	width:100%;	
 }
 
-/* Review Form on detail list */
 
-.review-box{
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
+.review-flexbox{
+	display: inline-flex;
+}
 
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; 
-
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
+/* wrap reviews for smaller screens*/
+@media(max-width: 30rem) {
+	.review-flexbox{
+		flex-wrap: wrap;
+	}
 }

@@ -25,8 +25,6 @@
 			<a href="product.html" class="box-item-nav"><span class="line-hover">PRODUCT</span></a>
 			<a href="about.html" class="box-item-nav"><span class="line-hover">ABOUT</span></a>
 
-			<!-- need to check with Paul on the needs to have both svg and png files -->
-
 			<button onclick="cart.html" id="cart-btn" class="cart-btn">
 				<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
 				<span>CART</span>
@@ -34,7 +32,59 @@
 		</div>
 	</nav>
 
-	
+	<!--Start of shopping cart -->
+	<section class="container shadow">
+		<h2 class="cart-headline">Cart</h2>
+
+		<div class="cart-deliver box-space-between">
+			<div>
+				<img src="styleguide/images/walmart logo.png" alt="">
+				<span>Walmart</span>
+			</div>
+
+			<div class="cart-deliver-info">
+				<span>Delivery to:</span>
+				<a href="#" class="text-green">1234 Glen drive (h1)</a>		
+			</div>
+		</div>
+
+
+			<div class="cart-item-container">
+				<div class="cart-item">
+					<img src="images/broccoli.png" alt="">
+					<span class="item-title">Broccoli</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div class="cart-item">
+					<img src="images/product-image.png" alt="">
+					<span class="item-title">Choi</span>
+
+					<div class="item-quantity">
+						<input type="number" placeholder="2" id="quantity">
+						<a href="#" class="delete-btn">Remove</a>
+					</div>
+
+					<span class="cart-price">2.98</span>
+				</div>
+
+				<div style="height: 4rem"></div>
+
+				<span class="total">Total:</span>
+				<span class="total-price">$8.98</span>
+				<form action="check-out.html">
+					<button class="check-out-btn" action>Check out</button>
+				</form>
+		</div>
+
+	</section>
+	<!--End of shopping cart-->
 
 
 	<!--contact section-->
@@ -52,6 +102,7 @@
 	<footer>
 		<img src="images/logo-greyscale.svg" alt="">
 		<div class="footer-link">
+			<a href="styleguide/index.html">Styleguide</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>
