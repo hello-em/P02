@@ -28,8 +28,17 @@ p{
 	/* width: 60%; */
 }
 
+/* Default all button style unless specfic */
 button{
 	display: block;
+	background-color: #63B146;
+    color: white;
+    border: none;
+}
+
+button:hover, button:focus{
+	 background-color: #9AE07E;
+	 cursor: pointer;
 }
 
 /* Code samples stylization to differentiate from regular text*/
@@ -49,17 +58,7 @@ nav{
 	margin: 0;
 	background-color: #FFDD50;
 	font-weight: bold;
-	padding: 0.7em 0.9em;
-}
-
-nav p{
-	display: inline;
-	font-size: 1.4rem;
-	margin-left: 1rem;
-}
-
-nav li{
-	list-style: none;
+	padding: 1.3em 7em;
 }
 
 .header-logo img{
@@ -70,66 +69,59 @@ nav li{
 	align-self: center;
 }
 
-#header-grocery{
-	color: #63B146;
-	font-weight: bold;
-}
-
-#header-Vancouver{
-	font-weight: lighter;
-	color: black;
-	padding-left: 0;
-}
-
-@media (max-width: 1000px){
-	#header-grocery{
-		font-size: 1.2rem;
-	}
-	
-	#header-Vancouver{
-		font-size: 1.2rem;
-	}
-}
-
 /* Search bar css*/
+
+.search{
+	position: relative;
+}
+
 .search-btn{
 	font-size: 1.0rem;
-	color: white;
-	background-color: #63B146;
-	padding: 0.5em 0.5em;
-	border-radius: 4px;
-	border-style: none;
-	display: inline;
+	border: 1px solid #ccc;
+	height:2rem;
+	border-radius: 0px 4px 4px 0px;
+	border-left: none;
+	display: inline-block;
+	position: absolute;
+	top:50%;
+    transform: translate(0, -50%);
 }
 
 input[type=search]{
 	width: 60%;
-	padding: 0.5em 0.5em;
+	height: 2rem;
 	border: 1px solid #ccc;
-	border-radius: 4px;
+	border-radius: 4px 0px 0px 4px;
+	border-right: none;
 	font-size: 1.0rem;
 }
 
 .search-btn img{
-	width: 1em;
-	height: 1em;
+	width: 1rem;
+	height: auto;
 }
-/* end Search bar css*/
-
-/* .cart-btn{
-	font-size: 1.0rem;
-	color: white;
-	background-color: #63B146;
-	padding: 0.8em 1.8em;
-	border-radius: 0.6rem;
-	align-self: center;
+/* end Search css*/
+ .cart-btn{
+	padding: 0.7em 1.4em;
+	border-radius: 0.5rem;
+	margin:auto;
 }
 
-.cart-btn span{
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-} */
+.cart-btn img{
+	display: inline-block;
+	width: 1.5em;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 0.3em;
+}
 
+
+.center-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
 
 
 /* end of nav bar */
@@ -145,13 +137,27 @@ input[type=search]{
 }
 
 /* Used in styleguide and site nav*/
-.page-nav-item span:hover, .page-nav-item span:focus{
-	border-bottom: 0.01rem solid black;
-	transition: color 0.5s;
+
+/* all text that needs a line to appear on hover*/
+.line-hover {
+	display: inline-block;
 }
 
-.active span{
-	border-bottom: 0.01rem solid black;
+.line-hover::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.03rem;
+    background: #000;
+    transition: width .3s;
+}
+
+.line-hover:hover::after {
+    width: 100%;
+}
+
+.active{
+	border-bottom: 0.03rem solid black;
 }
 
 
@@ -202,15 +208,12 @@ input[type=search]{
 }
 
 .hero-btn {
-    background-color: #63B146;
-    color: white;
     border: 1px solid #257F29;
     margin-top: 3rem;
     margin-bottom: 1rem;
     padding: 1rem 3rem;
     font-size: 1rem;
     font-weight: 200;
-    cursor: pointer;
     border-radius: 0.3rem;
 }
 

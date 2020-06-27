@@ -17,20 +17,19 @@
 			</a>
 		</div>
 		<div class="nav-box-right box">
-			<form class="box-item-nav">
+			<form class="box-item-nav search">
 				<input type="search" name="site-search"id="site-search" placeholder="Search">
 				<button type="submit" class="search-btn">
-					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon">
+					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
 				</button>
 			</form>
-			<a href="product.html" class="box-item-nav page-nav-item"><span>PRODUCT</span></a>
-			<a href="about.html" class="box-item-nav page-nav-item"><span>ABOUT</span></a>
+			<a href="product.html" class="box-item-nav"><span class="line-hover">PRODUCT</span></a>
+			<a href="about.html" class="box-item-nav"><span class="line-hover">ABOUT</span></a>
 
-			<!-- need to check with Paul on the needs to have both svg and png files -->
-
-			<a href="#" id="cart-btn">
-				<img src="images/cart-btn.svg" alt="Cart Button">
-			</a>
+			<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
+				<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
+				<span>CART</span>
+			</button>
 		</div>
 	</nav>
 	<!-- Start of Hero CTA Image Banner -->
@@ -53,12 +52,10 @@
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3>Select Store</h3></label>
+			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store</a></h3></label>
 			<select name="store" id="store"  onchange="location = this.value">
 				<option value="#">Walmart</option>
 				<option value="#">Superstore</option>
-				<option value="#">Costco</option>
-				<option value="#">T&T</option>
 				<option value="store.html">More Locations...</option>
 			</select>
 		</form>
@@ -68,7 +65,7 @@
 			<select name="address" id="address" onchange="location = this.value">
 				<option value="#">1234 University Ave, City Province</option>
 				<option value="#">1234 home street, city province</option>
-				<option value="add-address.html">Add new address</option>
+				<option value="#">Add new address</option>
 			</select>
 		</form>
 	</section>
@@ -77,7 +74,7 @@
 	<!-- Start of Category selection -->
 	<div class="container box">
 		<section class="category-grid box">
-			<a href="product-veg.html">
+			<a href="product-veg.html" class="line-hover" >
 				<section class="category-grid-item box-grid-item">
 					<img src="images/veggies.jpg" alt="Vegatable Category">
 					<h3>Veggies</h3>
@@ -85,7 +82,7 @@
 			</a>
 		</section>
 		<section class="category-grid box">
-			<a href="product-fruit.html">
+			<a href="product-fruit.html" class="line-hover">
 				<section class="category-grid-item box-grid-item">
 					<img src="images/fruits.jpg" alt="Fruits Category">
 					<h3>Fruits</h3>
@@ -93,7 +90,7 @@
 			</a>
 		</section>
 		<section class="category-grid box">
-			<a href="product-herb.html">
+			<a href="product-herb.html" class="line-hover">
 				<section class="category-grid-item box-grid-item">
 					<img src="images/herb.jpg" alt="Herbs Category">
 					<h3>Herbs</h3>
@@ -101,10 +98,9 @@
 			</a>
 		</section>
 		<section class="category-grid box">
-			<a href="product-season.html">
+			<a href="product-season.html" class="line-hover">
 				<section class="category-grid-item box-grid-item">
 					<img src="images/seasonal-foods.png" alt="Seasonal foods category">
-					<!-- <img src="styleguide/images/.png" alt=""> -->
 					<h3>Seasonals</h3>
 				</section>
 			</a>
@@ -166,8 +162,6 @@
 
 	</section>
 	<!--End of shopping cart-->
-	
-	<!-- <a href="styleguide/index.html" style="color: #63B146; font-weight: bold; margin: 3rem">A temporary link to the styleguide</a> -->
 
 		<!--start of seasonal category-->
 		<section class="category-section shadow">
