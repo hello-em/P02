@@ -3,6 +3,9 @@
 <head>
 	<title>About | Grocery Vancouver </title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+
+	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="css/about-page.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -33,8 +36,10 @@
 	</nav>
 
 	<!--Start of shopping cart -->
-	<section class="container shadow">
-		<h2 class="cart-headline">Cart</h2>
+	<section class="cart">
+		
+		<h2><a href="index.html" class="return-button"><</a>My shopping cart <span>(4)</span></h2>
+		<!-- <h2 class="cart-headline">Cart</h2> -->
 
 		<div class="cart-deliver box-space-between">
 			<div>
@@ -44,43 +49,55 @@
 
 			<div class="cart-deliver-info">
 				<span>Delivery to:</span>
-				<a href="#" class="text-green">1234 Glen drive (h1)</a>		
+				<a href="#" class="text-green">1234 Glen drive (1 hour)</a>		
 			</div>
 		</div>
 
 
-			<div class="cart-item-container">
-				<div class="cart-item">
-					<img src="images/broccoli.png" alt="">
-					<span class="item-title">Broccoli</span>
+		<div class="cart-item-container">
+			<div class="cart-item">
+				<img src="images/broccoli.png" alt="">
+				<span class="item-title">Broccoli</span>
 
-					<div class="item-quantity">
-						<input type="number" placeholder="2" id="quantity">
-						<a href="#" class="delete-btn">Remove</a>
-					</div>
-
-					<span class="cart-price">2.98</span>
+				<div class="item-quantity">
+					<input type="number" placeholder="2" id="quantity">
+					<a href="#" class="delete-btn">Remove</a>
 				</div>
 
-				<div class="cart-item">
-					<img src="images/product-image.png" alt="">
-					<span class="item-title">Choi</span>
+				<span class="cart-price">2.98</span>
+			</div>
 
-					<div class="item-quantity">
-						<input type="number" placeholder="2" id="quantity">
-						<a href="#" class="delete-btn">Remove</a>
-					</div>
+			<div class="cart-item">
+				<img src="images/broccoli.png" alt="">
+				<span class="item-title">Broccoli</span>
 
-					<span class="cart-price">2.98</span>
+				<div class="item-quantity">
+					<input type="number" placeholder="2" id="quantity">
+					<a href="#" class="delete-btn">Remove</a>
 				</div>
 
-				<div style="height: 4rem"></div>
+				<span class="cart-price">2.98</span>
+			</div>
 
-				<span class="total">Total:</span>
-				<span class="total-price">$8.98</span>
-				<form action="check-out.html">
-					<button class="check-out-btn" action>Check out</button>
-				</form>
+			<div class="cart-item">
+				<img src="images/product-image.png" alt="">
+				<span class="item-title">Choi</span>
+
+				<div class="item-quantity">
+					<input type="number" placeholder="2" id="quantity">
+					<a href="#" class="delete-btn">Remove</a>
+				</div>
+
+				<span class="cart-price">2.98</span>
+			</div>
+
+			<div style="height: 4rem"></div>
+
+			<span class="total">Total:</span>
+			<span class="total-price">$8.98</span>
+			<form action="check-out.html">
+				<button class="check-out-btn" action>Check out</button>
+			</form>
 		</div>
 
 	</section>
