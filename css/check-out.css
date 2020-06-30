@@ -8,6 +8,19 @@
     background-color: white;
 }
 
+@media(max-width: 800px){
+    .checkout-address{
+        margin-left: 0;
+        padding: 1rem;
+
+        width: 100%;
+    }
+
+    .checkout-address input [type=textarea]{
+        width: 10rem;
+    }
+}
+
 .checkout-address h3{
     margin-left: 0.7rem;
 }
@@ -59,6 +72,18 @@
     background-color: white;
 }
 
+@media (max-width: 800px){
+    .payment{
+        margin-left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .payment input{
+        width: 70%;
+    }
+}
+
 .payment input{
     margin-top: 1.2rem;
     display: block;
@@ -69,22 +94,41 @@
     margin-left: 0.7rem;
 }
 
+.payment button{
+    margin-left: 0.7rem;
+    margin-top: 2rem;
+    width: 10rem;
+}
+
 .order-btn{
     margin-top: 7rem;
     width: 100%;
 }
 
+#CVV{
+    width: 10rem;
+}
 
 /* start of order summary styling */
 
 .order-summary{
     margin-top: 2rem;
+    margin-right: 1rem;
     padding: 2rem;
     width: 20rem;
     height: 36rem;
     background-color: white;
     position: relative;
     align-items: center;
+}
+
+@media (max-width: 800px){
+    .order-summary{
+        margin-top: 2rem;
+        margin-right: 0rem;
+        padding: 1rem;
+        width: 100%;
+    }
 }
 
 .order-summary h3{
@@ -136,3 +180,16 @@
     margin-left: 0rem;
 }
 
+
+/* start of credit card logos section */
+.credit-card{
+    margin-left: 0.7rem;
+    margin-top: 2rem;
+
+}
+
+.credit-card-logo{
+    width: 40px;
+    height: auto;
+    margin-right: 1rem;
+}

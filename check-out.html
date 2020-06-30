@@ -35,8 +35,9 @@
 		</div>
 	</nav>
 
-	<section class="box checkout-flex">
-		<section class="">
+	<section class="box">
+
+		<section>
 
 			<div class="checkout-address">
 				<form action="">
@@ -73,14 +74,23 @@
 				<form action="">
 					<h3>Payment method</h3>
 
+					<div class="credit-card">
+						<img src="images/visa-logo.png" alt="" class="credit-card-logo">
+						<img src="images/mastercard-logo.png" alt="" class="credit-card-logo">
+						<img src="images/paypal-logo.png" alt="" class="credit-card-logo">
+
+					</div>
+
 					<input type="text" id="payment-name" placeholder="Name of the card holder">
-					<input type="number" id="card-number" placeholder="Card number">
-					<input type="number" id="POV" placeholder="CVVs">
-					<input type="text" id="card-number" placeholder="Billing address">
-				
+					<input type="text" id="card-number" placeholder="Card number">
+					<input type="text" id="CVV" placeholder="CVVs">
+					<input type="text" id="card-number" placeholder="Billing address line 1">
+					<input type="text" id="card-number" placeholder="Billing address line 2">
+
+					<button class="btn">Verify</button>
+
 				</form>
 				
-				<!-- <button class="btn">Place order</button>      -->
 			</div>  
 
 		</section>	
