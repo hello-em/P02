@@ -5,6 +5,8 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
 	margin: 0;
+
+	background-color: rgb(241, 241, 241);
 }
 
 img{
@@ -241,7 +243,15 @@ select {
 }
 
 .selection{
-	border-bottom: 1px solid #c2c2c2;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: white;
+	/* border-bottom: 1px solid #c2c2c2; */
+}
+
+.selection h3{
+	font-weight: normal;
 }
 
 

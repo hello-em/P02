@@ -1,6 +1,9 @@
 
 .service-section{
-    margin: 3rem 10%;
+    margin: 0;
+    padding: 1rem 10%;
+    padding-bottom: 6rem;
+    background-color: white;
 }
 
 .service-section h3{
