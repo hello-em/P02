@@ -656,6 +656,7 @@ footer img{
 	border-radius: 0.3em;
 }
 
+/* Temporary hide the filter in mobile version*/
 @media(max-width: 30rem){
 	.product-filter{
 		display: none;
@@ -764,6 +765,7 @@ footer img{
 	display: inline-block;
 	margin-right: 0.6rem;
 }
+
 
 .divider-line{
 	margin-top: 1.4rem;
