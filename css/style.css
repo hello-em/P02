@@ -349,6 +349,16 @@ select {
  }
 
 /* start of buy with products */
+.buy-with-item{
+	max-width: 20rem;
+}
+
+@media(max-width: 30rem){
+	.buy-with-item{
+		max-width: 10rem;
+	}
+}
+
 .buy-with-item h3{
 	display: block;
 }
@@ -646,6 +656,12 @@ footer img{
 	border-radius: 0.3em;
 }
 
+@media(max-width: 30rem){
+	.product-filter{
+		display: none;
+	}
+}
+
 .clear-filter-btn{
 	padding: 0.6em 1.6em;
 	margin: 1em 0em;
@@ -675,6 +691,11 @@ footer img{
 
 .product-grid{
 	width: 70%;
+}
+@media(max-width: 30rem){
+    .product-grid{
+    	width: 100%;
+    }
 }
 
 .product-white-background{
@@ -724,10 +745,6 @@ footer img{
 	text-align: right;
 	margin-top: 0.3rem;
 	font-size: 1.2rem;
-}
-
-.sort-by div{
-	background-color: #FFDD50;
 }
 
 .sort-by select { 

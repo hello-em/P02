@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="white-background">
+<body>
 	<nav class="box">
 		<div class="header-logo nav-box-left">
 			<a href="index.html">
@@ -76,11 +76,11 @@
 
 					<div class="product-right box-right">
 						<h3>Cilantro</h3>
-						<span>200g</span>
-						<p class="price">$0.86</p>
+						<span>Bunch</span>
+						<p class="price">$0.97</p>
 						<label for="product-quantity">Quantity:</label>
-						<input type="number" id="product-quantity" min="0.1" step="0.1" placeholder="0.2">
-						<span>/kg</span>
+						<input type="number" id="product-quantity" min="1" step="1" placeholder="1">
+						<span>Bunch</span>
 						<div class="box">
 							<button class="detail-btn box-item" onclick="location='cart.html'">Add to cart</button>
 							<button class="detail-btn box-item" onclick="location='check-out.html'">Check Out</button>
@@ -90,35 +90,35 @@
 			</div>
 
 			<h3>Often buy with</h3>
-			<div class="product-buy-with box">
+			<div class="product-buy-with box-flex-start">
 				<div class="buy-with-item box-grid-item">
-					<img src="images/lettues.png" alt="Buy With item - Veggie">
-					<input type="checkbox" id="lettues">
-					<label for="lettues">Lettues</label>
-					<p class="price">$0.99</p>
+					<img src="images/parsley.jpg" alt="Buy With item - Veggie">
+					<input type="checkbox" id="parsley">
+					<label for="lettues">Parsley</label>
+					<p class="price">$1.97</p>
 				</div>
 
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/onion.png" alt="">
-					<input type="checkbox" id="onion">
-					<label for="onion">Onion</label>
-					<p class="price">$0.99</p>
+					<img src="images/dill.jpg" alt="">
+					<input type="checkbox" id="dill">
+					<label for="onion">Dill</label>
+					<p class="price">$0.77</p>
 				</div>
 
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/product-image.png" alt="">
-					<input type="checkbox" id="product-image">
-					<label for="broccoli">Bok Choi</label>
-					<p class="price">$0.99</p>
+					<img src="images/mint.jpg" alt="">
+					<input type="checkbox" id="mint">
+					<label for="broccoli">Mint</label>
+					<p class="price">$0.77</p>
 
 				</div>
 			</div>
 			<span class="total">Total:</span>
-			<span class="total-price">$8.98</span>
+			<span class="total-price">$4.98</span>
 			<button class="btn" onclick="location='cart.html'">Add selected to cart</button>	
 		</section>
 	</div>

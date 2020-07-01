@@ -135,6 +135,7 @@
     justify-content: flex-start;
 }
 
+
 /*grid title*/
 .box-left-align{
     -webkit-flex: 1 1 auto;
@@ -143,14 +144,6 @@
     margin: 0.5rem 1rem;
 }
 
-/*sort by*/
-.text-right-align{
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    margin: 0.5rem 1rem;
 
-    text-align: right;
-}
 
 /* End of product page flexbox */
