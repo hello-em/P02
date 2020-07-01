@@ -18,6 +18,7 @@ img{
 a{
 	color: black;
 	text-decoration: none;
+	
 }
 
 
@@ -41,8 +42,10 @@ button{
 
 button:hover, button:focus{
 	 background-color: #9AE07E;
+	 color: black;
 	 cursor: pointer;
 }
+
 
 /* Code samples stylization to differentiate from regular text*/
 code, samp{
@@ -114,6 +117,7 @@ input[type=search]{
 	border-radius: 0.5rem;
 	margin:auto;
 }
+
 
 .cart-btn span{
 	font-size: 1rem;
@@ -445,6 +449,11 @@ select {
 	font-size: 1.2rem;
 	border-radius: 0.3em;
 	border: none;
+}
+
+.submit-btn:hover, .submit-btn:focus{
+	 background-color: #ffc700;  
+	 cursor: pointer;
 }
 
 /* end of btn section */

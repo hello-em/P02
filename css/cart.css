@@ -140,4 +140,10 @@
 	.cart-deliver div{
 		margin-bottom: 0.5em;
 	}
+	.check-out-btn{
+		padding: 0.6em 4em;
+		width: 100%
+	}
+
+	
 }
