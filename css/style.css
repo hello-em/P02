@@ -578,10 +578,10 @@ footer img{
 
 .product-filter{
 	max-width: 20rem;
-	background-color: rgb(235, 235, 235);
+	/* background-color: rgb(228, 228, 228); */
 	padding: 1rem 2rem;
 	padding-bottom: 3rem;
-	border-radius: 8px;
+	border-radius: 0.3em;
 }
 
 .clear-filter-btn{
@@ -613,6 +613,12 @@ footer img{
 
 .product-grid{
 	width: 70%;
+}
+
+.product-white-background{
+	background-color: white;
+	padding: 1rem;
+	border-radius: 0.3em;
 }
 
 .product-grid-item{
