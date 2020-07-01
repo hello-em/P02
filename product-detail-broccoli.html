@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="white-background">
+<body>
 	<nav class="box">
 		<div class="header-logo nav-box-left">
 			<a href="index.html">
@@ -40,18 +40,17 @@
 			<select name="store" id="store"  onchange="location = this.value">
 				<option value="#">Walmart</option>
 				<option value="#">Superstore</option>
-				<option value="#">Costco</option>
-				<option value="#">T&T</option>
 				<option value="store.html">More Locations...</option>
 			</select>
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3>Delivery to</h3></label>
+			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 			<select name="address" id="address" onchange="location = this.value">
-				<option value="#">1234 University Ave, City Province</option>
-				<option value="#">1234 home street, city province</option>
-				<option value="#">Add new address</option>
+				<option value="#">Choose your location</option>
+				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+				<option value="#">21, 2270 University Ave. Burnaby</option>
+				<option value="address.html">Add new address</option>
 			</select>
 		</form>
 	</section>
@@ -89,12 +88,12 @@
 			</div>
 
 			<h3>Often buy with</h3>
-			<div class="product-buy-with box">
+			<div class="product-buy-with box-flex-start">
 				<div class="buy-with-item box-grid-item">
 					<img src="images/lettues.png" alt="Buy With item - Veggie">
 					<input type="checkbox" id="lettues">
-					<label for="lettues">Lettues</label>
-					<p class="price">$0.99</p>
+					<label for="lettues">Lettuce</label>
+					<p class="price">$3.47</p>
 				</div>
 
 				<span class="plus-sign">+</span>
@@ -103,7 +102,7 @@
 					<img src="images/onion.png" alt="">
 					<input type="checkbox" id="onion">
 					<label for="onion">Onion</label>
-					<p class="price">$0.99</p>
+					<p class="price">$2.57</p>
 				</div>
 
 				<span class="plus-sign">+</span>
@@ -111,8 +110,8 @@
 				<div class="buy-with-item box-grid-item">
 					<img src="images/product-image.png" alt="">
 					<input type="checkbox" id="product-image">
-					<label for="broccoli">Bok Choi</label>
-					<p class="price">$0.99</p>
+					<label for="broccoli">Gai Lan</label>
+					<p class="price">$1.29</p>
 
 				</div>
 			</div>
@@ -162,12 +161,31 @@
 				<h3>Most Recent</h3>
 				<div>
 					<div class="review shadow">
-						<h4>Kelly Mills</h4>
-						<p>I ordered this through Walmart PickUp, ordered my groceries online and picked up at the Burlington North store. The bananas were picked perfectly by the pickup associate! A bit on the ripe side for the first couple of days, but they were delicious once ripe. I will definitely be ordering these again soon!</p>
+						<h4>Samantha Coyier</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>Some produce came brusied and not fresh. Not sure if that's the delivery service or the grocery market. The shopper respected the no contact rule and left grocery on front porch which was good.</p>
 					</div>
 					<div class="review shadow">
-						<h4>Tom</h4>
-						<p>we prefer yellowish greenish banana for lower Glycemic index , but these are just fine, to be consume on the day of pick up!</p>
+						<h4>Sebastian Lee</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>decent quality, the shopper came a bit later than expected but could be traffic. Overall the price is okay, they don't have all the sales from the grocery store but most of them are on the site.</p>
+					</div>
+					<div class="review shadow">
+						<h4>Linda</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>My grandparents live alone and they needed someone to get them grocery during the pandemic. I was busy this week so I wasn't able to help them but luckily I was able to order for them and have it deliver. A great replacement when I can't deliver myself but don't want my grandparents to go out at this time.</p>
 					</div>
 				</div>
 				<a href="#" id="more-review">More</a>

@@ -90,6 +90,7 @@
 	font-size: 1.4rem;
 }
 
+
 .delete-btn{
 	color: rgb(228, 36, 36);
 }
@@ -112,4 +113,37 @@
 	background-color: #63B146;
 	border-radius: 0.3em;
 	border: none;
+}
+
+
+@media(max-width: 30rem){
+	.cart{
+		padding: 1em 0.3em 1em 0.3em;
+	}
+
+	.item-quantity{
+		display: inline;
+		position: absolute;
+		left: auto;
+		position: absolute;
+		right: 0;
+		top: 2rem;
+	}	
+	.cart-price{
+		display: block;
+		position: relative;
+		text-align: right;
+		right: 0rem;
+		top: -1rem;
+	}
+
+	.cart-deliver div{
+		margin-bottom: 0.5em;
+	}
+	.check-out-btn{
+		padding: 0.6em 4em;
+		width: 100%
+	}
+
+	
 }

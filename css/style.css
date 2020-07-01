@@ -18,6 +18,7 @@ img{
 a{
 	color: black;
 	text-decoration: none;
+	
 }
 
 
@@ -41,8 +42,10 @@ button{
 
 button:hover, button:focus{
 	 background-color: #9AE07E;
+	 color: black;
 	 cursor: pointer;
 }
+
 
 /* Code samples stylization to differentiate from regular text*/
 code, samp{
@@ -114,6 +117,7 @@ input[type=search]{
 	border-radius: 0.5rem;
 	margin:auto;
 }
+
 
 .cart-btn span{
 	font-size: 1rem;
@@ -213,6 +217,7 @@ input[type=search]{
     font-weight: 600;
     margin-bottom: 0;
 }
+
 .hero-text{
     font-size: 1rem;
     font-weight: 200;
@@ -235,6 +240,24 @@ input[type=search]{
     border: 1px solid #257F29;
 }
 
+@media(max-width: 30rem){
+	.hero{
+		padding:1.5rem 2rem;
+	}
+
+	.hero::before{
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-cta-mobile.png");
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center;   
+	}
+
+	.hero-content {	
+	    left: auto;
+	    
+	}
+
+}
 /* END - Hero CTA */
 
 /* Select Store */
@@ -329,9 +352,24 @@ select {
 	margin: 3% 15%;
 	position: relative;
 }
-
+ @media(max-width: 30rem){
+ 	.smaller-container{
+		padding: 1rem 1rem;
+		margin: 3% 3%;
+	}
+ }
 
 /* start of buy with products */
+.buy-with-item{
+	max-width: 20rem;
+}
+
+@media(max-width: 30rem){
+	.buy-with-item{
+		max-width: 10rem;
+	}
+}
+
 .buy-with-item h3{
 	display: block;
 }
@@ -418,6 +456,11 @@ select {
 	font-size: 1.2rem;
 	border-radius: 0.3em;
 	border: none;
+}
+
+.submit-btn:hover, .submit-btn:focus{
+	 background-color: #ffc700;  
+	 cursor: pointer;
 }
 
 /* end of btn section */
@@ -568,6 +611,38 @@ footer img{
 	transform: translateY(-50%);
 }
 
+@media(max-width: 30rem){
+
+	footer img{
+		left: 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	.footer-link{
+		position: relative;
+		right: 0;
+		width: 20rem;
+		transform: translateY(-20%);
+
+		/* to evenly space the content at the footer and center content*/
+		display: -webkit-flex;
+	    display: -ms-flex;
+	    display: flex;
+
+	    -webkit-justify-content: space-between;
+	    -ms-justify-content: space-between;
+	    justify-content: space-between;
+	}
+
+	footer a{
+		margin: auto;
+	}
+
+}
+
 /* end of footer section */
 
 
@@ -596,6 +671,13 @@ footer img{
 	padding: 1rem 2rem;
 	padding-bottom: 3rem;
 	border-radius: 0.3em;
+}
+
+/* Temporary hide the filter in mobile version*/
+@media(max-width: 30rem){
+	.product-filter{
+		display: none;
+	}
 }
 
 .clear-filter-btn{
@@ -627,6 +709,11 @@ footer img{
 
 .product-grid{
 	width: 70%;
+}
+@media(max-width: 30rem){
+    .product-grid{
+    	width: 100%;
+    }
 }
 
 .product-white-background{
@@ -678,10 +765,6 @@ footer img{
 	font-size: 1.2rem;
 }
 
-.sort-by div{
-	background-color: #FFDD50;
-}
-
 .sort-by select { 
 	font-size: 1.17em;
 	color: black;
@@ -699,6 +782,7 @@ footer img{
 	display: inline-block;
 	margin-right: 0.6rem;
 }
+
 
 .divider-line{
 	margin-top: 1.4rem;

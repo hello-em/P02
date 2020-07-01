@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="white-background">
+<body>
 	<nav class="box">
 		<div class="header-logo nav-box-left">
 			<a href="index.html">
@@ -40,18 +40,17 @@
 			<select name="store" id="store"  onchange="location = this.value">
 				<option value="#">Walmart</option>
 				<option value="#">Superstore</option>
-				<option value="#">Costco</option>
-				<option value="#">T&T</option>
 				<option value="store.html">More Locations...</option>
 			</select>
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3>Delivery to</h3></label>
+			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 			<select name="address" id="address" onchange="location = this.value">
-				<option value="#">1234 University Ave, City Province</option>
-				<option value="#">1234 home street, city province</option>
-				<option value="#">Add new address</option>
+				<option value="#">Choose your location</option>
+				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+				<option value="#">21, 2270 University Ave. Burnaby</option>
+				<option value="address.html">Add new address</option>
 			</select>
 		</form>
 	</section>
@@ -76,11 +75,11 @@
 
 					<div class="product-right box-right">
 						<h3>Cilantro</h3>
-						<span>200g</span>
-						<p class="price">$0.86</p>
+						<span>Bunch</span>
+						<p class="price">$0.97</p>
 						<label for="product-quantity">Quantity:</label>
-						<input type="number" id="product-quantity" min="0.1" step="0.1" placeholder="0.2">
-						<span>/kg</span>
+						<input type="number" id="product-quantity" min="1" step="1" placeholder="1">
+						<span>Bunch</span>
 						<div class="box">
 							<button class="detail-btn box-item">Add to cart</button>
 							<button class="detail-btn box-item" onclick="location='cart.html'">View Cart</button>
@@ -90,35 +89,35 @@
 			</div>
 
 			<h3>Often buy with</h3>
-			<div class="product-buy-with box">
+			<div class="product-buy-with box-flex-start">
 				<div class="buy-with-item box-grid-item">
-					<img src="images/lettues.png" alt="Buy With item - Veggie">
-					<input type="checkbox" id="lettues">
-					<label for="lettues">Lettues</label>
-					<p class="price">$0.99</p>
+					<img src="images/parsley.jpg" alt="Buy With item - Veggie">
+					<input type="checkbox" id="parsley">
+					<label for="lettues">Parsley</label>
+					<p class="price">$1.97</p>
 				</div>
 
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/onion.png" alt="">
-					<input type="checkbox" id="onion">
-					<label for="onion">Onion</label>
-					<p class="price">$0.99</p>
+					<img src="images/dill.jpg" alt="">
+					<input type="checkbox" id="dill">
+					<label for="onion">Dill</label>
+					<p class="price">$0.77</p>
 				</div>
 
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/product-image.png" alt="">
-					<input type="checkbox" id="product-image">
-					<label for="broccoli">Bok Choi</label>
-					<p class="price">$0.99</p>
+					<img src="images/mint.jpg" alt="">
+					<input type="checkbox" id="mint">
+					<label for="broccoli">Mint</label>
+					<p class="price">$0.77</p>
 
 				</div>
 			</div>
 			<span class="total">Total:</span>
-			<span class="total-price">$8.98</span>
+			<span class="total-price">$4.98</span>
 			<button class="btn" onclick="location='cart.html'">Add selected to cart</button>	
 		</section>
 	</div>
@@ -163,12 +162,22 @@
 				<h3>Most Recent</h3>
 				<div>
 					<div class="review shadow">
-						<h4>Kelly Mills</h4>
-						<p>I ordered this through Walmart PickUp, ordered my groceries online and picked up at the Burlington North store. The bananas were picked perfectly by the pickup associate! A bit on the ripe side for the first couple of days, but they were delicious once ripe. I will definitely be ordering these again soon!</p>
+						<h4>Alex Lam</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>They need more asian produce on this site. I want to be able to get some lychee delivered</p>
 					</div>
 					<div class="review shadow">
-						<h4>Tom</h4>
-						<p>we prefer yellowish greenish banana for lower Glycemic index , but these are just fine, to be consume on the day of pick up!</p>
+						<h4>Amanada</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<p>Amaing service, I forgot to go grocery shopping this week and was panicking at work on what to cook for my family when I got home. Luckily the service can deliver to my house and I was able to pick it up and cook up a delicious meal for my family. Worth the hassle of my rambling at Superstore last minute!</p>
 					</div>
 				</div>
 				<a href="#" id="more-review">More</a>

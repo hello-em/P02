@@ -35,7 +35,7 @@
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store</a></h3></label>
+			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
 			<select name="store" id="store"  onchange="location = this.value">
 				<option value="#">Walmart</option>
 				<option value="#">Superstore</option>
@@ -44,16 +44,17 @@
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3>Delivery to</h3></label>
+			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 			<select name="address" id="address" onchange="location = this.value">
-				<option value="#">1234 University Ave, City Province</option>
-				<option value="#">1234 home street, city province</option>
-				<option value="#">Add new address</option>
+				<option value="#">Choose your location</option>
+				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+				<option value="#">21, 2270 University Ave. Burnaby</option>
+				<option value="address.html">Add new address</option>
 			</select>
 		</form>
 	</section>
 	<!-- End of store and delivery module -->
-
+	
 	<!-- Start of Category selection -->
 	<div class="container box">
 		<section class="category-grid box">
@@ -171,7 +172,8 @@
 				<h1 class="box-left-align">All Groceries</h1>
 
 				<form class="sort-by text-right-align">				
-					<label for="sort" class="sort"><h3>Sort By:</h3></label>
+					<label for="sort" class="sort">
+						<h3>Sort By:</h3></label>
 					<select name="sort" id="sort">
 						<option>High to Low</option>
 						<option>Low to High</option>

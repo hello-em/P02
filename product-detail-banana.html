@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Product | Grocery Vancouver</title>
+	<title>Banana | Grocery Vancouver</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="white-background">
+<body>
 	<nav class="box">
 		<div class="header-logo nav-box-left">
 			<a href="index.html">
@@ -40,18 +40,17 @@
 			<select name="store" id="store"  onchange="location = this.value">
 				<option value="#">Walmart</option>
 				<option value="#">Superstore</option>
-				<option value="#">Costco</option>
-				<option value="#">T&T</option>
 				<option value="store.html">More Locations...</option>
 			</select>
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3>Delivery to</h3></label>
+			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 			<select name="address" id="address" onchange="location = this.value">
-				<option value="#">1234 University Ave, City Province</option>
-				<option value="#">1234 home street, city province</option>
-				<option value="#">Add new address</option>
+				<option value="#">Choose your location</option>
+				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+				<option value="#">21, 2270 University Ave. Burnaby</option>
+				<option value="address.html">Add new address</option>
 			</select>
 		</form>
 	</section>
@@ -89,35 +88,35 @@
 			</div>
 
 			<h3>Often buy with</h3>
-			<div class="product-buy-with box">
+			<div class="product-buy-with box-flex-start">
 				<div class="buy-with-item box-grid-item">
-					<img src="images/lettues.png" alt="Buy With item - Veggie">
-					<input type="checkbox" id="lettues">
-					<label for="lettues">Lettues</label>
-					<p class="price">$1.99</p>
+					<img src="images/orange.jpg" alt="Buy With item - Veggie">
+					<input type="checkbox" id="orange">
+					<label for="lettues">Orange</label>
+					<p class="price">$1.23</p>
 				</div>
 
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/onion.png" alt="">
-					<input type="checkbox" id="onion">
-					<label for="onion">Onion</label>
-					<p class="price">$0.99</p>
+					<img src="images/mango.jpg" alt="">
+					<input type="checkbox" id="mango">
+					<label for="onion">Mango</label>
+					<p class="price">$1.67</p>
 				</div>
 
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/product-image.png" alt="">
-					<input type="checkbox" id="product-image">
-					<label for="broccoli">Bok Choi</label>
-					<p class="price">$3.83</p>
+					<img src="images/strawberry.jpg" alt="">
+					<input type="checkbox" id="strawberry">
+					<label for="broccoli">Strawberry</label>
+					<p class="price">$3.97</p>
 
 				</div>
 			</div>
 			<span class="total">Total:</span>
-			<span class="total-price">$8.98</span>
+			<span class="total-price">$7.36</span>
 			<button class="btn" onclick="location='cart.html'">Add selected to cart</button>	
 		</section>
 	</div>
@@ -163,11 +162,21 @@
 				<div>
 					<div class="review shadow">
 						<h4>Kelly Mills</h4>
-						<p>I ordered this through Walmart PickUp, ordered my groceries online and picked up at the Burlington North store. The bananas were picked perfectly by the pickup associate! A bit on the ripe side for the first couple of days, but they were delicious once ripe. I will definitely be ordering these again soon!</p>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>I had delivery from my local Walmart using Grocery Vancouver, I could not be any happier. The shopper was nice and got my groceries here just in time for dinner. The produce is also very nice, not bruised or damaged</p>
 					</div>
 					<div class="review shadow">
 						<h4>Tom</h4>
-						<p>we prefer yellowish greenish banana for lower Glycemic index , but these are just fine, to be consume on the day of pick up!</p>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<p>Amazing service and great value for delivery</p>
 					</div>
 
 					<a href="#" id="more-review">More</a>
