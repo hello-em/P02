@@ -213,11 +213,10 @@ input[type=search]{
     font-weight: 600;
     margin-bottom: 0;
 }
+
 .hero-text{
-    font-size: 1rem;
     font-weight: 200;
     margin-top: 1rem;
-    max-width: 20rem;
 }
 
 .hero-btn {
@@ -235,6 +234,24 @@ input[type=search]{
     border: 1px solid #257F29;
 }
 
+@media(max-width: 30rem){
+	.hero{
+		padding:1.5rem 2rem;
+	}
+
+	.hero::before{
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-cta-mobile.png");
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center;   
+	}
+
+	.hero-content {	
+	    left: auto;
+	    
+	}
+
+}
 /* END - Hero CTA */
 
 /* Select Store */
