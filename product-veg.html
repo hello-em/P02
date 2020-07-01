@@ -3,6 +3,7 @@
 <head>
 	<title>Product | Grocery Vancouver</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -93,14 +94,33 @@
 	</div>
 	<!-- END of Category selection -->
 
-		<!--Start of Product Grid and fliter-->
+	
+	<!--Pop up window when clicking "add to cart" button-->
+	<section class="cart-popup">
+		<div class="popup-content">
+			<h3>Item added to cart!</h3>
+			<div id="close">+</div>
+
+			<span>Change quantity:</span>
+			<input type="number" placeholder="1" min="0">
+			<div class="box">
+				<button class="btn" id="confirm-btn">Confirm</button>
+				<button class="btn" onclick="location='cart.html'">View cart</button>
+			</div>
+		</div>
+	</section>
+	<!--End of popup window-->
+
+
+
+	<!--Start of Product Grid and fliter-->
 
 	<div class="container box">
 
 		<!--Start of product filter section-->
 		<section class="product-filter filter-flex-item">
 			<h3>Filter</h3>
-			<span>408 results from<a href="#"> all groceries</a>
+			<span>73 results from<a href="#"> all groceries</a>
 			</span>
 			<!-- Placed everything into form so reset button actually works -->
 			<form id="filter">
@@ -193,7 +213,7 @@
 						<span class="product-weight">200g each</span>
 						<p class="grid-price">$2.97</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -204,7 +224,7 @@
 						<span class="product-weight">Sold in Bunches</span>
 						<p class="grid-price">$3.49</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -214,7 +234,7 @@
 						<span class="product-weight">170g/Bag</span>
 						<p class="grid-price">$3.99</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -225,7 +245,7 @@
 						<span class="product-weight">Each</span>
 						<p class="grid-price">$0.49</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -235,7 +255,7 @@
 						<span class="product-weight">900g/Bag</span>
 						<p class="grid-price">$2.97</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -245,7 +265,7 @@
 						<span class="product-weight">3lb Bag</span>
 						<p class="grid-price">$2.57</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -255,7 +275,7 @@
 						<span class="product-weight">Each</span>
 						<p class="grid-price">$3.47</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -265,7 +285,7 @@
 						<span class="product-weight">Each</span>
 						<p class="grid-price">$1.56</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -275,7 +295,7 @@
 						<span class="product-weight">1 Bag</span>
 						<p class="grid-price">$8.97</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -285,7 +305,7 @@
 						<span class="product-weight">Each</span>
 						<p class="grid-price">$0.97</p>
 					</a>
-					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
 			</section>
@@ -315,6 +335,8 @@
 			<a href="#">Term</a>
 		</div>
 	</footer>
+
+	<script src="js/main.js"></script>
 
 </body>
 </html>

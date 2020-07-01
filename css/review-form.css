@@ -110,7 +110,11 @@ textarea {
 	margin: 0em 0em;
 	padding: 0em 0em; 
 	padding-left: 2em;
-	border-left: 0.05rem solid #636363;
+	/* border-left: 0.05rem solid #636363; */
+}
+
+.comments h3{
+	margin-top: 0;
 }
 
 .review{
@@ -122,13 +126,22 @@ textarea {
 	width:100%;	
 }
 
+#review-border{
+	border-top: 1px grey solid;
+}
+
 .review h4{
 	margin-top: 0;
 }
 
-
 .review-flexbox{
 	display: inline-flex;
+}
+
+#more-review{
+	float: right;
+	font-weight: bold;
+	color: gray;
 }
 
 /* wrap reviews for smaller screens*/
