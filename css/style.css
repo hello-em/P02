@@ -71,6 +71,10 @@ nav{
 	align-self: center;
 }
 
+.header-logo:hover{
+	background-color: #eccc4b;
+}
+
 /* Search bar css*/
 
 .search{
@@ -845,4 +849,10 @@ footer img{
 	background-color: #F36B25;
 	color: white;
 	padding: 0.1rem 0.8rem;
+}
+
+
+/* style for add to cart button */
+.add-to-cart{
+	width: 100%;
 }

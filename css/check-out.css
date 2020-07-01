@@ -1,4 +1,5 @@
 
+/* styling for checkout page and address page */
 
 .checkout-address{
     margin-left: 5%;
@@ -192,4 +193,67 @@
     width: 40px;
     height: auto;
     margin-right: 1rem;
+}
+
+
+
+/* start of address page styling */
+.address-layout{
+    margin: 3rem;
+}
+
+.address-layout h2{
+    margin-top: 5rem;
+}
+
+.address-block{
+    margin-right: 3rem;
+    margin-top: 2rem;
+    padding: 1em 2em;
+    padding-bottom: 1em;
+    border-radius: 8px;
+
+    background-color: white;
+    width: 30%;
+    min-width: 17rem;
+    text-align: center;
+}
+
+.selected-block{
+    background-color: #fff9e1;
+}
+
+.address-block h2{
+}
+
+.address-block span{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.address-checkbox{
+    margin-top: 2rem;
+    width: 1.5rem;
+    height: 2rem;
+}
+
+.checkbox{
+    margin-left: 6%;
+}
+
+.save-btn{
+    margin-left: 0;
+    margin-top: 2rem;
+    width: 20%;
+    min-width: 6rem;
+}
+
+
+
+/* override the checkout-adress */
+
+#address-override{
+    margin-left: 0;
+    width: 70%;
+    min-width: 24rem;
 }

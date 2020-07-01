@@ -1,0 +1,42 @@
+
+/* home page pop up after clicking on "add to cart" button */
+
+
+
+.cart-popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+}
+
+.popup-content{
+    width: 30rem;
+    height: 15rem;
+    background-color:white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.popup-content button{
+    width: 40%;
+    min-width: 6rem;
+    margin-top: 3rem;
+}
+
+#close{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 2.4rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
