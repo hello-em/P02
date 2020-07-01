@@ -6,7 +6,7 @@ body{
 	font-size: 1rem;
 	margin: 0;
 
-	background-color: rgb(241, 241, 241);
+	
 }
 
 img{
@@ -247,7 +247,8 @@ select {
 	top: 0;
 	z-index: 10;
 	background-color: white;
-	/* border-bottom: 1px solid #c2c2c2; */
+	border-top: 1px solid #c2c2c2; 
+	border-bottom: 1px solid #c2c2c2; 
 }
 
 .selection h3{
