@@ -110,7 +110,31 @@
 
 /* about page css*/
 
+@media(max-width: 30rem) {
 
+    .about::before{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/about-banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .covid-news::before {
+         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/covid-news.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 80% 70%;   
+    }
+
+    .third-banner::before{
+         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/wash-hands.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 20%;  
+    }
+    
+}
 
 .contact-section{
     text-align: center;
