@@ -202,6 +202,7 @@
     margin: 3rem;
 }
 
+
 .address-layout h2{
     margin-top: 5rem;
 }
@@ -246,6 +247,14 @@
     margin-top: 2rem;
     width: 20%;
     min-width: 6rem;
+}
+
+
+/* making margin smaller in mobile */
+@media(max-width: 800px){
+    .address-layout{
+        margin: 2rem;
+    }
 }
 
 
