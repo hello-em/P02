@@ -560,6 +560,38 @@ footer img{
 	transform: translateY(-50%);
 }
 
+@media(max-width: 30rem){
+
+	footer img{
+		left: 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	.footer-link{
+		position: relative;
+		right: 0;
+		width: 20rem;
+		transform: translateY(-20%);
+
+		/* to evenly space the content at the footer and center content*/
+		display: -webkit-flex;
+	    display: -ms-flex;
+	    display: flex;
+
+	    -webkit-justify-content: space-between;
+	    -ms-justify-content: space-between;
+	    justify-content: space-between;
+	}
+
+	footer a{
+		margin: auto;
+	}
+
+}
+
 /* end of footer section */
 
 
