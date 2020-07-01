@@ -62,6 +62,10 @@
     height: 100%;
     margin: 0;
 }
+
+.cta-block p{
+    margin-top: 1.5em;
+}
 .colour1{
     background-color: #676767;
 }
