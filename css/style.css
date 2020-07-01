@@ -6,7 +6,7 @@ body{
 	font-size: 1rem;
 	margin: 0;
 
-
+	/*background-color: rgb(241, 241, 241);*/
 	
 }
 
@@ -263,17 +263,17 @@ select {
 /* used this plugin (https://brumm.af/shadows) to get the style of shadow wanted*/
 .shadow {
 	-webkit-box-shadow: 
-	0 6.6px 6.7px rgba(0, 0, 0, 0.023),
-  	0 23px 24px rgba(0, 0, 0, 0.034),
-  	0 119px 98px rgba(0, 0, 0, 0.07);
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
 	-moz-box-shadow: 
-	0 6.6px 6.7px rgba(0, 0, 0, 0.023),
-  	0 23px 24px rgba(0, 0, 0, 0.034),
-  	0 119px 98px rgba(0, 0, 0, 0.07);
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
 	box-shadow:
-	0 6.6px 6.7px rgba(0, 0, 0, 0.023),
-  	0 23px 24px rgba(0, 0, 0, 0.034),
-  	0 119px 98px rgba(0, 0, 0, 0.07);
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
 }
 
 
