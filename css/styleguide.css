@@ -1,0 +1,14 @@
+/* Styleguide only styles */
+
+/* Code samples stylization to differentiate from regular text*/
+code, samp{
+	display: block;
+	background-color: rgb(230,230,230);
+	padding: 0.5rem;
+	width: 50%;
+}
+
+.indent{
+	padding-left: 1em;
+}
+/* End of Code samples stylization */

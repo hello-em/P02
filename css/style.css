@@ -47,18 +47,6 @@ button:hover, button:focus{
 }
 
 
-/* Code samples stylization to differentiate from regular text*/
-code, samp{
-	display: block;
-	background-color: rgb(230,230,230);
-	padding: 0.5rem;
-}
-
-.indent{
-	padding-left: 1em;
-}
-/* End of Code samples stylization */
-
 /* nav bar */
 nav{
 	margin: 0;
