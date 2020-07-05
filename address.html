@@ -48,14 +48,14 @@
                     <h3>Francis Nairn</h3>
                     <span>2380, 1240 Glen Dr.</span>
                     <span>Coquitlam, BC, V09J0H</span>
-                    <input type="checkbox" checked class="address-checkbox">
+                    <input type="radio" id="c01" value="Yes" name="address" checked class="address-checkbox">
                 </section>
 
                 <section class="address-block shadow">
                     <h3>Charli Goddard</h3>
                     <span>21, 2270 University Ave.</span>
                     <span>Burnaby, BC, V5A 1S6</span>
-                    <input type="checkbox" class="address-checkbox">
+                    <input type="radio" id="c02" value="No" name="address" class="address-checkbox">
 				</section>
 			</div>
 
@@ -70,7 +70,7 @@
 
         <h2>Add new address</h2>
 
-        <div class="checkout-address" id= "address-override">
+        <div class="checkout-address shadow" id= "address-override">
             <form action="">            
                 <input type="text" placeholder="First Name">
                 <input type="text" placeholder="Last Name">

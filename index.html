@@ -12,27 +12,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<nav class="box">
-		<div class="header-logo nav-box-left">
+	<nav class="box navbar">
+		<div class="header-logo">
 			<a href="index.html">
 			<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
 			</a>
 		</div>
-		<div class="nav-box-right box">
-			<form class="box-item-nav search">
-				<input type="search" name="site-search"id="site-search" placeholder="Search">
-				<button type="submit" class="search-btn">
-					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
-				</button>
-			</form>
-			<a href="product.html" class="box-item-nav"><span class="line-hover">PRODUCT</span></a>
-			<a href="about.html" class="box-item-nav"><span class="line-hover">ABOUT</span></a>
 
-			<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
-				<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
-				<span>CART</span>
+		<form class="search">
+			<input type="search" name="site-search" id="site-search" placeholder="Search">
+			<button type="submit" class="search-btn">
+				<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
 			</button>
-		</div>
+		</form>
+
+		<!--Cart button for mobile version-->
+		<a href="cart.html">
+			<img src="images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+		</a>
+
+		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
+		<a href="about.html" class="nav-link" id="about-btn"><span class="line-hover">ABOUT</span></a>
+
+		<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
+			<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
+			<span>CART</span>
+		</button>
+		
 	</nav>
 	<!-- Start of Hero CTA Image Banner -->
 	<section class="hero">
@@ -95,10 +101,10 @@
 		<form class="box">
 			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 			<select name="address" id="address" onchange="location = this.value">
-				<option value="#">Choose your location</option>
+				<option value="address.html">Choose delivery location</option>
+				<option value="address.html">Add new address</option>
 				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
 				<option value="#">21, 2270 University Ave. Burnaby</option>
-				<option value="address.html">Add new address</option>
 			</select>
 		</form>
 	</section>

@@ -42,7 +42,7 @@ button{
 
 button:hover, button:focus{
 	 background-color: #9AE07E;
-	 color: black;
+	 color: white;
 	 cursor: pointer;
 }
 
@@ -59,20 +59,29 @@ code, samp{
 }
 /* End of Code samples stylization */
 
+
+
+
 /* nav bar */
 nav{
 	margin: 0;
 	background-color: #FFDD50;
 	font-weight: bold;
-	padding: 1.3em 7em;
+	padding: 1.2em 6em;
+
+	/* align items vertical */
+	align-items: center;
+	position: relative;
 }
 
-.header-logo img{
-	max-width: 12rem;
-}
+
 /* align-self overrides align-items notes from friend and it work to align the logo */
 .header-logo{
+	margin-left: 0%;
 	align-self: center;
+	max-width: 13rem;
+	padding: 0.5rem;
+	display: inline-block;
 }
 
 .header-logo:hover{
@@ -81,30 +90,42 @@ nav{
 
 /* Search bar css*/
 
+.nav-link{
+	margin-right: 2%;
+}
+
 .search{
+	margin-left: 10%;
 	position: relative;
+	width: 16rem;
+	max-width: 20rem;
+	min-width: 12rem;
 }
 
 .search-btn{
 	font-size: 1.0rem;
 	border: 1px solid #ccc;
-	height:2.2rem;
+	height:2.3rem;
 	border-radius: 0px 4px 4px 0px;
 	border-left: none;
 	display: inline-block;
 	position: absolute;
 	top:50%;
+	right: 3rem;
     transform: translate(0, -50%);
 }
 
 input[type=search]{
 	width: 70%;
-	height: 2.1rem;
+	height: 2.3rem;
 	border: 1px solid #ccc;
 	border-radius: 4px 0px 0px 4px;
 	border-right: none;
 	font-size: 1.0rem;
 	padding-left: 0.4rem;
+	position: absolute;
+	top:50%;
+    transform: translate(0, -50%);
 }
 
 .search-btn img{
@@ -112,15 +133,18 @@ input[type=search]{
 	height: auto;
 }
 /* end Search css*/
+
  .cart-btn{
 	padding: 0.7em 1.4em;
 	border-radius: 0.5rem;
-	margin:auto;
+	display: inline-block;
+	margin-right: 0rem;
 }
 
 
 .cart-btn span{
 	font-size: 1rem;
+	vertical-align: middle;
 }
 
 .cart-btn img{
@@ -132,7 +156,6 @@ input[type=search]{
 	/* margin-top: 0em; */
 }
 
-
 .center-img{
 	display: block;
 	margin-left: auto;
@@ -140,8 +163,80 @@ input[type=search]{
 	width: 50%;
 }
 
+#cart-btn-mobile{
+	display: none;
+}
+
+@media (max-width: 800px){
+
+	nav{
+		padding: 4rem 1rem;
+		align-items: center;
+	}
+
+	.header-logo{
+		position: absolute;
+		top: 0.5rem;
+		left: 1rem;
+		width: 12rem;
+	}
+	
+}
+
+@media (max-width: 700px){
+	.cart-btn{
+		display: none;
+	}
+
+	#cart-btn-mobile{
+		display: inline-block;
+		position: absolute;
+		top: 1rem;
+		right: 1.5rem;
+	}
+
+	.search{
+		margin: 0;
+		position: absolute;
+		bottom: 2rem;
+		left: 1.5rem;
+		width: 9rem;
+	}
+	.search-btn{
+		height: 2.0rem;
+		right: 2rem;
+	}
+
+	input[type=search]{
+		height: 2.0rem;
+	}
+
+	.cart-btn{
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+	}
+
+	#product-btn{
+		position: absolute;
+		bottom: 1.5rem;
+		right: 5.5rem;
+		font-size: 1rem;
+	}
+
+	#about-btn{
+		position: absolute;
+		bottom: 1.5rem;
+		right: 0.5rem;
+		font-size: 1rem;
+	}
+}
 
 /* end of nav bar */
+
+
+
+
 
 .page-nav{
 	padding: 2rem 2rem;
@@ -349,7 +444,7 @@ select {
 
 .smaller-container{
 	padding: 1rem 2rem;
-	margin: 3% 15%;
+	margin: 3% 10%;
 	position: relative;
 }
  @media(max-width: 30rem){

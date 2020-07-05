@@ -1,37 +1,8 @@
+'use strick'
 
-// js for shopping cart button
-// document.getElementById('cart-btn').addEventListener('click',
-//     function(){
-//     document.querySelector('.cart').style.display= 'block';
+// window.addEventListener('resize', fucntion(){
+
 // });
-
-// document.querySelector('.close-cart').addEventListener('click',
-//     function(){
-//     document.querySelector('.cart').style.display= 'none';
-// });
-
-
-
-// document.querySelector('#close-popup').addEventListener('click',
-//     function(){
-//     document.querySelector('.bg-modal').style.display= 'none';
-// });
-
-
-// address page js
-// var checkbox= document.getElementsByClassName('address-checkbox');
-// console.log(checkbox);
-
-// for(var i=0; i<checkbox.length;i++){
-//     this.addEventListener('click', 
-//     function(e){
-//         e.target.parentNode.classList.toggle('selected-block');
-//         console.log("click");
-//     });
-// }
-
-
-
 
 // js for pop up when clicking "add to cart"
 
