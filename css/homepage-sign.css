@@ -40,3 +40,28 @@
 	-ms-justify-content: space-around;
 	justify-content: space-around;
 }
+
+@media(max-width: 800px){
+    .service-section{
+        margin: 0;
+        padding: 1rem;
+        padding-bottom: 3rem;
+        background-color: white;
+    }
+
+    .service{
+        margin: 0.4rem;
+    }
+    .service img{
+        /* display: block; */
+        width: 75px;
+    }
+
+    .service span{
+        margin-top: 1rem;
+        display: block;
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: rgb(71, 71, 71);
+    }
+}

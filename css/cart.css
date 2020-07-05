@@ -75,8 +75,11 @@
 .item-quantity{
 	display: inline;
 	position: absolute;
-	left: 12rem;
-	top: 1.2rem;
+	right: 10%;
+	top: 25%;
+}
+.cart-item span{
+	margin: 1% 0;
 }
 
 .cart-item input{
@@ -121,14 +124,31 @@
 		padding: 1em 0.3em 1em 0.3em;
 	}
 
+	.cart-item input{
+		min-width: 1rem;
+		margin-right: 0;
+	}
 	.item-quantity{
 		display: inline;
 		position: absolute;
 		left: auto;
-		position: absolute;
 		right: 0;
-		top: 2rem;
-	}	
+	}
+
+	.item-quantity a{
+		visibility: hidden;
+    	position: relative;
+	}
+
+	.item-quantity a::after{
+		visibility: visible;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: auto;
+	    content: "X";
+	} 
+
 	.cart-price{
 		display: block;
 		position: relative;
@@ -143,7 +163,5 @@
 	.check-out-btn{
 		padding: 0.6em 4em;
 		width: 100%
-	}
-
-	
+	}	
 }
