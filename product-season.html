@@ -38,19 +38,20 @@
 		<form class="box">
 			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
 			<select name="store" id="store"  onchange="location = this.value">
+				<option value="#">Choose Store Location</option>
 				<option value="#">Walmart</option>
 				<option value="#">Superstore</option>
-				<option value="store.html">More Locations...</option>
+				<option value="store.html">More...</option>
 			</select>
 		</form>
 
 		<form class="box">
 			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 			<select name="address" id="address" onchange="location = this.value">
-				<option value="#">Choose your location</option>
+				<option value="address.html">Choose Delivery Address</option>
+				<option value="address.html">Add new address</option>
 				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
 				<option value="#">21, 2270 University Ave. Burnaby</option>
-				<option value="address.html">Add new address</option>
 			</select>
 		</form>
 	</section>
@@ -202,7 +203,7 @@
 			</div>
 
 			<!--Start of product grid-->
-			<section class=" box-flex-start product-flex-item product-white-background shadow">
+			<section class=" box product-white-background shadow">
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-banana.html">

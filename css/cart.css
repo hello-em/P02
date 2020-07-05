@@ -121,14 +121,25 @@
 		padding: 1em 0.3em 1em 0.3em;
 	}
 
-	.item-quantity{
-		display: inline;
-		position: absolute;
-		left: auto;
-		position: absolute;
-		right: 0;
-		top: 2rem;
-	}	
+	.cart-item input{
+		min-width: 1rem;
+	}
+
+
+	.item-quantity a{
+		visibility: hidden;
+    	position: relative;
+	}
+
+	.item-quantity a::after{
+		visibility: visible;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: auto;
+	    content: "X";
+	} 
+
 	.cart-price{
 		display: block;
 		position: relative;
@@ -143,7 +154,5 @@
 	.check-out-btn{
 		padding: 0.6em 4em;
 		width: 100%
-	}
-
-	
+	}	
 }

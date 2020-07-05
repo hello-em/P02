@@ -1,4 +1,3 @@
-
 body{
 
 	/* Lato font from Google fonts */
@@ -32,7 +31,24 @@ p{
 	/* width: 60%; */
 }
 
-/* Default all button style unless specfic */
+/*Reference boz-shadow by https://css-tricks.com/almanac/properties/b/box-shadow/ */
+/* used this plugin (https://brumm.af/shadows) to get the style of shadow wanted*/
+.shadow {
+	-webkit-box-shadow: 
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
+	box-shadow:
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
+}
+
+/************** Default all button style unless specfic ***********/
 button{
 	display: block;
 	background-color: #63B146;
@@ -62,7 +78,7 @@ code, samp{
 
 
 
-/* nav bar */
+/**************** nav bar *******************************/
 nav{
 	margin: 0;
 	background-color: #FFDD50;
@@ -88,7 +104,7 @@ nav{
 	background-color: #eccc4b;
 }
 
-/* Search bar css*/
+/***************** Search bar css ****************/
 
 .nav-link{
 	margin-right: 2%;
@@ -132,7 +148,7 @@ input[type=search]{
 	width: 1rem;
 	height: auto;
 }
-/* end Search css*/
+/**************** end Search css ****************/
 
  .cart-btn{
 	padding: 0.7em 1.4em;
@@ -232,11 +248,11 @@ input[type=search]{
 	}
 }
 
-/* end of nav bar */
+/**************** end of nav bar *******************************/
 
 
 
-
+/**************** Used in styleguide nav ****************/
 
 .page-nav{
 	padding: 2rem 2rem;
@@ -247,10 +263,10 @@ input[type=search]{
 .page-nav ul{
 	margin: 0;
 }
+/**************** Used in styleguide nav ****************/
 
-/* Used in styleguide and site nav*/
 
-/* all text that needs a line to appear on hover*/
+/**************** Hover Line ****************/
 .line-hover {
 	display: inline-block;
 }
@@ -271,9 +287,9 @@ input[type=search]{
 .active{
 	border-bottom: 0.03rem solid black;
 }
+/**************** Hover Line  *****************/
 
-
-/* Hero CTA */
+/**************** Hero CTA ****************/
 .hero {
     position: relative;
     width: 100%;
@@ -284,8 +300,8 @@ input[type=search]{
     padding: 5rem;
 }
 
-/* Testing Hero CTA banner https://www.developerdrive.com/full-page-hero-image-html-css/ */
-/* use ::before to add a brightness level to photo and not everything in the .hero div box (text etc.)*/
+/**** Hero CTA banner https://www.developerdrive.com/full-page-hero-image-html-css/ ****/
+/* use ::before to add a brightness level/or gradient to photo and not everything in the .hero div box (text etc.)*/
 .hero::before {
 	content: "";
     position: absolute;
@@ -353,9 +369,9 @@ input[type=search]{
 	}
 
 }
-/* END - Hero CTA */
+/**************** END - Hero CTA ****************/
 
-/* Select Store */
+/**************** Select Store ****************/
 select { 
 	font-size: 1.17em;
 	color: #63B146;
@@ -378,30 +394,23 @@ select {
 	font-weight: normal;
 }
 
+/* For Iphone 5/SE */
+@media(max-width: 320px){
+	select {
+		font-size: 0.8em;
+	}
 
-/* END Select Store */
+	label {
+		font-size: 0.8rem;
+	}
 
-/*Reference boz-shadow by https://css-tricks.com/almanac/properties/b/box-shadow/ */
-/* used this plugin (https://brumm.af/shadows) to get the style of shadow wanted*/
-.shadow {
-	-webkit-box-shadow: 
-	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
-	0 12.3px 25px rgba(0, 0, 0, 0.032),
-	0 77px 112px rgba(0, 0, 0, 0.07);
-	-moz-box-shadow: 
-	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
-	0 12.3px 25px rgba(0, 0, 0, 0.032),
-	0 77px 112px rgba(0, 0, 0, 0.07);
-	box-shadow:
-	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
-	0 12.3px 25px rgba(0, 0, 0, 0.032),
-	0 77px 112px rgba(0, 0, 0, 0.07);
 }
 
 
+/**************** END Select Store ****************/
 
 
-/* start of product list */
+/**************** start of product list ****************/
 
 .product-list{
 	border-radius: 0.5em;
@@ -437,9 +446,18 @@ select {
 	border: none;
 }
 
-/* class for button effect in js */
+/**** class for button effect in js ****/
 .detail-btn-selected{
 	background-color: #7ad857;
+}
+/**** End for button effect in js ****/
+
+/************** CONTAINERS MARGINS **************/
+.container{
+	margin: 3% 6%;
+	/* width: 90%;
+	height: 90%; */
+	position: relative;
 }
 
 .smaller-container{
@@ -447,14 +465,20 @@ select {
 	margin: 3% 10%;
 	position: relative;
 }
+
  @media(max-width: 30rem){
+ 	.container{
+		margin: 3% 5%;
+	}
+
  	.smaller-container{
 		padding: 1rem 1rem;
 		margin: 3% 3%;
 	}
  }
+/************** END CONTAINERS MARGINS **************/
 
-/* start of buy with products */
+/**** start of buy with products ****/
 .buy-with-item{
 	max-width: 20rem;
 }
@@ -506,28 +530,15 @@ select {
 	font-size: 1.5rem;
 }
 
-/* end of buy with products */
-/* end of product list */
+/**************** end of buy with products ****************/
+/**************** end of product list ****************/
 
-.container{
-	margin: 3% 6%;
-	/* width: 90%;
-	height: 90%; */
-	position: relative;
-}
-
-@media(max-width: 1000px){
-	.container{
-		margin: 3% 5%;
-	}
-}
- 
 .in-text-link{
 	font-weight: bold;
 	color: #63B146;
 }
 
-/* start of btn section */
+/**************** Start of btn Section ****************/
 
 .btn{
 	display: block;
@@ -558,8 +569,9 @@ select {
 	 cursor: pointer;
 }
 
-/* end of btn section */
+/**************** END of btn section ****************/
 
+/**************** Start of Price and Input section ****************/
 .price{
 	font-size: 1.6rem;
 	font-weight: bold;
@@ -588,7 +600,7 @@ input[type=number]{
 	text-align: center;
 }
 
-
+/**************** In Styleguide Only ****************/
 .white-swatch{
 	padding: 30px;
 	background-color: white;
@@ -610,8 +622,9 @@ input[type=number]{
 	padding: 30px;
 	background-color: #F36B25;
 }
+/**************** End In Styleguide Only ****************/
 
-/* text styling section */
+/**************** Text styling section ****************/
 
 .text-styling h1{
 	font-size: 2rem;
@@ -635,15 +648,7 @@ input[type=number]{
 }
 
 
-/* Start of Shopping Cart pop up*/
-
-
-/* end of cart style */
-
-
-
-
-/* start of contact section */
+/**************** START of contact section ****************/
 
 .contact-section{
 	border-top: 1px rgb(182, 182, 182) solid;
@@ -674,9 +679,9 @@ input[type=number]{
 	color: #63B146;
 }
 
-/* end of contact section */
+/**************** END of contact section ****************/
 
-/* start of footer */
+/**************** start of footer ****************/
 
 footer{
 	padding: 2rem 3rem;
@@ -719,7 +724,7 @@ footer img{
 	.footer-link{
 		position: relative;
 		right: 0;
-		width: 20rem;
+		width: 100%;
 		transform: translateY(-20%);
 
 		/* to evenly space the content at the footer and center content*/
@@ -738,11 +743,11 @@ footer img{
 
 }
 
-/* end of footer section */
+/**************** END of footer section ****************/
 
 
 
-/* wireframe styling */
+/**************** wireframe styling ****************/
 .wireframes img{
 	width: 100%;
 }
@@ -756,9 +761,9 @@ footer img{
 	list-style: none;
 }
 
-/* end of wireframe styling */
+/**************** end of wireframe styling ***************/
 
-/* Start of product filter sections */
+/**************** Start of product filter sections ****************/
 
 .product-filter{
 	max-width: 20rem;
@@ -800,7 +805,7 @@ footer img{
 	margin-top: 1.4rem;
 }
 
-/* product grid section */
+/**************** Product Grid section ****************/
 
 .product-grid{
 	width: 70%;
@@ -818,7 +823,6 @@ footer img{
 }
 
 .product-grid-item{
-	width: 20rem;
 	cursor: pointer;
 	max-width: 10rem;
 	position: relative;
@@ -835,7 +839,7 @@ footer img{
 	width: 90%;
 }
 
-/* add to cart button */
+/******** Add to cart button ******/
 
 .product-grid-item button{
 	/* text-align: center; */
@@ -848,6 +852,14 @@ footer img{
 .product-grid-item h3{
 	font-size: 1rem;
 	font-weight: normal;
+}
+
+/* For Iphone 5/SE */
+@media(max-width: 320px){
+	.product-grid-item{
+		max-width: 7rem;
+	}
+	
 }
 
 .product-weight{
@@ -883,12 +895,10 @@ footer img{
 	margin-top: 1.4rem;
 	border-bottom: 0.05rem solid #636363;
 }
-/* end of product grid section */
+/**************** END of product grid section ****************/
 
-/* start of categories section */
-.category-grid{
+/**************** START of categories section ****************/
 
-}
 .category-grid-item{
 	padding: auto;
 	cursor: pointer;
@@ -898,7 +908,7 @@ footer img{
 	text-align: center;
 }
 
-/* placement of the images with grey box */
+/* placement of the images with grey box when images are missing*/
 .category-grid-item div{
 	background-color: grey;
 	padding: 5rem 5rem;
@@ -913,10 +923,28 @@ footer img{
 	margin: 0;
 }
 
+/* For Iphone 5/SE */
+@media(max-width: 320px){
 
-/* end of categories section */
+	.category-grid-item div{
+		background-color: grey;
+		padding: 5rem 5rem;
+		max-width: 5rem;
+		max-height: 5rem;
+		margin: 0;
+	}
 
-/* start of store section */
+	.category-grid-item img{
+		max-width: 7rem;
+		max-height: 7rem;
+		margin: 0;
+	}
+}
+
+
+/**************** END of categories section ****************/
+
+/**************** START of store section ****************/
 
 .store-section{
 	margin: 2rem 4rem;
@@ -966,11 +994,11 @@ footer img{
 }
 
 
+/**************** END of store section ****************/
 
 
 
-
-/* start of category products */
+/**************** start of category products ****************/
 
 .category-section{
 	background-color:white;
@@ -1040,6 +1068,7 @@ footer img{
 	padding: 0.1rem 0.8rem;
 }
 
+/**************** END of category products ****************/
 
 /* style for add to cart button */
 .add-to-cart{
