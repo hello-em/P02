@@ -75,8 +75,11 @@
 .item-quantity{
 	display: inline;
 	position: absolute;
-	left: 12rem;
-	top: 1.2rem;
+	right: 10%;
+	top: 25%;
+}
+.cart-item span{
+	margin: 1% 0;
 }
 
 .cart-item input{
@@ -123,8 +126,14 @@
 
 	.cart-item input{
 		min-width: 1rem;
+		margin-right: 0;
 	}
-
+	.item-quantity{
+		display: inline;
+		position: absolute;
+		left: auto;
+		right: 0;
+	}
 
 	.item-quantity a{
 		visibility: hidden;
