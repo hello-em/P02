@@ -394,8 +394,8 @@ select {
 	font-weight: normal;
 }
 
-/* For Iphone 5/SE */
-@media(max-width: 320px){
+/* For Iphone 5/SE and Galaxy S% */
+@media(max-width: 360px){
 	select {
 		font-size: 0.8em;
 	}
@@ -854,8 +854,8 @@ footer img{
 	font-weight: normal;
 }
 
-/* For Iphone 5/SE */
-@media(max-width: 320px){
+/* For Iphone 5/SE and Galaxy S5*/
+@media(max-width: 360px){
 	.product-grid-item{
 		max-width: 7rem;
 	}
@@ -923,8 +923,8 @@ footer img{
 	margin: 0;
 }
 
-/* For Iphone 5/SE */
-@media(max-width: 320px){
+/* For Iphone 5/SE and Galaxy S5*/
+@media(max-width: 360px){
 
 	.category-grid-item div{
 		background-color: grey;
