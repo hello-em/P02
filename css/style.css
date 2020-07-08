@@ -788,9 +788,12 @@ footer img{
 /**************** Start of product filter sections ****************/
 
 .product-filter{
+	margin-right: 1rem;
+	width: 20%;
 	max-width: 20rem;
+	min-width: 12rem;
 	/* background-color: rgb(228, 228, 228); */
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 	padding-bottom: 3rem;
 	border-radius: 0.3em;
 }
@@ -830,7 +833,7 @@ footer img{
 /**************** Product Grid section ****************/
 
 .product-grid{
-	width: 75%;
+	width: 78%;
 }
 @media(max-width: 30rem){
     .product-grid{

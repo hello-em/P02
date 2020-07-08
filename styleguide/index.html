@@ -3,6 +3,7 @@
 <head>
 	<title>P02 website</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
 	<link rel="stylesheet" type="text/css" href="../css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="../css/styleguide.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
 	<!-- New Nav Bar - emily -->
 	<nav class="page-nav box">
 		<a class="active" href="index.html"><span>Style guide</span></a>
+		<a href="../index.html"><span>Website</span></a>
 		<a class="line-hover" href="wireframes.html"><span>Wireframes</span></a>
 		<a class="line-hover" href="citation.html"><span>Citation</span></a>
 	</nav>
@@ -178,52 +180,57 @@
 		<h3>Module pattern</h3>
 
 		<h4>Nav bar</h4>
-			<nav class="box">
-		<div class="header-logo nav-box-left">
-			<a href="index.html">
-			<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
-			</a>
-		</div>
-		<div class="nav-box-right box">
-			<form class="box-item-nav search">
-				<input type="search" name="site-search"id="site-search" placeholder="Search">
+		<nav class="box navbar">
+			<div class="header-logo">
+				<a href="index.html">
+				<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
+				</a>
+			</div>
+	
+			<form class="search">
+				<input type="search" name="site-search" id="site-search" placeholder="Search">
 				<button type="submit" class="search-btn">
 					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
 				</button>
 			</form>
-			<a href="product.html" class="box-item-nav"><span class="line-hover">PRODUCT</span></a>
-			<a href="about.html" class="box-item-nav"><span class="line-hover">ABOUT</span></a>
-
+	
+			<!--Cart button for mobile version-->
+			<a href="cart.html">
+				<img src="../images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+			</a>
+	
+			<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
+			<a href="about.html" class="nav-link" id="about-btn"><span class="line-hover">ABOUT</span></a>
+	
 			<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
 				<img src="../images/cart.png" srcset="../images/cart.svg" alt="Cart Button">
 				<span>CART</span>
 			</button>
-		</div>
-	</nav>
+		</nav>
 		
 		<samp>
-			&lt;nav class="box"&gt;
+			&lt;nav class="box navbar"&gt;
 				<div class="indent">
-					&lt;div class="header-logo nav-box-left"&gt;
+					&lt;div class="header-logo"&gt;
 					<div class="indent">
+						&lt;a href="index.html"&gt;
 						&lt;img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo" class="logo"&gt;
+						&lt;/a&gt;
 					</div>
 					&lt;/div&gt;
 				</div>
 
 				<div class="indent">
-					&lt;div class="nav-box-right box"&gt;
+					&lt;form class="search"&gt;
 						<div class="indent">
-							&lt;form class="box-item-nav"&gt;
-								<div class="indent">
-									&lt;input type="search" name="site-search"id="site-search" placeholder="Search"&gt;<br>
-									&lt;button type="submit" class="search-btn"&gt;
-									<div class="indent">
-										&lt;img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon"&gt;
-									</div>
-									&lt;/button&gt;
-								</div>
-							&lt;/form&gt;
+							&lt;input type="search" name="site-search"id="site-search" placeholder="Search"&gt;<br>
+							&lt;button type="submit" class="search-btn"&gt;
+							<div class="indent">
+								&lt;img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon"&gt;
+							</div>
+							&lt;/button&gt;
+						</div>
+					&lt;/form&gt;
 							
 						</div>
 						<div class="indent">
@@ -233,12 +240,19 @@
 							&lt;a href="#" class="box-item-nav"&gt;ABOUT&lt;/a&gt;
 						</div>
 						<div class="indent">
-							&lt;a href="#" class="box-item-nav cart-btn&gt;CART&lt;/a&gt;
+							&lt;button onclick="location='cart.html'" id="cart-btn" class="cart-btn"&gt;
+							<div class="indent">
+								&lt;img src="../images/cart.png" srcset="../images/cart.svg" alt="Cart Button"&gt;
+								&lt;span&gt;CART&lt;span&gt;
+							</div>
+							&lt;/buttom&gt;
 						</div>
 					&lt;/div&gt;
 				</div>
+
 			&lt;/nav&gt;
 		</samp>
+
 	<!-- End of Nav bar & samp code-->	
 
 	<!-- Hero CTA -->
@@ -489,7 +503,7 @@
 				
 		<!--Start of old JS version SHopping cart -->
 
-		<h3>Shopping cart menu</h3>
+		<!-- <h3>Shopping cart menu</h3>
 		<section class="cart">
 			<div class="cart-headline">
 				<h2>Cart</h2>
@@ -538,60 +552,70 @@
 				<button class="check-out-btn">Check out</button>
 			</div>
 
-		</section>
+		</section> -->
 		<!--End of old JS version SHopping cart -->
 
 		<!--Start of shopping cart -->
-		<section class="container shadow">
-			<h2 class="cart-headline">Cart</h2>
-
+		<section class="cart">
+			<h2><a href="index.html" class="return-button"><</a>My shopping cart <span>(4)</span></h2>
 			<div class="cart-deliver box-space-between">
 				<div>
-					<img src="images/walmart logo.png" alt="">
+					<img src="../styleguide/images/walmart logo.png" alt="">
 					<span>Walmart</span>
 				</div>
-
-				<div class="cart-deliver-info">
+	
+				<div>
 					<span>Delivery to:</span>
-					<a href="#" class="text-green">1234 Glen drive (h1)</a>		
+					<a href="#" class="text-green">1234 Glen drive (1 hour)</a>		
 				</div>
 			</div>
-
-
+	
+	
 			<div class="cart-item-container">
 				<div class="cart-item">
 					<img src="../images/broccoli.png" alt="">
 					<span class="item-title">Broccoli</span>
-
+	
 					<div class="item-quantity">
-						<input type="number" placeholder="2" id="quantity">
 						<a href="#" class="delete-btn">Remove</a>
+						<input type="number" placeholder="2" id="quantity">
 					</div>
-
+	
 					<span class="cart-price">2.98</span>
 				</div>
-
+	
 				<div class="cart-item">
-					<img src="../images/product-image.png" alt="">
-					<span class="item-title">Choi</span>
-
+					<img src="../images/mango.jpg" alt="">
+					<span class="item-title">Mango</span>
+	
 					<div class="item-quantity">
-						<input type="number" placeholder="2" id="quantity">
 						<a href="#" class="delete-btn">Remove</a>
+						<input type="number" placeholder="1" id="quantity">
 					</div>
-
+	
 					<span class="cart-price">2.98</span>
 				</div>
-
+	
+				<div class="cart-item">
+					<img src="../images/mint.jpg" alt="">
+					<span class="item-title">Mint</span>
+	
+					<div class="item-quantity">
+						<a href="#" class="delete-btn">Remove</a>
+						<input type="number" placeholder="2" id="quantity">
+					</div>
+	
+					<span class="cart-price">2.98</span>
+				</div>
+	
 				<div style="height: 4rem"></div>
-
+	
 				<span class="total">Total:</span>
 				<span class="total-price">$8.98</span>
 				<form action="check-out.html">
 					<button class="check-out-btn" action>Check out</button>
 				</form>
 			</div>
-
 		</section>
 		<!--End of shopping cart-->
 
@@ -599,44 +623,79 @@
 		<samp>
 			&lt;section class="cart"&gt;
 			<div class="indent">
-				&lt;h2&gt;Cart&lt;/h2&gt;<br>
+				&lt;h2&gt;&lt;a href="index.html" class="return-button"&gt;<&lt;/a&gt;My shopping cart
+				&lt;span&gt;(4)&lt;/span&gt;&lt;/h2&gt;<br>
 
-				&lt;div class="cart-item box"&gt;
+				&lt;div class="cart-deliver box-space-between"&gt;
 				<div class="indent">
-					&lt;img src="images/broccoli.png" alt="" class="box-item"&gt;<br>
-					&lt;div class="box-item"&gt;
-					<div class="indent">
-						&lt;h3&gt;Broccoli&lt;/h3&gt;<br>
-						&lt;label for="quantity">Quantity:&lt;/label&gt;<br>
-						&lt;input type="number" placeholder="2" id="quantity"&gt;<br>
-						&lt;a href="#" class="delete-btn"&gt;Delete&lt;/a&gt;<br>
-						&lt;p class="cart-price">2.98&lt;/p&gt;<br>
+					&lt;div&gt;<br>
+					&lt;img src="../styleguide/images/walmart logo.png" alt=""&gt;<br>
+					&lt;span&gt;Walmart&lt;/span&gt;<br>
+					&lt;/div&gt;<br><br>
+
+					&lt;div&gt;<br>
+					&lt;span&gt;Deliver to:&lt;/span&gt;<br>
+					&lt;a href="#" class="text-green"&gt;1234 Glen drive (1 hour)&lt;/a&gt;<br>
 					</div>
-					&lt;/div&gt;
-				</div>
-				&lt;/div&gt;
-				&lt;div class="cart-item box"&gt;
-				<div class="indent">
-					&lt;img src="images/product image.png" alt="" class="box-item"&gt; <br>
-					&lt;div class="box-item"&gt;
+					&lt;/div&gt;<br><br>
+
+
+					&lt;div class="cart-item-container"&gt;
+					
 					<div class="indent">
-						&lt;h3&gt;Choi&lt;/h3&gt;<br>
-						&lt;label for="delete">Quantity:&lt;/label&gt;<br>
-						&lt;input type="number" placeholder="1" id="delete"&gt;<br>
-						&lt;a href="#" class="delete-btn"&gt;Delete&lt;/a&gt;<br>
-						&lt;p class="cart-price">5.98&lt;/p&gt;<br>
-					</div>
-					&lt;/div&gt;
-				</div>
-				&lt;/div&gt;
-				&lt;div class="total"&gt;
-				<div class="indent">
-					&lt;h3&gt;Total:&lt;/h3&gt;<br>
-					&lt;span class="cart-price total-price"&gt;$8.98&lt;/span&gt;<br>
-				</div>
-				&lt;/div&gt;<br>
-				&lt;button class="check-out-btn"&gt;Check out&lt;/button&gt;<br>
-			</div>
+						&lt;div class="cart-item"&gt;
+						<div class="indent">
+						&lt;img src="../images/broccoli.png" alt=""&gt;
+						&lt;span class="item-title"&gt;Broccoli&lt;/span&gt;
+			
+						&lt;div class="item-quantity"&gt;
+						&lt;a href="#" class="delete-btn"&gt;Remove&lt;/a&gt;
+						&lt;input type="number" placeholder="2" id="quantity"&gt;
+						&lt;/div&gt;
+			
+						&lt;span class="cart-price"&gt;2.98&lt;/span&gt;
+						</div>
+						&lt;/div&gt;<br><br>
+			
+						&lt;div class="cart-item"&gt;
+						<div class="indent">
+						&lt;img src="../images/mango.jpg" alt=""&gt;
+						&lt;span class="item-title"&gt;ango&lt;/span&gt;
+			
+						&lt;div class="item-quantity"&gt;
+						&lt;a href="#" class="delete-btn"&gt;Remove&lt;/a&gt;
+						&lt;input type="number" placeholder="1" id="quantity"&gt;
+						&lt;/div&gt;
+			
+						&lt;span class="cart-price"&gt;2.98&lt;/span&gt;
+						</div>
+						&lt;/div&gt;<br><br>
+			
+						&lt;div class="cart-item"&gt;
+						<div class="indent">
+						&lt;img src="../images/mint.jpg" alt=""&gt;
+						&lt;span class="item-title"&gt;Mint&lt;/span&gt;
+			
+						&lt;div class="item-quantity"&gt;
+						&lt;a href="#" class="delete-btn"&gt;Remove&lt;/a&gt;
+						&lt;input type="number" placeholder="2" id="quantity"&gt;
+						&lt;/div&gt;
+			
+						&lt;span class="cart-price"&gt;2.98&lt;/span&gt;
+						</div>
+						&lt;/div&gt;<br><br>
+			
+						&lt;div style="height: 4rem"&gt;&lt;/div&gt;<br>
+			
+						&lt;span class="total"&gt;Total:&lt;/span&gt;
+						&lt;span class="total-price"&gt;$8.98&lt;/span&gt;br
+						&lt;form action="check-out.html"&gt;
+						&lt;button class="check-out-btn" action&gt;Check out&lt;/button&gt;
+						<br>
+						&lt;/form&gt;
+
+						</div>
+						&lt;/div&gt;<br>
 			&lt;/section&gt;
 		</samp>
 		<!-- END Shopping cart <samp> -->
@@ -645,28 +704,7 @@
 			
 	</div>
 
-	<!--contact section-->
-	<section class="contact-section">
-		<h2>Contact Us</h2>
-		<span class="phone-number">778-123-4567</span>
-		<form action="">
-			<label for="">Send us an email if you have any question</label>
-			<input type="text">
-			<button type="submit" class="submit-btn">Submit</button>
-		</form>
-	</section>
-
-	<footer>
-		<img src="images/logo-greyscale.svg" alt="">
-		<div class="footer-link">
-			<a href="styleguide/index.html">Styleguide</a>
-			<a href="#">Help</a>
-			<a href="#">Privacy</a>
-			<a href="#">Term</a>
-		</div>
-	</footer>
 	
-	<script src="../main.js"></script>
 
 </body>
 </html>
