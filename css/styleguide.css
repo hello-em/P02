@@ -11,4 +11,17 @@ code, samp{
 .indent{
 	padding-left: 1em;
 }
+
+/**************** Used in styleguide nav ****************/
+
+.page-nav{
+	padding: 2rem 2rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	font-size: 1.25rem;
+}
+.page-nav ul{
+	margin: 0;
+}
+/**************** Used in styleguide nav ****************/
 /* End of Code samples stylization */

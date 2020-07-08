@@ -1,8 +1,6 @@
 .form-btn{
 	margin-right: 1rem;
 	margin-top: 0.5rem;
-	background-color: #63B146;
-    color: white;
 	padding: 0.5rem 2rem;
 	margin-left: 0.25rem;
 	border:none;
@@ -12,12 +10,6 @@
     border-radius: 0.3rem;
 
 }
-
-.form-btn:hover, .form-btn:focus{
-	background-color: #9AE07E;
-	transition: background-color 0.5s;
-}
-
 
 .name-textbox{
 	max-width: 10rem;
@@ -103,14 +95,6 @@ textarea {
 	color: #FFDD50;    
 }
 
-
-
-/* .right-align{
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 0.5em;
-} */
-
 .left-align{
 	display: flex;
 	justify-content: flex-start;
@@ -126,13 +110,6 @@ textarea {
 
 .comments h3{
 	margin-top: 0;
-}
-
-@media(max-width: 30rem){
-	.comments{
-		margin-top: 3rem;
-	}
-
 }
 
 .review{
@@ -164,16 +141,31 @@ textarea {
 	color: gray;
 }
 
-/* wrap reviews for smaller screens*/
-@media(max-width: 30rem) {
-	.review-flexbox{
-		flex-wrap: wrap;
-	}
-}
-
-
 .total-price{
 	margin-left: 1rem;
 	font-size: 1.8rem;
 	color: #63B146;
 }
+
+/* wrap reviews for smaller screens*/
+@media(max-width: 30rem) {
+
+	/* This the checks, they are hidden off browser. Comment them out and you can see them*/
+	.rate:not(:checked) > input {
+	    position:absolute;
+	    top:-9999px;
+	    /* Make sure that it doesn't make the white bar on the right side*/
+	    left: -9999px;
+	}
+
+	.review-flexbox{
+		flex-wrap: wrap;
+	}
+
+	.comments{
+		margin-top: 3rem;
+		padding: 0;
+	}
+
+}
+

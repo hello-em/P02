@@ -268,20 +268,6 @@ input[type=search]{
 
 
 
-/**************** Used in styleguide nav ****************/
-
-.page-nav{
-	padding: 2rem 2rem;
-	margin-top: 2rem;
-	margin-bottom: 3rem;
-	font-size: 1.25rem;
-}
-.page-nav ul{
-	margin: 0;
-}
-/**************** Used in styleguide nav ****************/
-
-
 /**************** Hover Line ****************/
 .line-hover {
 	display: inline-block;
@@ -442,7 +428,7 @@ select {
 /**************** END Select Store ****************/
 
 
-/**************** start of product list ****************/
+/**************** START of PRODUCT LIST ****************/
 
 .product-list{
 	border-radius: 0.5em;
@@ -510,7 +496,7 @@ select {
  }
 /************** END CONTAINERS MARGINS **************/
 
-/**** start of buy with products ****/
+/**** START of BUY WITH products ****/
 .buy-with-item{
 	max-width: 20rem;
 }
@@ -562,8 +548,8 @@ select {
 	font-size: 1.5rem;
 }
 
-/**************** end of buy with products ****************/
-/**************** end of product list ****************/
+/**************** END of buy with products ****************/
+/**************** END of product list ****************/
 
 .in-text-link{
 	font-weight: bold;
@@ -994,7 +980,7 @@ footer img{
 }
 
 /* For Iphone 5/SE and Galaxy S5*/
-@media(max-width: 360px){
+@media(max-width: 30em){
 	.category-grid-item{
 		padding: auto;
 		cursor: pointer;
