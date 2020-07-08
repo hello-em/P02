@@ -301,8 +301,11 @@ input[type=search]{
 }
 
 .active{
-	border-bottom: 0.03rem solid black;
+	margin: auto;
+	width: 80%;
+	border-bottom: 0.03rem solid rgb(0, 0, 0);
 }
+
 /**************** Hover Line  *****************/
 
 /**************** Hero CTA ****************/
@@ -326,7 +329,7 @@ input[type=search]{
     width: 100%;
     height: 100%;
     /* makes a gradient https://cssgradient.io/ */
-    background: linear-gradient(90deg, rgba(2,0,36,0) 29%, rgba(0,0,0,1) 65%), url("../images/hero-cta.png");
+    background: linear-gradient(90deg, rgba(2,0,36,0) 39%, rgba(0,0,0,1) 65%), url("../images/hero-cta.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
@@ -809,9 +812,19 @@ footer img{
 	max-width: 20rem;
 	min-width: 12rem;
 	/* background-color: rgb(228, 228, 228); */
-	padding: 1rem 1rem;
+	padding: 3rem 1rem;
 	padding-bottom: 3rem;
 	border-radius: 0.3em;
+	color: rgb(75, 75, 75);
+	font-size: 1rem;
+}
+
+.product-filter h2{
+	font-size: 1.2rem;
+}
+
+.product-filter h3{
+	font-size: 1rem;
 }
 
 /* Temporary hide the filter in mobile version*/
@@ -822,7 +835,7 @@ footer img{
 }
 
 .clear-filter-btn{
-	padding: 0.6em 1.6em;
+	padding: 0.4em 1.4em;
 	margin: 1em 0em;
 	margin-bottom: 3rem;
 	font-size: 1rem;
@@ -858,6 +871,7 @@ footer img{
 }
 
 .product-white-background{
+	margin-top: 1rem;
 	background-color: white;
 	padding: 1rem;
 	border-radius: 0.3em;
@@ -919,9 +933,10 @@ footer img{
 	background-color: #FFDD50;
 	border: none;
 	margin: 0rem;
-	padding: 0.2rem 0.6rem;
+	padding: 0.4rem 0.8rem;
 	border-radius: 0.3rem;
 	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
 	display: inline-block;
 }
 
@@ -934,7 +949,8 @@ footer img{
 
 .divider-line{
 	margin-top: 1.4rem;
-	border-bottom: 0.05rem solid #636363;
+	width: 80%;
+	border-bottom: 1px solid #b4b4b4;
 }
 /**************** END of product grid section ****************/
 
@@ -943,6 +959,18 @@ footer img{
 .category-grid-item{
 	padding: auto;
 	cursor: pointer;
+	padding: 1rem 2rem 0.5rem 2rem;
+}
+
+.category-grid-item:hover{ 
+	background-color: rgb(230, 230, 230);
+	border-radius: 6px;
+	transition: 0.4s ease-in-out;
+}
+
+.category-grid-item:active{
+	background-color: rgb(240, 240, 240);
+	border-radius: 6px;
 }
 
 .category-grid-item h3{
@@ -962,6 +990,7 @@ footer img{
 	max-width: 10rem;
 	max-height: 10rem;
 	margin: 0;
+	border-radius: 4px;
 }
 
 /* For Iphone 5/SE and Galaxy S5*/
