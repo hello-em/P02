@@ -41,13 +41,14 @@
 		<section class=" box">
 
 			<form class="box">
-				<label for="delivery-address"><h3>Delivery to</h3></label>
+				<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 				<select name="address" id="address" onchange="location = this.value">
-					<option value="#">1234 University Ave, City Province</option>
-					<option value="#">1234 home street, city province</option>
-					<option value="#">Add new address</option>
+					<option value="address.html">Choose Delivery Address</option>
+					<option value="address.html">Add new address</option>
+					<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+					<option value="#">21, 2270 University Ave. Burnaby</option>
 				</select>
-			</form>
+			</form>	
 		</section>
 
 		<section class="store-section box-flex-start">
@@ -121,8 +122,20 @@
 
 	</div>
 
-
+	<div class="push-footer">
+		
+	</div>
 	
+	<!--contact section-->
+	<section class="contact-section" id="contact-section">
+		<h2>Contact Us</h2>
+		<span class="phone-number">778-123-4567</span>
+		<form action="">
+			<label for="" placeholder>Send us an email if you have any question</label>
+			<input type="text">
+			<button type="submit" class="submit-btn">Submit</button>
+		</form>
+	</section>
 
 
 	<!-- Footer  -->

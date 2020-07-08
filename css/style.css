@@ -698,6 +698,9 @@ input[type=number]{
 /**************** END of contact section ****************/
 
 /**************** start of footer ****************/
+.push-footer{
+	 height: 100px;
+}
 
 footer{
 	padding: 2rem 3rem;
