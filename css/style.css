@@ -320,9 +320,7 @@ input[type=search]{
     background: linear-gradient(90deg, rgba(2,0,36,0) 39%, rgba(0,0,0,1) 65%), url("../images/hero-cta.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-   
-   	
+    background-position: center;	
 }
 .hero-content {
     position: relative;
@@ -428,24 +426,11 @@ select {
 
 }
 
-/* popup window background */
 
 /**************** END Select Store ****************/
 
-	position: absolute;
-	top: 0rem;
-}
 
 /**************** START of PRODUCT LIST ****************/
-
-#close-popup{
-	position: absolute;
-	top: 0;
-	right: 1rem;
-	font-size: 3rem;
-	transform: rotate(45deg);
-	cursor: pointer;
-}
 
 .product-list{
 	border-radius: 0.5em;
@@ -454,10 +439,6 @@ select {
 .product-info{
 	padding-bottom: 1rem;
 	border-bottom: 1px solid rgb(129, 129, 129);
-}
-.product-left{
-	width: 10%;
-	height: auto;
 }
 
 .product-nav a{
@@ -551,8 +532,14 @@ select {
 	display: inline;
 }
 
-/* end of buy with products */
+.plus-sign{
+	display: -webkit-flex;
+	display: -ms-flex;
+    display: flex;
 
+    -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
 
     -webkit-justify-content: space-around;
 	-ms-justify-content: space-around;
@@ -690,7 +677,7 @@ input[type=number]{
 .contact-section{
 	border-top: 1px rgb(182, 182, 182) solid;
 	text-align: center;
-	margin-top: 20rem;
+	margin-top: 5rem;
 	display: block;
 }
 
@@ -1093,14 +1080,9 @@ footer img{
 	right: 8%
 }
 
-.category-section button{
-	padding: 0.6em 0.8em;
-	margin: 0.3em 0em;
-	font-size: 1rem;
-	color: white;
-	background-color: #63B146;
-	border-radius: 0.3em;
-	border: none;
+/* the a href to the detail html */
+.product-grid-item a{
+	position: initial;
 }
 
 .price-section{
@@ -1119,7 +1101,7 @@ footer img{
 
 .original-price{
 	float: right;
-	margin-right: 2rem;
+	margin-right: 0;
 
 	color: grey;
 	font-size: 1.2rem;

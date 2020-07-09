@@ -123,70 +123,90 @@
 	<div class="container box">
 
 		<!--Start of product filter section-->
-		<section class="product-filter box-item">
+		<section class="product-filter filter-flex-item">
 			<h3>Filter</h3>
 			<span>84 results from<a href="#"> all groceries</a>
 			</span>
-			<button href="#" class="clear-filter-btn">Clear filter</button>
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+			<!-- Placed everything into form so reset button actually works -->
+			<form id="filter">
+				<button href="#" type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
+				<h3>Categories</h3>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Veggies</label>
+				</div>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Fruits</label>
+				</div>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Herbs</label>
+				</div>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Seasonal</label>
+				</div>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="divider-line"></div>
+				<h3>Brands</h3>
 
-			<div class="filter-checkbox">
-				<input type="checkbox" id="Veggies">
-				<label for="Veggies">Veggies</label>
-			</div>
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Store Brand</label>
+				</div>
 
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Farmer's Market</label>
+				</div>
+
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Legunord</label>
+				</div>
+
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Dole</label>
+				</div>
+
+				<div class="divider-line"></div>
+
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Organic</label>
+				</div>
+
+				<div class="filter-checkbox">
+					<input type="checkbox" id="Veggies">
+					<label for="Veggies">Frozen</label>
+				</div>
+
+				
+			</form>
 		</section>
+		<!--End of product filter section-->
 	
 
-	<!--Start of product grid-->
-	<section class="product-grid box box-item" id="js-trial">
-		<section class="product-grid-item box-grid-item">
-			<img src="styleguide/images/broccoli.png" alt="">
-			<h3>Broccoli</h3>
-			<span class="product-weight">200g each</span>
-			<p class="grid-price">$6.99</p>
-			<button class="btn">Add to cart</button>
-		</section>
+	<!-- -->
+		<section class="product-grid ">
+			<div class="box product-title">
+				<h1 class="box-left-align">Seasonal</h1>
 
-		<section class="product-grid-item box-grid-item">
-			<img src="styleguide/images/carrot.png" alt="">
-			<h3>Broccoli</h3>
-			<span class="product-weight">200g each</span>
-			<p class="grid-price">$6.99</p>
-			<button class="btn">Add to cart</button>
-		</section>
+				<form class="sort-by text-right-align">				
+					<label for="sort" class="sort"><h3>Sort By:</h3></label>
+					<select name="sort" id="sort">
+						<option>High to Low</option>
+						<option>Low to High</option>
+						<option>Popularity</option>
+					</select>
 
-			<section class="product-grid-item box-grid-item">
-				<img src="styleguide/images/bean.png" alt="">
-				<h3>Broccoli</h3>
-				<span class="product-weight">200g each</span>
-				<p class="grid-price">$6.99</p>
-				<button class="btn">Add to cart</button>
-			</section>
-	
+				</form>
+			</div>
 
 			<!--Start of product grid-->
 			<section class=" box product-white-background shadow">

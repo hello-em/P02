@@ -29,10 +29,14 @@
 .checkout-address input{
     margin-top: 1.2rem;
     display: block;
+    padding: 1rem 1rem;
 }
 
-.payment-form{
-    margin-top: 8rem;
+.checkout-address label{
+    font-weight: bold;
+    display: block;
+    margin-top: 2rem;
+
 }
 
 .checkout-address select{
