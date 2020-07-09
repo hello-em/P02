@@ -1,16 +1,18 @@
-/* Styleguide only styles */
-
 /* Code samples stylization to differentiate from regular text*/
 code, samp{
+	-moz-tab-size:    4; /* Firefox 4+ */
+    -o-tab-size:      4; /* Opera 11.5 & 12.1 only */
+    tab-size:         4; /* Chrome 21+, Safari 6.1+, Opera 15+ */
+
 	display: block;
 	background-color: rgb(230,230,230);
-	padding: 0.5rem;
-	width: 50%;
+	padding: 0.5rem 2rem;
+	justify-content: space-around;
+	white-space: pre-wrap;
+	overflow: auto;
 }
 
-.indent{
-	padding-left: 1em;
-}
+/* End of Code samples stylization */
 
 /**************** Used in styleguide nav ****************/
 
@@ -24,4 +26,20 @@ code, samp{
 	margin: 0;
 }
 /**************** Used in styleguide nav ****************/
-/* End of Code samples stylization */
+
+/**************** wireframe styling ****************/
+.wireframes img{
+	width: 100%;
+}
+
+.mockup img{
+	width: 40%;
+	margin: 0.3em 0.3em;
+}
+
+.wireframes ol{
+	list-style: none;
+}
+
+/**************** end of wireframe styling ***************/
+

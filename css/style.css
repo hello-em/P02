@@ -287,8 +287,10 @@ input[type=search]{
 }
 
 .active{
+	/*
+	This is causing Styleguide to be off and not right. removed to back to old style
 	margin: auto;
-	width: 80%;
+	width: 80%;*/
 	border-bottom: 0.03rem solid rgb(0, 0, 0);
 }
 
@@ -773,22 +775,6 @@ footer img{
 /**************** END of footer section ****************/
 
 
-
-/**************** wireframe styling ****************/
-.wireframes img{
-	width: 100%;
-}
-
-.mockup img{
-	width: 40%;
-	margin: 0.3em 0.3em;
-}
-
-.wireframes ol{
-	list-style: none;
-}
-
-/**************** end of wireframe styling ***************/
 
 /**************** Start of product filter sections ****************/
 
