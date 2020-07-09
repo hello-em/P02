@@ -43,3 +43,8 @@ code, samp{
 
 /**************** end of wireframe styling ***************/
 
+
+/**************** Citation Photos ***************/
+li img{
+	width: 25%
+}
