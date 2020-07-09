@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product | Grocery Vancouver</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/properties.css">
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<link rel="stylesheet" type="text/css" href="css/review-form.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav class="box navbar">
+		<div class="header-logo">
+			<a href="index.html">
+			<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
+			</a>
+		</div>
+
+		<form class="search">
+			<input type="search" name="site-search" id="site-search" placeholder="Search">
+			<button type="submit" class="search-btn">
+				<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
+			</button>
+		</form>
+
+		<!--Cart button for mobile version-->
+		<a href="cart.html">
+			<img src="images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+		</a>
+
+		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
+		<a href="about.html" class="nav-link" id="about-btn"><span class="line-hover">ABOUT</span></a>
+
+		<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
+			<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
+			<span>CART</span>
+		</button>
+	</nav>
+	<!-- Start of store and delivery module -->
+	<section class="selection box">
+		<form class="box">
+			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
+			<select name="store" id="select-store"  onchange="location = this.value">
+				<option value="#">Choose Store Location</option>
+				<option value="#">Walmart</option>
+				<option value="#">Superstore</option>
+				<option value="store.html">More...</option>
+			</select>
+		</form>
+
+		<form class="box">
+			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
+			<select name="address" id="address" onchange="location = this.value">
+				<option value="address.html">Choose Delivery Address</option>
+				<option value="address.html">Add new address</option>
+				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+				<option value="#">21, 2270 University Ave. Burnaby</option>
+			</select>
+		</form>
+	</section>
+	<!-- End of store and delivery module -->
+
+	
+	<!-- Start of product detail Section -->
+	<div class="smaller-container">
+		<section class="product-list">
+			<div class="product-info">
+				<div class="product-nav">
+					<a href="product.html">All Groceries</a>
+					<span>></span>
+					<a href="product-herb.html">Herbs</a>
+					<span>></span>
+					<a href="#">Cilantro</a>
+				</div>
+				<div class="box">
+					<div class="product-left box-item">
+						<img src="images/cilantro.jpg" alt="Cilantro detail photo">
+					</div>
+
+					<div class="product-right box-right">
+						<h3>Cilantro</h3>
+						<span>Bunch</span>
+						<p class="price">$0.97</p>
+						<label for="product-quantity">Quantity:</label>
+						<input type="number" id="product-quantity" min="1" step="1" placeholder="1">
+						<span>Bunch</span>
+						<div class="box">
+							<button class="detail-btn box-item">Add to cart</button>
+							<button class="detail-btn box-item" onclick="location='cart.html'">View Cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h3>Often buy with</h3>
+			<div class="product-buy-with box-flex-start">
+				<div class="buy-with-item box-grid-item">
+					<img src="images/parsley.jpg" alt="Buy With item - Veggie">
+					<input type="checkbox" id="parsley">
+					<label for="lettues">Parsley</label>
+					<p class="price">$1.97</p>
+				</div>
+
+				<span class="plus-sign">+</span>
+
+				<div class="buy-with-item box-grid-item">
+					<img src="images/dill.jpg" alt="">
+					<input type="checkbox" id="dill">
+					<label for="onion">Dill</label>
+					<p class="price">$0.77</p>
+				</div>
+
+				<span class="plus-sign">+</span>
+
+				<div class="buy-with-item box-grid-item">
+					<img src="images/mint.jpg" alt="">
+					<input type="checkbox" id="mint">
+					<label for="broccoli">Mint</label>
+					<p class="price">$0.77</p>
+
+				</div>
+			</div>
+			<span class="total">Total:</span>
+			<span class="total-price">$4.98</span>
+			<button class="btn" onclick="location='cart.html'">Add selected to cart</button>	
+		</section>
+	</div>
+	
+	<!-- End of product detail Section -->
+
+
+	<!-- Start of review section -->
+	<section class="smaller-container">
+		<h2>Ratings & Reviews</h2>
+		<div class="review-flexbox">
+			<form action="#" method="post" id="commentform" class="write-form">
+				<div class="box-flex-start">
+					
+					<input placeholder="Name" type="text" id="postName" name="postName" class="name-textbox">
+					
+					<!-- Stars from https://codepen.io/hesguru/pen/BaybqXv-->
+					<div class="rate">
+						<input type="radio" id="star5" name="rate" value="5" />
+						<label for="star5" title="text">5 stars</label>
+						<input type="radio" id="star4" name="rate" value="4" />
+						<label for="star4" title="text">4 stars</label>
+						<input type="radio" id="star3" name="rate" value="3" />
+						<label for="star3" title="text">3 stars</label>
+						<input type="radio" id="star2" name="rate" value="2" />
+						<label for="star2" title="text">2 stars</label>
+						<input type="radio" id="star1" name="rate" value="1" />
+						<label for="star1" title="text">1 star</label>
+					</div>
+				</div>
+
+				
+				<textarea placeholder="Write a Review" name="comment" id="comment" form="commentform"></textarea>
+				
+				<div class="left-align">
+					<button type="reset" form="commentform" value="Submit" class="form-btn ">Submit</button>
+					<button type="reset" form="commentform" value="Reset" class="form-btn ">Reset</button>
+				</div>
+			</form>
+
+			<section class="box-item comments">
+				<h3>Most Recent</h3>
+				<div>
+					<div class="review shadow">
+						<h4>Alex Lam</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>They need more asian produce on this site. I want to be able to get some lychee delivered</p>
+					</div>
+					<div class="review shadow">
+						<h4>Amanada</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<p>Amaing service, I forgot to go grocery shopping this week and was panicking at work on what to cook for my family when I got home. Luckily the service can deliver to my house and I was able to pick it up and cook up a delicious meal for my family. Worth the hassle of my rambling at Superstore last minute!</p>
+					</div>
+				</div>
+				<a href="#" id="more-review">More</a>
+			</section>
+		</div>
+	</section>
+
+
+	<!-- End of review section -->
+
+	<!--contact section-->
+	<section class="contact-section" id="contact-section">
+		<h2>Contact Us</h2>
+		<span class="phone-number">778-123-4567</span>
+		<form action="">
+			<label for="" placeholder>Send us an email if you have any question</label>
+			<input type="text">
+			<button type="submit" class="submit-btn">Submit</button>
+		</form>
+	</section>
+
+
+	<!-- Footer  -->
+	<footer>
+		<img src="images/logo-greyscale.svg" alt="">
+		<div class="footer-link">
+			<a href="styleguide/index.html">Styleguide</a>
+			<a href="#">Help</a>
+			<a href="#">Privacy</a>
+			<a href="#">Term</a>
+		</div>
+	</footer>
+
+	<script src="js/product-detail.js"></script>
+	
+</body>
+</html>

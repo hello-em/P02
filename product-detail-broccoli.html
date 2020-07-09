@@ -3,55 +3,60 @@
 <head>
 	<title>Product | Grocery Vancouver</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="css/temp.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<nav class="box">
-		<div class="header-logo nav-box-left">
+	<nav class="box navbar">
+		<div class="header-logo">
 			<a href="index.html">
 			<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
 			</a>
 		</div>
-		<div class="nav-box-right box">
-			<form class="box-item-nav">
-				<input type="search" name="site-search"id="site-search" placeholder="Search">
-				<button type="submit" class="search-btn">
-					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon">
-				</button>
-			</form>
-			<a href="product.html" class="box-item-nav page-nav-item active"><span>PRODUCT</span></a>
-			<a href="about.html" class="box-item-nav page-nav-item"><span>ABOUT</span></a>
 
-			<!-- need to check with Paul on the needs to have both svg and png files -->
+		<form class="search">
+			<input type="search" name="site-search" id="site-search" placeholder="Search">
+			<button type="submit" class="search-btn">
+				<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
+			</button>
+		</form>
 
-			<a href="#">
-				<img src="images/cart-btn.svg" alt="Cart Button">
-			</a>
-		</div>
+		<!--Cart button for mobile version-->
+		<a href="cart.html">
+			<img src="images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+		</a>
+
+		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
+		<a href="about.html" class="nav-link" id="about-btn"><span class="line-hover">ABOUT</span></a>
+
+		<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
+			<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
+			<span>CART</span>
+		</button>
 	</nav>
 
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3>Select Store</h3></label>
-			<select name="store" id="store"  onchange="location = this.value">
+			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
+			<select name="store" id="select-store"  onchange="location = this.value">
+				<option value="#">Choose Store Location</option>
 				<option value="#">Walmart</option>
 				<option value="#">Superstore</option>
-				<option value="#">Costco</option>
-				<option value="#">T&T</option>
-				<option value="store.html">More Locations...</option>
+				<option value="store.html">More...</option>
 			</select>
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3>Delivery to</h3></label>
+			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 			<select name="address" id="address" onchange="location = this.value">
-				<option value="#">1234 University Ave, City Province</option>
-				<option value="#">1234 home street, city province</option>
-				<option value="#">Add new address</option>
+				<option value="address.html">Choose Delivery Address</option>
+				<option value="address.html">Add new address</option>
+				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+				<option value="#">21, 2270 University Ave. Burnaby</option>
 			</select>
 		</form>
 	</section>
@@ -59,7 +64,7 @@
 
 	
 	<!-- Start of product detail Section -->
-	<div class="product-detail-container">
+	<div class="smaller-container">
 		<section class="product-list">
 			<div class="product-info">
 				<div class="product-nav">
@@ -70,54 +75,64 @@
 					<a href="#">Broccoli</a>
 				</div>
 				<div class="box">
-					<img src="styleguide/images/broccoli.png" alt="" class="product-left box-left">
+					<div class="product-left box-item">
+						<img src="images/broccoli.png" alt="Broccoli detail photo">
+					</div>
 
 					<div class="product-right box-right">
 						<h3>Broccoli</h3>
-						<span>200g</span>
+						<span>200g each</span>
 						<p class="price">$0.86</p>
+
+						<div class="product-type">
+							<span>Type:</span>
+							<select name="broccoli-type" id="broccoli-type">
+								<option value="">Broccoli Stalks</option>
+								<option value="">Broccoli Crowns</option>
+							</select>
+						</div>
+						
 						<label for="product-quantity">Quantity:</label>
-						<input type="number" id="product-quantity" min="0.1" step="0.1" placeholder="0.2">
-						<span>/kg</span>
+						<input type="number" id="product-quantity" min="0" step="1" placeholder="0">
 						<div class="box">
 							<button class="detail-btn box-item">Add to cart</button>
-							<button class="detail-btn box-item">View to cart</button>
+							<button class="detail-btn box-item" onclick="location='cart.html'">View Cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<h3>Often buy with</h3>
-			<div class="product-buy-with box">
+			<div class="product-buy-with box-flex-start">
 				<div class="buy-with-item box-grid-item">
-					<img src="styleguide/images/lettues.png" alt="Buy With item - Veggie">
+					<img src="images/lettues.png" alt="Buy With item - Veggie">
 					<input type="checkbox" id="lettues">
-					<label for="lettues">Lettues</label>
-					<p class="price">$0.99</p>
+					<label for="lettues">Lettuce</label>
+					<p class="price">$3.47</p>
 				</div>
 
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="styleguide/images/onion.png" alt="">
+					<img src="images/onion.png" alt="">
 					<input type="checkbox" id="onion">
 					<label for="onion">Onion</label>
-					<p class="price">$0.99</p>
+					<p class="price">$2.57</p>
 				</div>
 
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
+					<img src="images/product-image.png" alt="">
 					<input type="checkbox" id="product-image">
-					<label for="broccoli">Bok Choi</label>
-					<p class="price">$0.99</p>
+					<label for="broccoli">Gai Lan</label>
+					<p class="price">$1.29</p>
 
 				</div>
 			</div>
 			<span class="total">Total:</span>
 			<span class="total-price">$8.98</span>
-			<button class="btn">Add selected to cart</button>	
+			<button class="btn" onclick="location='cart.html'">Add selected to cart</button>	
 		</section>
 	</div>
 	
@@ -125,13 +140,13 @@
 
 
 	<!-- Start of review section -->
-	<section class="container">
+	<section class="smaller-container">
 		<h2>Ratings & Reviews</h2>
-		<div class="box-flex-start">
-			<form action="#" method="post" id="commentform">
+		<div class="review-flexbox">
+			<form action="#" method="post" id="commentform" class="write-form">
 				<div class="box-flex-start">
 					
-						<input placeholder="Name" type="text" id="postName" name="postName" class="name-textbox">
+					<input placeholder="Name" type="text" id="postName" name="postName" class="name-textbox">
 					
 					<!-- Stars from https://codepen.io/hesguru/pen/BaybqXv-->
 					<div class="rate">
@@ -151,24 +166,44 @@
 				
 				<textarea placeholder="Write a Review" name="comment" id="comment" form="commentform"></textarea>
 				
-				<div class="right-align">
-					<button type="submit" form="commentform" value="Submit" class="form-btn ">Submit</button>
+				<div class="left-align">
+					<button type="reset" form="commentform" value="Submit" class="form-btn ">Submit</button>
 					<button type="reset" form="commentform" value="Reset" class="form-btn ">Reset</button>
 				</div>
 			</form>
 
 			<section class="box-item comments">
 				<h3>Most Recent</h3>
-				<div class="test">
-				<div class="review shadow">
-					<h4>Kelly Mills</h4>
-					<p>I ordered this through Walmart PickUp, ordered my groceries online and picked up at the Burlington North store. The bananas were picked perfectly by the pickup associate! A bit on the ripe side for the first couple of days, but they were delicious once ripe. I will definitely be ordering these again soon!</p>
+				<div>
+					<div class="review shadow">
+						<h4>Samantha Coyier</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>Some produce came brusied and not fresh. Not sure if that's the delivery service or the grocery market. The shopper respected the no contact rule and left grocery on front porch which was good.</p>
+					</div>
+					<div class="review shadow">
+						<h4>Sebastian Lee</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>decent quality, the shopper came a bit later than expected but could be traffic. Overall the price is okay, they don't have all the sales from the grocery store but most of them are on the site.</p>
+					</div>
+					<div class="review shadow">
+						<h4>Linda</h4>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star checked">&#x2605</span>
+						<span class="star">&#x2605</span>
+						<p>My grandparents live alone and they needed someone to get them grocery during the pandemic. I was busy this week so I wasn't able to help them but luckily I was able to order for them and have it deliver. A great replacement when I can't deliver myself but don't want my grandparents to go out at this time.</p>
+					</div>
 				</div>
-				<div class="review shadow">
-					<h4>Tom</h4>
-					<p>we prefer yellowish greenish banana for lower Glycemic index , but these are just fine, to be consume on the day of pick up!</p>
-				</div>
-				</div>
+				<a href="#" id="more-review">More</a>
 			</section>
 		</div>
 	</section>
@@ -181,13 +216,13 @@
 	<footer>
 		<img src="images/logo-greyscale.svg" alt="">
 		<div class="footer-link">
+			<a href="styleguide/index.html">Styleguide</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>
 		</div>
 	</footer>
 
-	
-
+	<script src="js/product-detail.js"></script>
 </body>
 </html>

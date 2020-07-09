@@ -1,0 +1,171 @@
+.form-btn{
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+	padding: 0.5rem 2rem;
+	margin-left: 0.25rem;
+	border:none;
+	font-size: 1rem;
+    font-weight: 200;
+    cursor: pointer;
+    border-radius: 0.3rem;
+
+}
+
+.name-textbox{
+	max-width: 10rem;
+	padding: 0;
+	margin: 0;
+
+}
+
+.write-form{
+	margin-right: 2em;
+}
+
+/* to override the main input in style.css*/
+.write-form input{
+	width: 100%;
+	padding: 0.5em 0.5em;
+	margin:0 ;
+	margin-right: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 0.3rem;
+	font-size: 1.0rem;
+	
+}
+
+textarea {
+	font-family: 'Lato', sans-serif;
+	min-height: 5em;
+	width: 25rem;
+	padding: 0.5em 0.5em;
+	margin-top: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 0.3rem;
+	font-size: 1.0rem;
+	resize: vertical;
+}
+/* Smaller text area for devices ipad pro and smaller*/
+@media (max-width: 1024px){
+	textarea{
+		width: 100%;
+	}
+}
+
+.rate {
+    padding: 0.7em 0;
+}
+/* This the checks, they are hidden off browser. Comment them out and you can see them*/
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+
+/* normal not checked grey state */
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:1.5rem;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '\2605 ';
+}
+
+/* checked colour */
+.rate > input:checked ~ label {
+    color: #FFDD50;    
+}
+/* Not checked items can hover*/
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #ffc700;  
+}
+
+.star{
+	display: inline-block;
+	color:#ccc; 
+	font-size:1.5rem;
+}
+
+.checked{
+	color: #FFDD50;    
+}
+
+.left-align{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 0.5em;
+}
+
+.comments{
+	margin: 0em 0em;
+	padding: 0em 0em; 
+	padding-left: 2em;
+	/* border-left: 0.05rem solid #636363; */
+}
+
+.comments h3{
+	margin-top: 0;
+}
+
+.review{
+	border-radius: 0.3rem;
+	background-color: white;
+	padding: 2em 1em;
+	margin: 0;
+	margin-bottom: 2em;
+	width:100%;	
+}
+
+#review-border{
+	border-top: 1px grey solid;
+}
+
+.review h4{
+	display: inline-block;
+	margin-top: 0;
+	margin-right: 0.5rem;
+}
+
+.review-flexbox{
+	display: inline-flex;
+}
+
+#more-review{
+	float: right;
+	font-weight: bold;
+	color: gray;
+}
+
+.total-price{
+	margin-left: 1rem;
+	font-size: 1.8rem;
+	color: #63B146;
+}
+
+/* wrap reviews for smaller screens*/
+@media(max-width: 30rem) {
+
+	/* This the checks, they are hidden off browser. Comment them out and you can see them*/
+	.rate:not(:checked) > input {
+	    position:absolute;
+	    top:-9999px;
+	    /* Make sure that it doesn't make the white bar on the right side*/
+	    left: -9999px;
+	}
+
+	.review-flexbox{
+		flex-wrap: wrap;
+	}
+
+	.comments{
+		margin-top: 3rem;
+		padding: 0;
+	}
+
+}
+

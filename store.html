@@ -8,95 +8,141 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<nav class="box">
-		<div class="header-logo nav-box-left">
+	<nav class="box navbar">
+		<div class="header-logo">
 			<a href="index.html">
 			<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
 			</a>
 		</div>
-		<div class="nav-box-right box">
-			<form class="box-item-nav">
-				<input type="search" name="site-search"id="site-search" placeholder="Search">
-				<button type="submit" class="search-btn">
-					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon">
-				</button>
-			</form>
-			<a href="product.html" class="box-item-nav page-nav-item"><span>PRODUCT</span></a>
-			<a href="about.html" class="box-item-nav page-nav-item"><span>ABOUT</span></a>
 
-			<!-- need to check with Paul on the needs to have both svg and png files -->
+		<form class="search">
+			<input type="search" name="site-search" id="site-search" placeholder="Search">
+			<button type="submit" class="search-btn">
+				<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
+			</button>
+		</form>
 
-			<a href="#">
-				<img src="images/cart-btn.svg" alt="Cart Button">
-			</a>
-		</div>
+		<!--Cart button for mobile version-->
+		<a href="cart.html">
+			<img src="images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+		</a>
+
+		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
+		<a href="about.html" class="nav-link" id="about-btn"><span class="line-hover">ABOUT</span></a>
+
+		<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
+			<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
+			<span>CART</span>
+		</button>
 	</nav>
 
 	<div class="container"> 
+		<h1>Stores Near You</h1>
+		<section class=" box">
+
+			<form class="box">
+				<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
+				<select name="address" id="address" onchange="location = this.value">
+					<option value="address.html">Choose Delivery Address</option>
+					<option value="address.html">Add new address</option>
+					<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+					<option value="#">21, 2270 University Ave. Burnaby</option>
+				</select>
+			</form>	
+		</section>
 
 		<section class="store-section box-flex-start">
 
+
+
 			<!--store-flex-item class is not used, keep it for later use-->
 			<div class="store store-flex-item">
-				<img src="styleguide/images/walmart logo.png" alt="">
-				<h3>Walmart</h3>
-				<span>Delivery in 1h</span>
+				<a href="index.html">
+					<img src="styleguide/images/walmart logo.png" alt="">
+					<h3>Walmart</h3>
+					<span>Delivery in 1h</span>
+				</a>
 			</div>
 
 			<div class="store store-flex-item">
-				<img src="styleguide/images/walmart logo.png" alt="">
+				<img src="images/superstore-logo.png" alt="">
 				<h3>Superstore</h3>
-				<span>Delivery in 1h</span>
+				<span>Delivery in 45m</span>
 			</div>
 
 			<div class="store store-flex-item">
-				<img src="styleguide/images/walmart logo.png" alt="">
-				<h3>T&T</h3>
-				<span>Delivery in 1h</span>
+				<a href="index.html">
+					<img src="images/T&T-logo.png" alt="">
+					<h3>T&T</h3>
+					<span>Delivery in 1.5h</span>
+				</a>
 			</div>
 
 			<div class="store store-flex-item">
-				<img src="styleguide/images/walmart logo.png" alt="">
-				<h3>Saveway</h3>
-				<span>Delivery in 1h</span>
+				<a href="index.html">
+					<img src="images/safeway-logo.png" alt="">
+					<h3>Safeway</h3>
+					<span>Delivery in 1h</span>
+				</a>
 			</div>
 
 			<div class="store store-flex-item">
-				<img src="styleguide/images/walmart logo.png" alt="">
-				<h3>Walmart</h3>
-				<span>Delivery in 1h</span>
+				<a href="index.html">
+					<img src="images/costco-logo.png" alt="">
+					<h3>Costco</h3>
+					<span>Delivery in 1h</span>
+				</a>
 			</div>
 
 			<div class="store store-flex-item">
-				<img src="styleguide/images/walmart logo.png" alt="">
-				<h3>Walmart</h3>
-				<span>Delivery in 1h</span>
+				<a href="index.html">
+					<img src="images/nofrills-logo.png" alt="">
+					<h3>No Frills</h3>
+					<span>Delivery in 1h</span>
+				</a>
 			</div>
 
 			<div class="store store-flex-item">
-				<img src="styleguide/images/walmart logo.png" alt="">
-				<h3>Walmart</h3>
-				<span>Delivery in 1h</span>
+				<a href="index.html">
+					<img src="images/save-on-foods-logo.png" alt="">
+					<h3>Save On Foods</h3>
+					<span>Delivery in 30m</span>
+				</a>
 			</div>
 
 			<div class="store store-flex-item">
-				<img src="styleguide/images/walmart logo.png" alt="">
-				<h3>Walmart</h3>
-				<span>Delivery in 1h</span>
+				<a href="index.html">
+					<img src="images/loblaws-logo.png" alt="">
+					<h3>Loblaws</h3>
+					<span>Delivery in 1h</span>
+				</a>
 			</div>
 
 		</section>
 
 	</div>
 
-
+	<div class="push-footer">
+		
+	</div>
 	
+	<!--contact section-->
+	<section class="contact-section" id="contact-section">
+		<h2>Contact Us</h2>
+		<span class="phone-number">778-123-4567</span>
+		<form action="">
+			<label for="" placeholder>Send us an email if you have any question</label>
+			<input type="text">
+			<button type="submit" class="submit-btn">Submit</button>
+		</form>
+	</section>
 
 
 	<!-- Footer  -->
 	<footer>
 		<img src="images/logo-greyscale.svg" alt="">
 		<div class="footer-link">
+			<a href="styleguide/index.html">Styleguide</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>

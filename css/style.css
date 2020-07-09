@@ -1,11 +1,12 @@
-
 body{
 
 	/* Lato font from Google fonts */
 	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
 	margin: 0;
-	background-color: rgb(240, 240, 240);
+
+	/*background-color: rgb(241, 241, 241);*/
+	
 }
 
 img{
@@ -16,6 +17,7 @@ img{
 a{
 	color: black;
 	text-decoration: none;
+	
 }
 
 
@@ -29,9 +31,37 @@ p{
 	/* width: 60%; */
 }
 
+/*Reference boz-shadow by https://css-tricks.com/almanac/properties/b/box-shadow/ */
+/* used this plugin (https://brumm.af/shadows) to get the style of shadow wanted*/
+.shadow {
+	-webkit-box-shadow: 
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
+	box-shadow:
+	0 1.1px 7.4px rgba(0, 0, 0, 0.028),
+	0 12.3px 25px rgba(0, 0, 0, 0.032),
+	0 77px 112px rgba(0, 0, 0, 0.07);
+}
+
+/************** Default all button style unless specfic ***********/
 button{
 	display: block;
+	background-color: #63B146;
+    color: white;
+    border: none;
 }
+
+button:hover, button:focus{
+	 background-color: #9AE07E;
+	 color: white;
+	 cursor: pointer;
+}
+
 
 /* Code samples stylization to differentiate from regular text*/
 code, samp{
@@ -45,118 +75,228 @@ code, samp{
 }
 /* End of Code samples stylization */
 
-/* nav bar */
+
+
+
+/**************** nav bar *******************************/
 nav{
 	margin: 0;
 	background-color: #FFDD50;
 	font-weight: bold;
-	padding: 0.3em 0.5em;
+	padding: 1.2em 6em;
+
+	/* align items vertical */
+	align-items: center;
+	position: relative;
 }
 
-nav p{
-	display: inline;
-	font-size: 1.4rem;
-	margin-left: 1rem;
-}
 
-nav li{
-	list-style: none;
-}
-
-.header-logo img{
-	max-width: 12rem;
-}
 /* align-self overrides align-items notes from friend and it work to align the logo */
 .header-logo{
+	margin-left: 0%;
 	align-self: center;
+	max-width: 13rem;
+	padding: 0.5rem;
+	display: inline-block;
 }
 
-#header-grocery{
-	color: #63B146;
-	font-weight: bold;
+.header-logo:hover{
+	background-color: #eccc4b;
 }
 
-#header-Vancouver{
-	font-weight: lighter;
-	color: black;
-	padding-left: 0;
+/***************** Search bar css ****************/
+
+.nav-link{
+	margin-right: 2%;
 }
 
-@media (max-width: 1000px){
-	#header-grocery{
-		font-size: 1.2rem;
-	}
-	
-	#header-Vancouver{
-		font-size: 1.2rem;
-	}
+.search{
+	margin-left: 10%;
+	position: relative;
+	width: 16rem;
+	max-width: 20rem;
+	min-width: 12rem;
 }
 
-/* Search bar css*/
 .search-btn{
 	font-size: 1.0rem;
-	color: white;
-	background-color: #63B146;
-	padding: 0.5em 0.5em;
-	border-radius: 4px;
-	border-style: none;
-	display: inline;
+	border: 1px solid #ccc;
+	height:2.3rem;
+	border-radius: 0px 4px 4px 0px;
+	border-left: none;
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	right: 3rem;
+    transform: translate(0, -50%);
 }
 
 input[type=search]{
-	width: 60%;
-	padding: 0.5em 0.5em;
+	width: 70%;
+	height: 2.3rem;
 	border: 1px solid #ccc;
-	border-radius: 4px;
+	border-radius: 4px 0px 0px 4px;
+	border-right: none;
 	font-size: 1.0rem;
+	padding-left: 0.4rem;
+	position: absolute;
+	top:50%;
+    transform: translate(0, -50%);
 }
 
 .search-btn img{
-	width: 1em;
-	height: 1em;
+	width: 1rem;
+	height: auto;
 }
-/* end Search bar css*/
+/**************** end Search css ****************/
 
-/* .cart-btn{
-	font-size: 1.0rem;
-	color: white;
-	background-color: #63B146;
-	padding: 0.8em 1.8em;
-	border-radius: 0.6rem;
-	align-self: center;
+ .cart-btn{
+	padding: 0.7em 1.4em;
+	border-radius: 0.5rem;
+	display: inline-block;
+	margin-right: 0rem;
 }
+
 
 .cart-btn span{
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-} */
-
-
-
-/* end of nav bar */
-
-.page-nav{
-	padding: 2rem 2rem;
-	margin-top: 2rem;
-	margin-bottom: 3rem;
-	font-size: 1.25rem;
-}
-.page-nav ul{
-	margin: 0;
+	font-size: 1rem;
+	vertical-align: middle;
 }
 
-/* Used in styleguide and site nav*/
-.page-nav-item span:hover, .page-nav-item span:focus{
-	border-bottom: 0.01rem solid black;
-	transition: color 0.5s;
+.cart-btn img{
+	display: inline-block;
+	width: 1.8em;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 0.3em;
+	/* margin-top: 0em; */
 }
 
-.active span{
-	border-bottom: 0.01rem solid black;
+.center-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
+#cart-btn-mobile{
+	display: none;
+}
 
-/* Hero CTA */
+@media (max-width: 800px){
+
+	nav{
+		padding: 4rem 1rem;
+		align-items: center;
+	}
+
+	.header-logo{
+		position: absolute;
+		top: 0.5rem;
+		left: 1rem;
+		width: 12rem;
+	}
+
+	.search{
+		margin-left: 2rem;
+	}
+	
+}
+
+@media (max-width: 700px){
+	.cart-btn{
+		display: none;
+	}
+
+	#cart-btn-mobile{
+		display: inline-block;
+		position: absolute;
+		top: 1rem;
+		right: 1.5rem;
+	}
+
+	.search{
+		margin: 0;
+		position: absolute;
+		bottom: 2rem;
+		left: 1.5rem;
+		width: 9rem;
+	}
+	.search-btn{
+		height: 2.0rem;
+		right: 2rem;
+	}
+
+	input[type=search]{
+		height: 2.0rem;
+	}
+
+	.cart-btn{
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+	}
+
+	#product-btn{
+		position: absolute;
+		bottom: 1.5rem;
+		right: 5.5rem;
+		font-size: 1rem;
+	}
+
+	#about-btn{
+		position: absolute;
+		bottom: 1.5rem;
+		right: 0.5rem;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 330px){
+	#product-btn{
+		right: 3.5rem;
+		font-size: 0.8rem;
+	}
+
+	#about-btn{
+		right: 0rem;
+		font-size: 0.8rem;
+	}
+}
+
+/**************** end of nav bar *******************************/
+
+
+
+/**************** Hover Line ****************/
+.line-hover {
+	display: inline-block;
+}
+
+.line-hover::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.03rem;
+    background: #000;
+    transition: width .3s;
+}
+
+.line-hover:hover::after {
+    width: 100%;
+}
+
+.active{
+	/*
+	This is causing Styleguide to be off and not right. removed to back to old style
+	margin: auto;
+	width: 80%;*/
+	border-bottom: 0.03rem solid rgb(0, 0, 0);
+}
+
+/**************** Hover Line  *****************/
+
+/**************** Hero CTA ****************/
 .hero {
     position: relative;
     width: 100%;
@@ -167,8 +307,8 @@ input[type=search]{
     padding: 5rem;
 }
 
-/* Testing Hero CTA banner https://www.developerdrive.com/full-page-hero-image-html-css/ */
-/* use ::before to add a brightness level to photo and not everything in the .hero div box (text etc.)*/
+/**** Hero CTA banner https://www.developerdrive.com/full-page-hero-image-html-css/ ****/
+/* use ::before to add a brightness level/or gradient to photo and not everything in the .hero div box (text etc.)*/
 .hero::before {
 	content: "";
     position: absolute;
@@ -176,8 +316,8 @@ input[type=search]{
     left: 0;
     width: 100%;
     height: 100%;
-    /* makes a gradient */
-    background: linear-gradient(90deg, rgba(2,0,36,0) 29%, rgba(0,0,0,1) 65%), url("../images/hero-cta.png");
+    /* makes a gradient https://cssgradient.io/ */
+    background: linear-gradient(90deg, rgba(2,0,36,0) 39%, rgba(0,0,0,1) 65%), url("../images/hero-cta.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -186,34 +326,33 @@ input[type=search]{
 }
 .hero-content {
     position: relative;
-    left: 25%;
+    left: 35%;
     color: white;
     text-align: left;
     margin: 0.625rem;
 }
 
 .hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 600;
-    margin-bottom: 0;
+	margin-bottom: 0;
+	width: 60%;
 }
+
 .hero-text{
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 1rem;
     max-width: 20rem;
 }
 
 .hero-btn {
-    background-color: #63B146;
-    color: white;
     border: 1px solid #257F29;
     margin-top: 3rem;
     margin-bottom: 1rem;
     padding: 1rem 3rem;
     font-size: 1rem;
     font-weight: 200;
-    cursor: pointer;
     border-radius: 0.3rem;
 }
 
@@ -222,9 +361,39 @@ input[type=search]{
     border: 1px solid #257F29;
 }
 
-/* END - Hero CTA */
+@media(max-width: 800px){
+	.hero{
+		padding:1.5rem 2rem;
+	}
 
-/* Select Store */
+	.hero::before{
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-cta-mobile.png");
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center;   
+	}
+
+	.hero-content {	
+	    left: auto;
+	}
+
+	.hero-title{
+		font-size: 2rem;
+		width: 100%;
+	}
+
+	.hero-btn {
+		margin-top: 2rem;
+		padding: 0.8rem 2rem;
+		font-size: 1rem;
+		font-weight: 200;
+		border-radius: 0.3rem;
+	}
+
+}
+/**************** END - Hero CTA ****************/
+
+/**************** Select Store ****************/
 select { 
 	font-size: 1.17em;
 	color: #63B146;
@@ -235,31 +404,39 @@ select {
 }
 
 .selection{
-	border-bottom: 1px solid #c2c2c2;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: white;
+	border-top: 1px solid #c2c2c2; 
+	border-bottom: 1px solid #c2c2c2; 
 }
 
+.selection h3{
+	font-weight: normal;
+}
 
-/* END Select Store */
+/* For Iphone 5/SE and Galaxy S% */
+@media(max-width: 360px){
+	select {
+		font-size: 0.8em;
+	}
 
-/* start of product list */
+	label {
+		font-size: 0.8rem;
+	}
+
+}
 
 /* popup window background */
 
-.bg-modal{
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
-	padding: 3rem;
-	display: none;
+/**************** END Select Store ****************/
 
 	position: absolute;
 	top: 0rem;
 }
 
-.modal-content{
-	background-color: white;
-	position: relative;
-}
+/**************** START of PRODUCT LIST ****************/
 
 #close-popup{
 	position: absolute;
@@ -271,7 +448,6 @@ select {
 }
 
 .product-list{
-	padding: 1rem 2rem;
 	border-radius: 0.5em;
 }
 
@@ -292,31 +468,76 @@ select {
 	margin: 0em 1em;
 }
 
-/*Reference boz-shadow by https://css-tricks.com/almanac/properties/b/box-shadow/ */
-/* used this plugin (https://brumm.af/shadows) to get the style of shadow wanted*/
-.shadow {
-	-webkit-box-shadow: 
-	0 -1px 5.2px rgba(0, 0, 0, 0.027),
-	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
-	0 58px 80px rgba(0, 0, 0, 0.08);
-	-moz-box-shadow: 
-	0 -1px 5.2px rgba(0, 0, 0, 0.027),
-	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
-	0 58px 80px rgba(0, 0, 0, 0.08);
-	box-shadow:
-	0 -1px 5.2px rgba(0, 0, 0, 0.027),
-	0 5.9px 18.7px rgba(0, 0, 0, 0.035),
-	0 58px 80px rgba(0, 0, 0, 0.08);
-
+.product-type{
+	margin-bottom: 1rem;
 }
 
-/* start of buy with products */
+.detail-btn{
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	margin-top: 1.5em;
+	margin-right: 1em;
+	margin-bottom: 0;
+	margin-left: 0;
+
+	min-width: 7rem;
+
+	font-size: 1.2rem;
+	color: white;
+	background-color: #63B146;
+	border-radius: 0.3em;
+	border: none;
+}
+
+/**** class for button effect in js ****/
+.detail-btn-selected{
+	background-color: #7ad857;
+}
+/**** End for button effect in js ****/
+
+/************** CONTAINERS MARGINS **************/
+.container{
+	margin: 3% 6%;
+	/* width: 90%;
+	height: 90%; */
+	position: relative;
+}
+
+.smaller-container{
+	padding: 1rem 2rem;
+	margin: 3% 10%;
+	position: relative;
+}
+
+ @media(max-width: 30rem){
+ 	.container{
+		margin: 3% 5%;
+	}
+
+ 	.smaller-container{
+		padding: 1rem 1rem;
+		margin: 3% 3%;
+	}
+ }
+/************** END CONTAINERS MARGINS **************/
+
+/**** START of BUY WITH products ****/
+.buy-with-item{
+	max-width: 20rem;
+}
+
+@media(max-width: 30rem){
+	.buy-with-item{
+		max-width: 10rem;
+	}
+}
+
 .buy-with-item h3{
 	display: block;
 }
 
 .buy-with-item img{
-	width: 60%;
+	width: 70%;
 	height: auto;
 	display: block;
 }
@@ -333,27 +554,28 @@ select {
 /* end of buy with products */
 
 
-/* end of product list */
+    -webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
 
-.container{
-	margin: 3% 6%;
-	/* width: 90%;
-	height: 90%; */
-	position: relative;
+	-webkit-align-content: center;
+	-ms-align-content: center;
+	align-content: center;
+
+	margin-right: 2rem;
+	text-align: center;
+	font-size: 1.5rem;
 }
 
-@media(max-width: 1000px){
-	.container{
-		margin: 3% 5%;
-	}
-}
- 
+/**************** END of buy with products ****************/
+/**************** END of product list ****************/
+
 .in-text-link{
 	font-weight: bold;
 	color: #63B146;
 }
 
-/* start of btn section */
+/**************** Start of btn Section ****************/
 
 .btn{
 	display: block;
@@ -379,8 +601,14 @@ select {
 	border: none;
 }
 
-/* end of btn section */
+.submit-btn:hover, .submit-btn:focus{
+	 background-color: #ffc700;  
+	 cursor: pointer;
+}
 
+/**************** END of btn section ****************/
+
+/**************** Start of Price and Input section ****************/
 .price{
 	font-size: 1.6rem;
 	font-weight: bold;
@@ -399,6 +627,7 @@ input[type=text]{
 
 input[type=number]{
 	width: 20%;
+	min-width: 6rem;
 	padding: 0.5em 0.5em;
 	margin: 0.5em 0.5em;
 	display: inline-block;
@@ -408,7 +637,7 @@ input[type=number]{
 	text-align: center;
 }
 
-
+/**************** In Styleguide Only ****************/
 .white-swatch{
 	padding: 30px;
 	background-color: white;
@@ -430,8 +659,9 @@ input[type=number]{
 	padding: 30px;
 	background-color: #F36B25;
 }
+/**************** End In Styleguide Only ****************/
 
-/* text styling section */
+/**************** Text styling section ****************/
 
 .text-styling h1{
 	font-size: 2rem;
@@ -455,137 +685,7 @@ input[type=number]{
 }
 
 
-
-
-.cart{
-	width: 30rem;
-	/* padding: 1em 3em 1em 3em; */
-	background-color:white;
-	display: block;
-	border: 1px black solid;
-	display: none;
-
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
-.cart-headline{
-	padding: 1rem 0.5rem;
-	background-color:#FFDD50;
-	position: relative;
-}
-
-.close-cart{
-	position: absolute;
-	top: 0rem;
-	left: 1rem;
-	font-size: 3rem;
-	font-weight: normal;
-	transform: rotate(45deg);
-	cursor: pointer;
-}
-
-.cart-deliver{
-	border-bottom: 1px rgb(170, 170, 170) solid;
-	/* padding-bottom: 1rem; */
-	padding: 1rem 2rem;
-	position: relative;
-}
-
-.cart-deliver a{
-	color: #63B146;
-}
-
-.cart-deliver img{
-	width: 3rem;
-}
-
-.cart-deliver-info{
-	position: absolute;
-	right: 1rem;
-	top: 3rem;
-}
-
-@media (max-width: 60rem){
-	.cart{
-		width: 100%;
-	}
-}
-
-.cart h2{
-	text-align: center;
-	font-weight: normal;
-	margin: 0;
-}
-
-.cart-item-container{
-	padding: 2rem 1rem;
-}
-
-.cart-item{
-	margin-top: 0;
-	margin-bottom: 1em;
-	position: relative;
-}
-
-.cart-item img{
-	width: 100px;
-	vertical-align: middle;
-	/* min-width: 6rem;
-	max-width: 10rem; */
-}
-
-.item-title{
-	font-size: 1.2rem;
-	vertical-align: middle;
-}
-
-.item-quantity{
-	display: inline;
-	position: absolute;
-	left: 12rem;
-	top: 1.2rem;
-}
-
-.cart-item input{
-	width: 4rem;
-}
-
-.cart-price{
-	position: absolute;
-	right: 1rem;
-	top: 2.2rem;
-	font-size: 1.4rem;
-}
-
-.delete-btn{
-	color: rgb(228, 36, 36);
-}
-
-
-.total-price{
-	float: right;
-	margin-right: 1rem;
-	color: #63B146;
-	font-size: 2rem;
-}
-
-.check-out-btn{
-	margin-top: 3rem;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0.6em 8em;
-	font-size: 1.2rem;
-	color: white;
-	background-color: #63B146;
-	border-radius: 0.3em;
-	border: none;
-}
-
-/* end of cart style */
-
-/* start of contact section */
+/**************** START of contact section ****************/
 
 .contact-section{
 	border-top: 1px rgb(182, 182, 182) solid;
@@ -616,9 +716,12 @@ input[type=number]{
 	color: #63B146;
 }
 
-/* end of contact section */
+/**************** END of contact section ****************/
 
-/* start of footer */
+/**************** start of footer ****************/
+.push-footer{
+	 height: 100px;
+}
 
 footer{
 	padding: 2rem 3rem;
@@ -648,88 +751,80 @@ footer img{
 	transform: translateY(-50%);
 }
 
-/* end of footer section */
+@media(max-width: 30rem){
 
-/* about page css*/
-.cta-block{
-	color: white;
-	position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-.colour1{
-	background-color: #676767;
-}
-.colour2{
-	background-color: #949494;
-}
+	footer img{
+		left: 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
 
+	.footer-link{
+		position: relative;
+		right: 0;
+		width: 100%;
+		transform: translateY(-20%);
 
-.cta-block-inner-left{
-	max-width: 30em;
-    text-align: left;
-    margin:0 0.625em;
-	padding:3em 2em 3.5em;
-	position: relative;
-}
+		/* to evenly space the content at the footer and center content*/
+		display: -webkit-flex;
+	    display: -ms-flex;
+	    display: flex;
 
-.cta-block-inner-right{
-	max-width: 30em;
-    text-align: left;
-    margin:0 0.625em;
-	padding:3em 2em 3.5em;
-	position: relative;	
+	    -webkit-justify-content: space-between;
+	    -ms-justify-content: space-between;
+	    justify-content: space-between;
+	}
+
+	footer a{
+		margin: auto;
+	}
+
 }
 
-.cta-block-header h1{
-	font-size: 1.5rem;
+@media (max-width: 700px){
+	footer img{
+		display: none;
+	}
 }
 
-.cta-block-body{
-	line-height:1.2;
-}
-
-.cta-block-action{
-	display:inline-block;
-	color: white;
-	font-size: 1.25em;
-	text-decoration: none;
-	margin-top: 0.5em;
-	padding-bottom: 0.2em;
-	border-bottom: 0.1em solid white;
-}
-
-/* about page css*/
-
-/* wireframe styling */
-.wireframes img{
-	width: 100%;
-}
-
-.mockup img{
-	width: 40%;
-	margin: 0.3em 0.3em;
-}
-
-.wireframes ol{
-	list-style: none;
-}
-
-/* end of wireframe styling */
+/**************** END of footer section ****************/
 
 
-/* Start of product filter sections */
+
+/**************** Start of product filter sections ****************/
 
 .product-filter{
+	margin-right: 1rem;
+	width: 20%;
 	max-width: 20rem;
-	background-color: rgb(224, 224, 224);
-	padding: 1rem 2rem;
+	min-width: 12rem;
+	/* background-color: rgb(228, 228, 228); */
+	padding: 3rem 1rem;
 	padding-bottom: 3rem;
+	border-radius: 0.3em;
+	color: rgb(75, 75, 75);
+	font-size: 1rem;
+}
+
+.product-filter h2{
+	font-size: 1.2rem;
+}
+
+.product-filter h3{
+	font-size: 1rem;
+}
+
+/* Temporary hide the filter in mobile version*/
+@media(max-width: 30rem){
+	.product-filter{
+		display: none;
+	}
 }
 
 .clear-filter-btn{
-	padding: 0.6em 1.6em;
+	padding: 0.4em 1.4em;
 	margin: 1em 0em;
 	margin-bottom: 3rem;
 	font-size: 1rem;
@@ -753,16 +848,27 @@ footer img{
 	margin-top: 1.4rem;
 }
 
-/* product grid section */
+/**************** Product Grid section ****************/
 
 .product-grid{
-	width: 70%;
+	width: 78%;
+}
+@media(max-width: 30rem){
+    .product-grid{
+    	width: 100%;
+    }
+}
+
+.product-white-background{
+	margin-top: 1rem;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 0.3em;
 }
 
 .product-grid-item{
-	width: 20rem;
 	cursor: pointer;
-	max-width: 12rem;
+	max-width: 10rem;
 	position: relative;
 }
 
@@ -777,14 +883,27 @@ footer img{
 	width: 90%;
 }
 
+/******** Add to cart button ******/
+
 .product-grid-item button{
-	min-width: 10rem;
+	/* text-align: center; */
+	min-width: 8rem;
 	margin: 0.5rem 0;
+	width: 100%;
+	padding: 0.5rem 0.4rem;
 }
 
 .product-grid-item h3{
 	font-size: 1rem;
 	font-weight: normal;
+}
+
+/* For Iphone 5/SE and Galaxy S5*/
+@media(max-width: 360px){
+	.product-grid-item{
+		max-width: 7rem;
+	}
+	
 }
 
 .product-weight{
@@ -796,22 +915,64 @@ footer img{
 	margin-top: 0.3rem;
 	font-size: 1.2rem;
 }
-/* end of product grid section */
 
-/* start of categories section */
-.category-grid{
-
+.sort-by select { 
+	font-size: 1.17em;
+	color: black;
+	background-color: #FFDD50;
+	border: none;
+	margin: 0rem;
+	padding: 0.4rem 0.8rem;
+	border-radius: 0.3rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	display: inline-block;
 }
+
+.sort-by h3 { 
+	margin: 0rem;
+	display: inline-block;
+	margin-right: 0.6rem;
+}
+
+
+.divider-line{
+	margin-top: 1.4rem;
+	width: 80%;
+	border-bottom: 1px solid #b4b4b4;
+}
+
+@media (max-width: 760px){
+	.product-grid-placeholder{
+		display: none;
+	}
+}
+
+/**************** END of product grid section ****************/
+
+/**************** START of categories section ****************/
+
 .category-grid-item{
-	padding: auto;
 	cursor: pointer;
+	padding: 1rem 2rem 0.5rem 2rem;
+}
+
+.category-grid-item:hover{ 
+	background-color: rgb(230, 230, 230);
+	border-radius: 6px;
+	transition: 0.4s ease-in-out;
+}
+
+.category-grid-item:active{
+	background-color: rgb(240, 240, 240);
+	border-radius: 6px;
 }
 
 .category-grid-item h3{
 	text-align: center;
 }
 
-/* placement of the images with grey box */
+/* placement of the images with grey box when images are missing*/
 .category-grid-item div{
 	background-color: grey;
 	padding: 5rem 5rem;
@@ -824,12 +985,28 @@ footer img{
 	max-width: 10rem;
 	max-height: 10rem;
 	margin: 0;
+	border-radius: 4px;
+}
+
+/* For Iphone 5/SE and Galaxy S5*/
+@media(max-width: 30em){
+	.category-grid-item{
+		padding: auto;
+		cursor: pointer;
+		padding: 0;
+	}
+
+	.category-grid-item img{
+		max-width: 7rem;
+		max-height: 7rem;
+		margin: 0;
+	}
 }
 
 
-/* end of categories section */
+/**************** END of categories section ****************/
 
-/* start of store section */
+/**************** START of store section ****************/
 
 .store-section{
 	margin: 2rem 4rem;
@@ -879,16 +1056,16 @@ footer img{
 }
 
 
+/**************** END of store section ****************/
 
 
 
-
-/* start of category products */
+/**************** start of category products ****************/
 
 .category-section{
 	background-color:white;
 	position: relative;
-	padding: 1rem 2rem 2rem 2rem;
+	padding: 0.5rem 1rem 2rem 2rem;
 	margin: 3rem 3% 0 3%;
 	
 	border-radius: 6px;
@@ -956,4 +1133,11 @@ footer img{
 	background-color: #F36B25;
 	color: white;
 	padding: 0.1rem 0.8rem;
+}
+
+/**************** END of category products ****************/
+
+/* style for add to cart button */
+.add-to-cart{
+	width: 100%;
 }

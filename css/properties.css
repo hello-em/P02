@@ -10,3 +10,16 @@
 .text-orange{
     color: #F36B25;
 }
+
+.text-yellow{
+    color: #FFDD50;
+}
+
+.border-bottom{
+	border-bottom: 1px rgb(199, 199, 199) solid;
+	padding-bottom: 1rem;
+}
+
+.product-white-background{
+	background-color: white;
+}

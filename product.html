@@ -1,62 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Product | Grocery Vancouver</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="css/temp.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<nav class="box">
-		<div class="header-logo nav-box-left">
+	<nav class="box navbar">
+		<div class="header-logo">
 			<a href="index.html">
 			<img src="images/logo.png" srcset="images/logo.svg" alt="Grocery Vancouver" id="logo">
 			</a>
 		</div>
-		<div class="nav-box-right box">
-			<form class="box-item-nav">
-				<input type="search" name="site-search"id="site-search" placeholder="Search">
-				<button type="submit" class="search-btn">
-					<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon">
-				</button>
-			</form>
-			<a href="product.html" class="box-item-nav page-nav-item active"><span>PRODUCT</span></a>
-			<a href="about.html" class="box-item-nav page-nav-item"><span>ABOUT</span></a>
 
-			<!-- need to check with Paul on the needs to have both svg and png files -->
+		<form class="search">
+			<input type="search" name="site-search" id="site-search" placeholder="Search">
+			<button type="submit" class="search-btn">
+				<img src="images/search-icon.png" srcset="images/search-icon.svg" alt="search icon" id="icon" class="center-img">
+			</button>
+		</form>
 
-			<a href="#">
-				<img src="images/cart-btn.svg" alt="Cart Button">
-			</a>
-		</div>
+		<!--Cart button for mobile version-->
+		<a href="cart.html">
+			<img src="images/cart-btn-mobile.svg" alt="Shopping cart button" id="cart-btn-mobile" >
+		</a>
+
+		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
+		<a href="about.html" class="nav-link" id="about-btn"><span class="line-hover">ABOUT</span></a>
+
+		<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
+			<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
+			<span>CART</span>
+		</button>
 	</nav>
 
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3>Select Store</h3></label>
-			<select name="store" id="store"  onchange="location = this.value">
+			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
+			<select name="store" id="select-store"  onchange="location = this.value">
+				<option value="#">Choose Store Location</option>
 				<option value="#">Walmart</option>
 				<option value="#">Superstore</option>
-				<option value="#">Costco</option>
-				<option value="#">T&T</option>
-				<option value="store.html">More Locations...</option>
+				<option value="store.html">More...</option>
 			</select>
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3>Delivery to</h3></label>
+			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
 			<select name="address" id="address" onchange="location = this.value">
-				<option value="#">1234 University Ave, City Province</option>
-				<option value="#">1234 home street, city province</option>
-				<option value="#">Add new address</option>
+				<option value="address.html">Choose Delivery Address</option>
+				<option value="address.html">Add new address</option>
+				<option value="#">2380, 1240 Glen Dr. Coquitlam</option>
+				<option value="#">21, 2270 University Ave. Burnaby</option>
 			</select>
 		</form>
 	</section>
 	<!-- End of store and delivery module -->
-
+	
 	<!-- Start of Category selection -->
 	<div class="container box">
 		<section class="category-grid box">
@@ -94,15 +99,17 @@
 	</div>
 	<!-- END of Category selection -->
 
+
 	<!--Start of Product Grid and fliter-->
 
 	<div class="container box">
 
 		<!--Start of product filter section-->
 		<section class="product-filter filter-flex-item">
-			<h3>Filter</h3>
-			<span>408 results from<a href="#"> all groceries</a>
-			</span>
+			<h2>Filter</h2>
+			<!-- <span>408 results from<a href="#"> all groceries</a> -->
+			<!-- </span> -->
+			
 			<!-- Placed everything into form so reset button actually works -->
 			<form id="filter">
 				<button href="#" type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
@@ -172,7 +179,8 @@
 				<h1 class="box-left-align">All Groceries</h1>
 
 				<form class="sort-by text-right-align">				
-					<label for="sort" class="sort"><h3>Sort By:</h3></label>
+					<label for="sort" class="sort">
+						<h3>Sort By:</h3></label>
 					<select name="sort" id="sort">
 						<option>High to Low</option>
 						<option>Low to High</option>
@@ -183,11 +191,11 @@
 			</div>
 
 			<!--Start of product grid-->
-			<section class=" box-flex-start product-flex-item">
+			<section class=" box product-white-background shadow">
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="styleguide/images/broccoli.png" alt="">
+						<img src="images/broccoli.png" alt="Broccoli">
 						<h3>Broccoli</h3>
 						<span class="product-weight">200g each</span>
 						<p class="grid-price">$2.97</p>
@@ -196,119 +204,103 @@
 				</section>
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/carrot.png" alt="">
-					<h3>Carrot</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
+					<a href="product-detail-broccoli.html">
+						<img src="images/carrot.png" alt="Carrot">
+						<h3>Carrot</h3>
+						<span class="product-weight">900g/Bag</span>
+						<p class="grid-price">$2.97</p>
+					</a>
+					<button class="btn" onclick="location='cart.html'">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/bean.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
-		
-
-
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/onion.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
+				<a href="product-detail-banana.html">
+					<img src="images/apple.jpg" alt="apple">
+					<div class="seasonal-tag">Seasonal</div>
+					<h3>Gala Apple</h3>
+					<span class="product-weight">$4.95/kg </span>
+					<p class="grid-price">$0.90</p>
+				</a>
+				<button class="btn" onclick="location='cart.html'">Add to cart</button>
+			</section>
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/lettues.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
+					<a href="product-detail-broccoli.html">
+						<img src="images/bean.png" alt="bean">
+						<h3>Snow Peas</h3>
+						<span class="product-weight">170g/Bag</span>
+						<p class="grid-price">$3.99</p>
+					</a>
+					<button class="btn" onclick="location='cart.html'">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/tomato.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
+					<a href="product-detail-cilantro.html">
+						<img src="images/cilantro.jpg" alt="cilantro">
+						<h3>Cilantro</h3>
+						<span class="product-weight">200g each</span>
+						<p class="grid-price">$0.97</p>
+					</a>
+					<button class="btn" onclick="location='cart.html'">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
+					<a href="product-detail-broccoli.html">
+						<img src="images/lettues.png" alt="lettuces">
+						<h3>Cabbage</h3>
+						<span class="product-weight">Each</span>
+						<p class="grid-price">$3.64</p>
+					</a>
+					<button class="btn" onclick="location='cart.html'">Add to cart</button>
+				</section>
+
+
+				<section class="product-grid-item box-grid-item">
+					<a href="product-detail-banana.html">
+						<img src="images/banana-organic.jpg" alt="Organic Banana">
+						<h3>Organic Banana</h3>
+						<span class="product-weight">$1.93/kg</span>
+						<p class="grid-price">$0.47</p>
+					</a>
+					<button class="btn" onclick="location='cart.html'">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
+					<a href="product-detail-banana.html">
+						<img src="images/mango.jpg" alt="Mango">
+						<div class="seasonal-tag">Seasonal</div>
+						<h3>Mango</h3>
+						<span class="product-weight">Each</span>
+						<p class="grid-price">$1.67</p>
+					</a>
+
+					<button class="btn" onclick="location='cart.html'">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/lettues.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
+					<a href="product-detail-cilantro.html">
+						<img src="images/parsley.jpg" alt="Parsley">
+						<h3>Parsley</h3>
+						<span class="product-weight">Sold in bunches</span>
+						<p class="grid-price">$1.97</p>
+					</a>
+					<button class="btn" onclick="location='cart.html'">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/tomato.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
+					<a href="product-detail-cilantro.html">
+						<img src="images/thyme.jpg" alt="Thyme">
+						<h3>Thyme</h3>
+						<span class="product-weight">20g in Tray</span>
+						<p class="grid-price">$0.77</p>
+					</a>
+					<button class="btn" onclick="location='cart.html'">Add to cart</button>
 				</section>
 
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
-				
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
+				<!--Item placeholder to make product grid looks like flex start while making the padding even-->
+				<div class="product-grid-item box-grid-item product-grid-placeholder"></div>
+				<div class="product-grid-item box-grid-item product-grid-placeholder"></div>
 
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
-				
-				<section class="product-grid-item box-grid-item">
-					<img src="styleguide/images/product image.png" alt="">
-					<h3>Broccoli</h3>
-					<span class="product-weight">200g each</span>
-					<p class="grid-price">$6.99</p>
-					<button class="btn">Add to cart</button>
-				</section>
-
-				<!-- 2 empty ones to help with the grid flex, -->
-				<section class="product-grid-item box-grid-item">
-					
-				</section>
-				
-				<section class="product-grid-item box-grid-item">
-					
-				</section>
 			</section>
 			<!--End of product grid-->
 			</section>
@@ -379,15 +371,14 @@
 
 	<!-- Footer  -->
 	<footer>
-		<img src="images/logo-greyscale.svg" alt="">
+		<img src="images/logo-greyscale.svg" alt="Grocery Vancouver Logo">
 		<div class="footer-link">
+			<a href="styleguide/index.html">Styleguide</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>
 		</div>
 	</footer>
-
-	
 
 </body>
 </html>
