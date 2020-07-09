@@ -807,6 +807,8 @@ footer img{
 @media(max-width: 30rem){
 	.product-filter{
 		display: none;
+		margin-right: 0;
+		width: 100%
 	}
 }
 
