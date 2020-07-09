@@ -936,14 +936,15 @@ footer img{
 	padding: 1rem 2rem 0.5rem 2rem;
 }
 
-.category-grid-item:hover{ 
+.category-grid-item:hover, .category-grid-item:focus{ 
 	background-color: rgb(230, 230, 230);
 	border-radius: 6px;
 	transition: 0.4s ease-in-out;
 }
 
-.category-grid-item:active{
-	background-color: rgb(240, 240, 240);
+/* Grey box for te current active html*/
+.active-2{
+	background-color: rgb(230, 230, 230);
 	border-radius: 6px;
 }
 
