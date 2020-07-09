@@ -110,6 +110,14 @@
     width: 10rem;
 }
 
+.same-as-delivery{
+    margin-left: 0.5rem;
+}
+
+.same-as-delivery input{
+    display: inline;
+}
+
 /* start of order summary styling */
 
 .order-summary{
