@@ -775,7 +775,7 @@ footer img{
 }
 
 /* Temporary hide the filter in mobile version*/
-@media(max-width: 30rem){
+@media(max-width: 800px){
 	.product-filter{
 		display: none;
 		margin-right: 0;
@@ -787,12 +787,12 @@ footer img{
 		width: 100%;
 		padding: 0.7em 1.4em;
 		border-radius: 0.5rem;
-		background-color: #7a7a7a;
+		background-color: #63B146;
 		margin:0.5rem 1rem;
 	}
 
 	.filter-mobile:hover, .filter-mobile:focus{
-		background-color: #838383;
+		background-color: #86c96e;
 	}
 }
 
@@ -826,7 +826,7 @@ footer img{
 .product-grid{
 	width: 78%;
 }
-@media(max-width: 30rem){
+@media(max-width: 800px){
     .product-grid{
     	width: 100%;
     }
@@ -967,7 +967,7 @@ footer img{
 }
 
 /* For Iphone 5/SE and Galaxy S5*/
-@media(max-width: 30em){
+@media(max-width: 800px){
 	.category-grid-item{
 		cursor: pointer;
 		padding: 0.5rem;
