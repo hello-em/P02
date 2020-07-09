@@ -58,8 +58,8 @@ textarea {
 /* This the checks, they are hidden off browser. Comment them out and you can see them*/
 .rate:not(:checked) > input {
     position:absolute;
-    top:-9999px;
-}
+    display: none;
+ }
 
 /* normal not checked grey state */
 .rate:not(:checked) > label {
@@ -150,13 +150,6 @@ textarea {
 /* wrap reviews for smaller screens*/
 @media(max-width: 30rem) {
 
-	/* This the checks, they are hidden off browser. Comment them out and you can see them*/
-	.rate:not(:checked) > input {
-	    position:absolute;
-	    top:-9999px;
-	    /* Make sure that it doesn't make the white bar on the right side*/
-	    left: -9999px;
-	}
 
 	.review-flexbox{
 		flex-wrap: wrap;
