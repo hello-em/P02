@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/cart.css">
 	<link rel="stylesheet" type="text/css" href="../css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="../css/styleguide.css">
+	<link rel="stylesheet" type="text/css" href="../css/review-form.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -588,7 +589,127 @@ Grocery Vancouver offers a wide variety of fresh vegies and fruits with a fast s
 		</samp>
 		<!-- END Shopping cart <samp> -->
 
+		<!-- Reviews -->
+		<section class="smaller-container" id="review-border">
+			<h2>Ratings & Reviews</h2>
+			<div class="review-flexbox">
+				<form action="#" method="post" id="commentform" class="write-form">
+					<div class="box-flex-start">
 
+						<input placeholder="Name" type="text" id="postName" name="postName" class="name-textbox">
+
+						<!-- Stars from https://codepen.io/hesguru/pen/BaybqXv-->
+						<div class="rate">
+							<input type="radio" id="star5" name="rate" value="5" />
+							<label for="star5" title="text">5</label>
+							<input type="radio" id="star4" name="rate" value="4" />
+							<label for="star4" title="text">4</label>
+							<input type="radio" id="star3" name="rate" value="3" />
+							<label for="star3" title="text">3</label>
+							<input type="radio" id="star2" name="rate" value="2" />
+							<label for="star2" title="text">2</label>
+							<input type="radio" id="star1" name="rate" value="1" />
+							<label for="star1" title="text">1</label>
+						</div>
+					</div>
+
+
+					<textarea placeholder="Write a Review" name="comment" id="comment" form="commentform"></textarea>
+
+					<div class="left-align">
+						<button type="reset" form="commentform" value="Submit" class="form-btn">Submit</button>
+						<button type="reset" form="commentform" value="Reset" class="form-btn">Reset</button>
+					</div>
+				</form>
+
+				<section class="box-item comments">
+					<h3>Most Recent</h3>
+					<div>
+						<div class="review shadow">
+							<h4>Kelly Mills</h4>
+							<span class="star checked">&#x2605</span>
+							<span class="star checked">&#x2605</span>
+							<span class="star checked">&#x2605</span>
+							<span class="star checked">&#x2605</span>
+							<span class="star">&#x2605</span>
+							<p>Comment goes here</p>
+						</div>
+						<div class="review shadow">
+							<h4>Tom</h4>
+							<span class="star checked">&#x2605</span>
+							<span class="star checked">&#x2605</span>
+							<span class="star checked">&#x2605</span>
+							<span class="star checked">&#x2605</span>
+							<span class="star checked">&#x2605</span>
+							<p>Comment Goes here</p>
+						</div>
+
+						<a href="#" id="more-review">More</a>
+					</div>
+				</section>
+			</div>
+		</section>
+	<samp class="smaller-container">
+&#x3C;section class=&#x22;smaller-container&#x22; id=&#x22;review-border&#x22;&#x3E;
+	&#x3C;h2&#x3E;Ratings &#x26; Reviews&#x3C;/h2&#x3E;
+		&#x3C;div class=&#x22;review-flexbox&#x22;&#x3E;
+			&#x3C;form action=&#x22;#&#x22; method=&#x22;post&#x22; id=&#x22;commentform&#x22; class=&#x22;write-form&#x22;&#x3E;
+				&#x3C;div class=&#x22;box-flex-start&#x22;&#x3E;
+
+					&#x3C;input placeholder=&#x22;Name&#x22; type=&#x22;text&#x22; id=&#x22;postName&#x22; name=&#x22;postName&#x22; class=&#x22;name-textbox&#x22;&#x3E;
+
+					&#x3C;!-- Stars from https://codepen.io/hesguru/pen/BaybqXv--&#x3E;
+					&#x3C;div class=&#x22;rate&#x22;&#x3E;
+						&#x3C;input type=&#x22;radio&#x22; id=&#x22;star5&#x22; name=&#x22;rate&#x22; value=&#x22;5&#x22; /&#x3E;
+						&#x3C;label for=&#x22;star5&#x22; title=&#x22;text&#x22;&#x3E;5&#x3C;/label&#x3E;
+						&#x3C;input type=&#x22;radio&#x22; id=&#x22;star4&#x22; name=&#x22;rate&#x22; value=&#x22;4&#x22; /&#x3E;
+						&#x3C;label for=&#x22;star4&#x22; title=&#x22;text&#x22;&#x3E;4&#x3C;/label&#x3E;
+						&#x3C;input type=&#x22;radio&#x22; id=&#x22;star3&#x22; name=&#x22;rate&#x22; value=&#x22;3&#x22; /&#x3E;
+						&#x3C;label for=&#x22;star3&#x22; title=&#x22;text&#x22;&#x3E;3&#x3C;/label&#x3E;
+						&#x3C;input type=&#x22;radio&#x22; id=&#x22;star2&#x22; name=&#x22;rate&#x22; value=&#x22;2&#x22; /&#x3E;
+						&#x3C;label for=&#x22;star2&#x22; title=&#x22;text&#x22;&#x3E;2&#x3C;/label&#x3E;
+						&#x3C;input type=&#x22;radio&#x22; id=&#x22;star1&#x22; name=&#x22;rate&#x22; value=&#x22;1&#x22; /&#x3E;
+						&#x3C;label for=&#x22;star1&#x22; title=&#x22;text&#x22;&#x3E;1&#x3C;/label&#x3E;
+					&#x3C;/div&#x3E;
+				&#x3C;/div&#x3E;
+
+
+				&#x3C;textarea placeholder=&#x22;Write a Review&#x22; name=&#x22;comment&#x22; id=&#x22;comment&#x22; form=&#x22;commentform&#x22;&#x3E;&#x3C;/textarea&#x3E;
+
+				&#x3C;div class=&#x22;left-align&#x22;&#x3E;
+					&#x3C;button type=&#x22;reset&#x22; form=&#x22;commentform&#x22; value=&#x22;Submit&#x22; class=&#x22;form-btn&#x22;&#x3E;Submit&#x3C;/button&#x3E;
+					&#x3C;button type=&#x22;reset&#x22; form=&#x22;commentform&#x22; value=&#x22;Reset&#x22; class=&#x22;form-btn&#x22;&#x3E;Reset&#x3C;/button&#x3E;
+				&#x3C;/div&#x3E;
+			&#x3C;/form&#x3E;
+
+			&#x3C;section class=&#x22;box-item comments&#x22;&#x3E;
+				&#x3C;h3&#x3E;Most Recent&#x3C;/h3&#x3E;
+				&#x3C;div&#x3E;
+					&#x3C;div class=&#x22;review shadow&#x22;&#x3E;
+						&#x3C;h4&#x3E;Kelly Mills&#x3C;/h4&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;span class=&#x22;star&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;p&#x3E;Comment goes here&#x3C;/p&#x3E;
+					&#x3C;/div&#x3E;
+					&#x3C;div class=&#x22;review shadow&#x22;&#x3E;
+						&#x3C;h4&#x3E;Tom&#x3C;/h4&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;span class=&#x22;star checked&#x22;&#x3E;&#x26;#x2605&#x3C;/span&#x3E;
+						&#x3C;p&#x3E;Comment Goes here&#x3C;/p&#x3E;
+					&#x3C;/div&#x3E;
+
+					&#x3C;a href=&#x22;#&#x22; id=&#x22;more-review&#x22;&#x3E;More&#x3C;/a&#x3E;
+				&#x3C;/div&#x3E;
+			&#x3C;/section&#x3E;
+		&#x3C;/div&#x3E;	
+&#x3C;/section&#x3E;
+	</samp>
 			
 	</div>
 
