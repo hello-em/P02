@@ -63,21 +63,6 @@ button:hover, button:focus{
 }
 
 
-/* Code samples stylization to differentiate from regular text*/
-code, samp{
-	display: block;
-	background-color: rgb(230,230,230);
-	padding: 0.5rem;
-}
-
-.indent{
-	padding-left: 1em;
-}
-/* End of Code samples stylization */
-
-
-
-
 /**************** nav bar *******************************/
 nav{
 	margin: 0;
@@ -708,6 +693,7 @@ input[type=number]{
 .phone-number{
 	font-size: 2rem;
 	color: #63B146;
+	margin-bottom: 1rem;
 }
 
 /**************** END of contact section ****************/
@@ -796,10 +782,9 @@ footer img{
 	min-width: 12rem;
 	/* background-color: rgb(228, 228, 228); */
 	padding: 3rem 1rem;
-	padding-bottom: 3rem;
 	border-radius: 0.3em;
 	color: rgb(75, 75, 75);
-	font-size: 1rem;
+	font-size: 1rem;s
 }
 
 .product-filter h2{
@@ -810,12 +795,29 @@ footer img{
 	font-size: 1rem;
 }
 
+.filter-mobile{
+	display: none;
+}
+
 /* Temporary hide the filter in mobile version*/
 @media(max-width: 30rem){
 	.product-filter{
 		display: none;
 		margin-right: 0;
-		width: 100%
+		width: 100%;
+		padding-top: 1rem;
+	}
+	.filter-mobile{
+		display: block;
+		width: 100%;
+		padding: 0.7em 1.4em;
+		border-radius: 0.5rem;
+		background-color: #7a7a7a;
+		margin:0.5rem 1rem;
+	}
+
+	.filter-mobile:hover, .filter-mobile:focus{
+		background-color: #838383;
 	}
 }
 
@@ -957,14 +959,15 @@ footer img{
 	padding: 1rem 2rem 0.5rem 2rem;
 }
 
-.category-grid-item:hover{ 
+.category-grid-item:hover, .category-grid-item:focus{ 
 	background-color: rgb(230, 230, 230);
 	border-radius: 6px;
 	transition: 0.4s ease-in-out;
 }
 
-.category-grid-item:active{
-	background-color: rgb(240, 240, 240);
+/* Grey box for te current active html*/
+.active-2{
+	background-color: rgb(230, 230, 230);
 	border-radius: 6px;
 }
 

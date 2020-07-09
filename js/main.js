@@ -24,3 +24,12 @@ for(var i=0; i<addCartBtn.length; i++){
     });
 }
 
+//Filter for mobile to show up and close
+function filterPopup() {
+  var x = document.getElementById("filter");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

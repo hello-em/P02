@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<title>About | Grocery Vancouver </title>
+	<link rel="icon" href="images/carrot-logo.svg" type="image/svg+xml">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="css/about-page.css">
@@ -31,7 +32,7 @@
 		</a>
 
 		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
-		<a href="about.html" class="nav-link" id="about-btn"><span class="line-hover">ABOUT</span></a>
+		<a href="about.html" class="nav-link" id="about-btn"><span class="active">ABOUT</span></a>
 
 		<button onclick="location='cart.html'" id="cart-btn" class="cart-btn">
 			<img src="images/cart.png" srcset="images/cart.svg" alt="Cart Button">
@@ -40,7 +41,7 @@
 		
 	</nav>
 
-	<section class="cta-block box about">
+	<section class="cta-block box about" id="first-news">
 		<div class="cta-block-inner-left">
 			<h1 class="cta-block-header">
 				Who we are?
@@ -63,7 +64,7 @@
 		</div>
 	</section>
 
-	<section class="cta-block box covid-news">
+	<section class="cta-block box covid-news" id="second-news">
 		<div class="cta-block-inner-left">	
 		</div>
 		<div class="cta-block-inner-right">
@@ -78,13 +79,13 @@
 				<p>
 				Virtually overnight, hitting the grocery store went from a routine outing to a surreal, experience requiring extensive pre-planning and hyper-vigilance.</p>
 			</div>
-			<button type="button" class="hero-btn" onclick="location.href='#'" >
+			<button type="button" class="hero-btn" onclick="location.href='#second-news'" >
 				Learn More
 			</button>
 		</div>
 		
 	</section>
-	<section class="cta-block box third-banner">
+	<section class="cta-block box third-banner" id="third-news">
 		<div class="cta-block-inner-left">
 			<h1 class="cta-block-header">
 				What can we do to help?
@@ -93,7 +94,7 @@
 			<div class="cta-block-body">
 				<p>Use alcohol-based hand sanitizer or wash your hands with soap and water. If you use an alcohol-based hand sanitizer, make sure you use and store it carefully. Keep alcohol-based hand sanitizers out of children's reach. Teach them how to apply the sanitizer and monitor its use. Apply a coin-sized amount on your hands. There is no need to use a large amount of the product.</p>
 			</div>
-			<button type="button" class="hero-btn" onclick="location.href='#'">
+			<button type="button" class="hero-btn" onclick="location.href='#third-news'">
 				Learn More
 			</button>
 		</div>
@@ -106,10 +107,13 @@
 	<!--contact section-->
 	<section class="contact-section" id="contact-section">
 		<h2>Contact Us</h2>
-		<span class="phone-number">778-123-4567</span>
-		<form>
-			<label for="contact-text">Send us an email if you have any question</label>
-			<input type="text" id="contact-text">
+		<div class="phone-number">778-123-4567</div>
+		<div>350 SE Marine Dr</div>
+		<div>Vancouver, BC V5X 2S5</div>
+		<div>email: delivery@groceryvancouver.com</div>
+		<form action="">
+			<label for="">Send us an email if you have any question</label>
+			<input type="text">
 			<button type="submit" class="submit-btn">Submit</button>
 		</form>
 	</section>
@@ -119,6 +123,7 @@
 		<img src="images/logo-greyscale.svg" alt="Grocery Vancouver Logo">
 		<div class="footer-link">
 			<a href="styleguide/index.html">Styleguide</a>
+			<a href="https://github.com/vanilla-98/P02.git">Git Repo</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>
