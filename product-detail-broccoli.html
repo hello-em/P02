@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="css/review-form.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -41,7 +42,7 @@
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
+			<label for="select-store" class="select-store"><a href="store.html">Select Store:</a></label>
 			<select name="store" id="select-store"  onchange="location = this.value">
 				<option value="#">Choose Store Location</option>
 				<option value="#">Walmart</option>
@@ -51,7 +52,7 @@
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
+			<label for="address"><a href="address.html">Delivery to:</a></label>
 			<select name="address" id="address" onchange="location = this.value">
 				<option value="address.html">Choose Delivery Address</option>
 				<option value="address.html">Add new address</option>
@@ -114,7 +115,7 @@
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/onion.png" alt="">
+					<img src="images/onion.png" alt="Buy With item - onion">
 					<input type="checkbox" id="onion">
 					<label for="onion">Onion</label>
 					<p class="price">$2.57</p>
@@ -123,9 +124,9 @@
 				<span class="plus-sign">+</span>
 
 				<div class="buy-with-item box-grid-item">
-					<img src="images/product-image.png" alt="">
+					<img src="images/product-image.png" alt="Buy With item - Gai Lan">
 					<input type="checkbox" id="product-image">
-					<label for="broccoli">Gai Lan</label>
+					<label for="product-image">Gai Lan</label>
 					<p class="price">$1.29</p>
 
 				</div>
@@ -215,9 +216,9 @@
 	<section class="contact-section" id="contact-section">
 		<h2>Contact Us</h2>
 		<span class="phone-number">778-123-4567</span>
-		<form action="">
-			<label for="" placeholder>Send us an email if you have any question</label>
-			<input type="text">
+		<form>
+			<label for="contact-text">Send us an email if you have any question</label>
+			<input type="text" id="contact-text">
 			<button type="submit" class="submit-btn">Submit</button>
 		</form>
 	</section>
@@ -225,7 +226,7 @@
 
 	<!-- Footer  -->
 	<footer>
-		<img src="images/logo-greyscale.svg" alt="">
+		<img src="images/logo-greyscale.svg" alt="logo">
 		<div class="footer-link">
 			<a href="styleguide/index.html">Styleguide</a>
 			<a href="#">Help</a>

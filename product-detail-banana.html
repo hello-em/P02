@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="css/review-form.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -26,7 +27,7 @@
 
 		<!--Cart button for mobile version-->
 		<a href="cart.html">
-			<img src="images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+			<img src="images/cart-btn-mobile.svg" alt="cart button" id="cart-btn-mobile" >
 		</a>
 
 		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
@@ -41,7 +42,7 @@
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
+			<label for="select-store" class="select-store"><a href="store.html">Select Store:</a></label>
 			<select name="store" id="select-store"  onchange="location = this.value">
 				<option value="#">Choose Store Location</option>
 				<option value="#">Walmart</option>
@@ -51,7 +52,7 @@
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
+			<label for="address"><a href="address.html">Delivery to:</a></label>
 			<select name="address" id="address" onchange="location = this.value">
 				<option value="address.html">Choose Delivery Address</option>
 				<option value="address.html">Add new address</option>
@@ -107,7 +108,7 @@
 				<div class="buy-with-item box-grid-item">
 					<img src="images/orange.jpg" alt="Buy With item - Veggie">
 					<input type="checkbox" id="orange">
-					<label for="lettues">Orange</label>
+					<label for="orange">Orange</label>
 					<p class="price">$1.23</p>
 				</div>
 
@@ -116,7 +117,7 @@
 				<div class="buy-with-item box-grid-item">
 					<img src="images/mango.jpg" alt="">
 					<input type="checkbox" id="mango">
-					<label for="onion">Mango</label>
+					<label for="mango">Mango</label>
 					<p class="price">$1.67</p>
 				</div>
 
@@ -125,7 +126,7 @@
 				<div class="buy-with-item box-grid-item">
 					<img src="images/strawberry.jpg" alt="">
 					<input type="checkbox" id="strawberry">
-					<label for="broccoli">Strawberry</label>
+					<label for="strawberry">Strawberry</label>
 					<p class="price">$3.97</p>
 
 				</div>
@@ -168,7 +169,7 @@
 				
 				<div class="left-align">
 					<button type="reset" form="commentform" value="Submit" class="form-btn">Submit</button>
-					<button type="reset" form="commentform" value="Reset" class="form-btn ">Reset</button>
+					<button type="reset" form="commentform" value="Reset" class="form-btn">Reset</button>
 				</div>
 			</form>
 
@@ -207,9 +208,9 @@
 	<section class="contact-section" id="contact-section">
 		<h2>Contact Us</h2>
 		<span class="phone-number">778-123-4567</span>
-		<form action="">
-			<label for="" placeholder>Send us an email if you have any question</label>
-			<input type="text">
+		<form>
+			<label for="contact-text">Send us an email if you have any question</label>
+			<input type="text" id="contact-text">
 			<button type="submit" class="submit-btn">Submit</button>
 		</form>
 	</section>
@@ -217,7 +218,7 @@
 
 	<!-- Footer  -->
 	<footer>
-		<img src="images/logo-greyscale.svg" alt="">
+		<img src="images/logo-greyscale.svg" alt="logo">
 		<div class="footer-link">
 			<a href="styleguide/index.html">Styleguide</a>
 			<a href="#">Help</a>

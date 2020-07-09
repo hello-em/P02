@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -26,7 +27,7 @@
 
 		<!--Cart button for mobile version-->
 		<a href="cart.html">
-			<img src="images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+			<img src="images/cart-btn-mobile.svg" alt="cart button" id="cart-btn-mobile" >
 		</a>
 
 		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
@@ -41,7 +42,7 @@
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
+			<label for="select-store" class="select-store"><a href="store.html">Select Store:</a></label>
 			<select name="store" id="select-store"  onchange="location = this.value">
 				<option value="#">Choose Store Location</option>
 				<option value="#">Walmart</option>
@@ -51,7 +52,7 @@
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
+			<label for="address"><a href="address.html">Delivery to:</a></label>
 			<select name="address" id="address" onchange="location = this.value">
 				<option value="address.html">Choose Delivery Address</option>
 				<option value="address.html">Add new address</option>
@@ -125,12 +126,13 @@
 
 		<!--Start of product filter section-->
 		<section class="product-filter filter-flex-item">
-			<h3>Filter</h3>
-			<span>408 results from<a href="#"> all groceries</a>
-			</span>
+			<h2>Filter</h2>
+			<!-- <span>408 results from<a href="#"> all groceries</a> -->
+			<!-- </span> -->
+			
 			<!-- Placed everything into form so reset button actually works -->
 			<form id="filter">
-				<button href="#" type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
+				<button type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
 				<h3>Categories</h3>
 				<div class="filter-checkbox">
 					<input type="checkbox" id="Veggies">
@@ -190,16 +192,35 @@
 				
 			</form>
 		</section>
+
+
+		<!--Pop up window when clicking "add to cart" button-->
+		<section class="cart-popup">
+			<div class="popup-content">
+				<h3>Item added to cart!</h3>
+				<div id="close">+</div>
+
+				<span>Change quantity:</span>
+				<input type="number" placeholder="1" min="0">
+				<div class="box">
+					<button class="btn" id="confirm-btn">Confirm</button>
+					<button class="btn" onclick="location='cart.html'">View cart</button>
+				</div>
+			</div>
+		</section>
+		<!--End of popup window-->
+
+
+
 		<!--End of product filter section-->
 	
-
-	<!-- -->
-		<section class="product-grid ">
+		<section class="product-grid">
 			<div class="box product-title">
-				<h1 class="box-left-align">Herbs</h1>
+				<h1 class="box-left-align">All Groceries</h1>
 
 				<form class="sort-by text-right-align">				
-					<label for="sort" class="sort"><h3>Sort By:</h3></label>
+					<label for="sort" class="sort">
+						<span>Sort By:</span></label>
 					<select name="sort" id="sort">
 						<option>High to Low</option>
 						<option>Low to High</option>
@@ -210,11 +231,11 @@
 			</div>
 
 			<!--Start of product grid-->
-			<section class=" box product-white-background shadow">
+			<section class="box product-white-background shadow">
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-cilantro.html">
-						<img src="images/cilantro.jpg" alt="">
+						<img src="images/cilantro.jpg" alt="Cilantro">
 						<h3>Cilantro</h3>
 						<span class="product-weight">200g each</span>
 						<p class="grid-price">$0.97</p>
@@ -224,7 +245,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-cilantro.html">
-						<img src="images/parsley.jpg" alt="">
+						<img src="images/parsley.jpg" alt="Parsley">
 						<h3>Parsley</h3>
 						<span class="product-weight">Sold in bunches</span>
 						<p class="grid-price">$1.97</p>
@@ -234,7 +255,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-cilantro.html">
-						<img src="images/dill.jpg" alt="">
+						<img src="images/dill.jpg" alt="Dill">
 						<h3>Dill</h3>
 						<span class="product-weight">7g in Tray</span>
 
@@ -250,7 +271,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-cilantro.html">
-						<img src="images/sage.jpg" alt="">
+						<img src="images/sage.jpg" alt="Sage">
 						<h3>Sage</h3>
 						<span class="product-weight">7g in Tray</span>
 						<p class="grid-price">$0.77</p>
@@ -260,7 +281,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-cilantro.html">
-						<img src="images/thyme.jpg" alt="">
+						<img src="images/thyme.jpg" alt="Thyme">
 						<h3>Thyme</h3>
 						<span class="product-weight">20g in Tray</span>
 						<p class="grid-price">$0.77</p>
@@ -270,7 +291,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-cilantro.html">
-						<img src="images/mint.jpg" alt="">
+						<img src="images/mint.jpg" alt="Mint">
 						<h3>Mint</h3>
 						<span class="product-weight">7g in Tray</span>
 						<p class="grid-price">$0.77</p>
@@ -280,7 +301,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-cilantro.html">
-						<img src="images/rosemary.jpg" alt="">
+						<img src="images/rosemary.jpg" alt="Rosemary">
 						<h3>Rosemary</h3>
 						<span class="product-weight">7g in Tray</span>
 						<p class="grid-price">$0.77</p>
@@ -291,7 +312,7 @@
 				
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-cilantro.html">
-						<img src="images/chives.jpg" alt="">
+						<img src="images/chives.jpg" alt="Chives">
 						<h3>Chives</h3>
 						<span class="product-weight">7g in Tray</span>
 						<p class="grid-price">$0.77</p>
@@ -313,15 +334,15 @@
 	<section class="contact-section" id="contact-section">
 		<h2>Contact Us</h2>
 		<span class="phone-number">778-123-4567</span>
-		<form action="">
-			<label for="" placeholder>Send us an email if you have any question</label>
-			<input type="text">
+		<form>
+			<label for="contact-text">Send us an email if you have any question</label>
+			<input type="text" id="contact-text">
 			<button type="submit" class="submit-btn">Submit</button>
 		</form>
 	</section>
 	<!-- Footer  -->
 	<footer>
-		<img src="images/logo-greyscale.svg" alt="">
+		<img src="images/logo-greyscale.svg" alt="logo">
 		<div class="footer-link">
 			<a href="styleguide/index.html">Styleguide</a>
 			<a href="#">Help</a>

@@ -16,6 +16,12 @@
 
 }
 
+.cart-title{
+	margin-bottom: 2rem;
+	display: block;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
 
 .cart-headline{
 	padding: 1rem 2rem;

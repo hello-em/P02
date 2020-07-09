@@ -10,9 +10,3 @@ document.querySelector('.close-cart').addEventListener('click',
     document.querySelector('.cart').style.display= 'none';
 });
 
-
-
-// document.querySelector('#close-popup').addEventListener('click',
-//     function(){
-//     document.querySelector('.bg-modal').style.display= 'none';
-// });
