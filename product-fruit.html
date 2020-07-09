@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Fruits | Grocery Vancouver</title>
+	<link rel="icon" href="images/carrot-logo.svg" type="image/svg+xml">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/popup.css">
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
@@ -103,9 +104,9 @@
 		<!--Start of Product Grid and fliter-->
 
 	<div class="container box">
-
+		<button class="filter-mobile" onclick="filterPopup()">Filters &#9662;</button>
 		<!--Start of product filter section-->
-		<section class="product-filter filter-flex-item">
+		<section class="product-filter filter-flex-item" id="filter">
 			<h3>Filter</h3>
 			<span>57 results from<a href="#"> all groceries</a>
 			</span>
@@ -203,6 +204,7 @@
 					</select>
 
 				</form>
+		
 			</div>
 
 			<!--Start of product grid-->
