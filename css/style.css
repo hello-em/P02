@@ -1107,6 +1107,12 @@ footer img{
 	padding: 0.1rem 0.8rem;
 }
 
+@media (max-width: 1000px){
+	.fifth-item{
+		display: none;
+	}
+}
+
 /**************** END of category products ****************/
 
 /* style for add to cart button */
