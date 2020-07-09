@@ -929,7 +929,6 @@ footer img{
 /**************** START of categories section ****************/
 
 .category-grid-item{
-	padding: auto;
 	cursor: pointer;
 	padding: 1rem 2rem 0.5rem 2rem;
 }
