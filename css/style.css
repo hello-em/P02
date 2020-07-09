@@ -682,6 +682,7 @@ input[type=number]{
 .phone-number{
 	font-size: 2rem;
 	color: #63B146;
+	margin-bottom: 1rem;
 }
 
 /**************** END of contact section ****************/
