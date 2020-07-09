@@ -1,8 +1,8 @@
 /* Code samples stylization to differentiate from regular text*/
 code, samp{
-	-moz-tab-size:    4; /* Firefox 4+ */
-    -o-tab-size:      4; /* Opera 11.5 & 12.1 only */
-    tab-size:         4; /* Chrome 21+, Safari 6.1+, Opera 15+ */
+	-webkit-tab-size:    4;
+    -ms-tab-size:      4; 
+    tab-size:         4; 
 
 	display: block;
 	background-color: rgb(230,230,230);
@@ -42,6 +42,30 @@ code, samp{
 }
 
 /**************** end of wireframe styling ***************/
+
+/**************** In Styleguide Only ****************/
+.white-swatch{
+	padding: 30px;
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+}
+
+.yellow-swatch{
+	padding: 30px;
+	background-color: #FFDD50;
+}
+
+.green-swatch{
+	padding: 30px;
+	background-color: #63B146;
+}
+
+.orange-swatch{
+	padding: 30px;
+	background-color: #F36B25;
+}
+/**************** End In Styleguide Only ****************/
 
 
 /**************** Citation Photos ***************/

@@ -1,5 +1,4 @@
 body{
-
 	/* Lato font from Google fonts */
 	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
@@ -63,7 +62,7 @@ button:hover, button:focus{
 }
 
 
-/**************** nav bar *******************************/
+/**************** NAV BAR *******************************/
 nav{
 	margin: 0;
 	background-color: #FFDD50;
@@ -133,7 +132,7 @@ input[type=search]{
 	width: 1rem;
 	height: auto;
 }
-/**************** end Search css ****************/
+/**************** END Search css ****************/
 
  .cart-btn{
 	padding: 0.7em 1.4em;
@@ -249,7 +248,7 @@ input[type=search]{
 	}
 }
 
-/**************** end of nav bar *******************************/
+/**************** END of NAV bar *******************************/
 
 
 
@@ -616,30 +615,6 @@ input[type=number]{
 	text-align: center;
 }
 
-/**************** In Styleguide Only ****************/
-.white-swatch{
-	padding: 30px;
-	background-color: white;
-	border: 1px solid black;
-	color: black;
-}
-
-.yellow-swatch{
-	padding: 30px;
-	background-color: #FFDD50;
-}
-
-.green-swatch{
-	padding: 30px;
-	background-color: #63B146;
-}
-
-.orange-swatch{
-	padding: 30px;
-	background-color: #F36B25;
-}
-/**************** End In Styleguide Only ****************/
-
 /**************** Text styling section ****************/
 
 .text-styling h1{
@@ -995,7 +970,7 @@ footer img{
 @media(max-width: 30em){
 	.category-grid-item{
 		cursor: pointer;
-		padding: 0;
+		padding: 0.5rem;
 	}
 
 	.category-grid-item img{
