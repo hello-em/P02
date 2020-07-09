@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -27,7 +28,7 @@
 
 		<!--Cart button for mobile version-->
 		<a href="cart.html">
-			<img src="images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+			<img src="images/cart-btn-mobile.svg" alt="cart button" id="cart-btn-mobile" >
 		</a>
 
 		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
@@ -42,7 +43,7 @@
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
+			<label for="select-store" class="select-store"><a href="store.html">Select Store:</a></label>
 			<select name="store" id="select-store"  onchange="location = this.value">
 				<option value="#">Choose Store Location</option>
 				<option value="#">Walmart</option>
@@ -52,7 +53,7 @@
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
+			<label for="address"><a href="address.html">Delivery to:</a></label>
 			<select name="address" id="address" onchange="location = this.value">
 				<option value="address.html">Choose Delivery Address</option>
 				<option value="address.html">Add new address</option>
@@ -67,11 +68,10 @@
 	<div class="container box">
 		<section class="category-grid box">
 			<a href="product-veg.html">
-				<section class="category-grid-item box-grid-item">
+				<section class="category-grid-item box-grid-item active-2">
 					<img src="images/veggies.jpg" alt="Vegatable Category">
 					<h3>Veggies</h3>
 				</section>
-				<div class="active"></div>
 			</a>
 		</section>
 		<section class="category-grid box">
@@ -131,7 +131,7 @@
 			</span>
 			<!-- Placed everything into form so reset button actually works -->
 			<form id="filter">
-				<button href="#" type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
+				<button type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
 				<h3>Categories</h3>
 				<div class="filter-checkbox">
 					<input type="checkbox" id="Veggies">
@@ -139,69 +139,87 @@
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Fruits</label>
+					<input type="checkbox" id="Fruits">
+					<label for="Fruits">Fruits</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Herbs</label>
+					<input type="checkbox" id="Herbs">
+					<label for="Herbs">Herbs</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Seasonal</label>
+					<input type="checkbox" id="Seasonal">
+					<label for="Seasonal">Seasonal</label>
 				</div>
 
 				<div class="divider-line"></div>
 				<h3>Brands</h3>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Store Brand</label>
+					<input type="checkbox" id="Brand">
+					<label for="Brand">Store Brand</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Farmer's Market</label>
+					<input type="checkbox" id="Market">
+					<label for="Market">Farmer's Market</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Legunord</label>
+					<input type="checkbox" id="Legunord">
+					<label for="Legunord">Legunord</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Dole</label>
+					<input type="checkbox" id="Dole">
+					<label for="Dole">Dole</label>
 				</div>
 
 				<div class="divider-line"></div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Organic</label>
+					<input type="checkbox" id="Organic">
+					<label for="Organic">Organic</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Frozen</label>
+					<input type="checkbox" id="Frozen">
+					<label for="Frozen">Frozen</label>
 				</div>
 
 				
 			</form>
 		</section>
+
+
+		<!--Pop up window when clicking "add to cart" button-->
+		<section class="cart-popup">
+			<div class="popup-content">
+				<h3>Item added to cart!</h3>
+				<div id="close">+</div>
+
+				<span>Change quantity:</span>
+				<input type="number" placeholder="1" min="0">
+				<div class="box">
+					<button class="btn" id="confirm-btn">Confirm</button>
+					<button class="btn" onclick="location='cart.html'">View cart</button>
+				</div>
+			</div>
+		</section>
+		<!--End of popup window-->
+
+
+
 		<!--End of product filter section-->
 	
-
-	<!-- -->
-		<section class="product-grid ">
+		<section class="product-grid">
 			<div class="box product-title">
-				<h1 class="box-left-align">Vegetables</h1>
+				<h1 class="box-left-align">All Groceries</h1>
 
 				<form class="sort-by text-right-align">				
 					<label for="sort" class="sort">
-						<h3>Sort By:</h3></label>
+						<span>Sort By:</span></label>
 					<select name="sort" id="sort">
 						<option>High to Low</option>
 						<option>Low to High</option>
@@ -213,11 +231,11 @@
 			</div>
 
 			<!--Start of product grid-->
-			<section class=" box product-white-background shadow">
+			<section class="box product-white-background shadow">
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/broccoli.png" alt="">
+						<img src="images/broccoli.png" alt="broccoli">
 						<h3>Broccoli</h3>
 						<span class="product-weight">200g each</span>
 						<p class="grid-price">$2.97</p>
@@ -227,7 +245,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/asparagus.jpg" alt="">
+						<img src="images/asparagus.jpg" alt="Asparagus">
 						<div class="seasonal-tag">Seasonal</div>
 						<h3>Asparagus</h3>
 						<span class="product-weight">Sold in Bunches</span>
@@ -238,7 +256,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/bean.png" alt="">
+						<img src="images/bean.png" alt="Snow Peas">
 						<h3>Snow Peas</h3>
 						<span class="product-weight">170g/Bag</span>
 						<p class="grid-price">$3.99</p>
@@ -248,7 +266,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/corn.png" alt="">
+						<img src="images/corn.png" alt="Corn">
 						<div class="seasonal-tag">Seasonal</div>
 						<h3>Corn</h3>
 						<span class="product-weight">Each</span>
@@ -259,7 +277,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/carrot.png" alt="">
+						<img src="images/carrot.png" alt="Carrot">
 						<h3>Carrot</h3>
 						<span class="product-weight">900g/Bag</span>
 						<p class="grid-price">$2.97</p>
@@ -269,7 +287,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/onion.png" alt="">
+						<img src="images/onion.png" alt="Onion">
 						<h3>Onion</h3>
 						<span class="product-weight">3lb Bag</span>
 						<p class="grid-price">$2.57</p>
@@ -289,7 +307,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/pepper.jpg" alt="">
+						<img src="images/pepper.jpg" alt="Green Pepper">
 						<h3>Green Pepper</h3>
 						<span class="product-weight">Each</span>
 						<p class="grid-price">$1.56</p>
@@ -299,7 +317,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/potato.jpg" alt="">
+						<img src="images/potato.jpg" alt="Potato">
 						<h3>Potato</h3>
 						<span class="product-weight">1 Bag</span>
 						<p class="grid-price">$8.97</p>
@@ -309,7 +327,7 @@
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
-						<img src="images/zucchini.jpg" alt="">
+						<img src="images/zucchini.jpg" alt="Zucchini">
 						<h3>Zucchini</h3>
 						<span class="product-weight">Each</span>
 						<p class="grid-price">$0.97</p>
@@ -317,6 +335,16 @@
 					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
+				<section class="product-grid-item box-grid-item">
+				 <!-- Empty Content to have more even spacing of products -->
+				</section>
+				</section>
+				<section class="product-grid-item box-grid-item">
+				 <!-- Empty Content to have more even spacing of products -->
+				</section>
+
+				 <!-- Empty Content to have more even spacing of products -->
+				<section class="product-grid-item box-grid-item">
 			</section>
 			<!--End of product grid-->
 			</section>
@@ -327,7 +355,10 @@
 	<!--contact section-->
 	<section class="contact-section" id="contact-section">
 		<h2>Contact Us</h2>
-		<span class="phone-number">778-123-4567</span>
+		<div class="phone-number">778-123-4567</div>
+		<div>350 SE Marine Dr</div>
+		<div>Vancouver, BC V5X 2S5</div>
+		<div>email: delivery@groceryvancouver.com</div>
 		<form action="">
 			<label for="" placeholder>Send us an email if you have any question</label>
 			<input type="text">
@@ -336,9 +367,10 @@
 	</section>
 	<!-- Footer  -->
 	<footer>
-		<img src="images/logo-greyscale.svg" alt="">
+		<img src="images/logo-greyscale.svg" alt="logo">
 		<div class="footer-link">
 			<a href="styleguide/index.html">Styleguide</a>
+			<a href="https://github.com/vanilla-98/P02.git">Git Repo</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>

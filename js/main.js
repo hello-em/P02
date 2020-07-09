@@ -1,8 +1,5 @@
 'use strick'
 
-// window.addEventListener('resize', fucntion(){
-
-// });
 
 // js for pop up when clicking "add to cart"
 

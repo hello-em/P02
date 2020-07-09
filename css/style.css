@@ -316,7 +316,7 @@ input[type=search]{
 }
 
 .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 600;
 	margin-bottom: 0;
 	width: 60%;
@@ -395,6 +395,13 @@ select {
 	border-bottom: 1px solid #c2c2c2; 
 }
 
+.selection a{
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+
 .selection h3{
 	font-weight: normal;
 }
@@ -432,6 +439,10 @@ select {
 
 .product-nav{
 	margin: 0em 1em;
+}
+
+.product-type{
+	margin-bottom: 1rem;
 }
 
 .detail-btn{
@@ -682,6 +693,7 @@ input[type=number]{
 .phone-number{
 	font-size: 2rem;
 	color: #63B146;
+	margin-bottom: 1rem;
 }
 
 /**************** END of contact section ****************/
@@ -921,12 +933,23 @@ footer img{
 	margin-right: 0.6rem;
 }
 
+.sort span{
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
 
 .divider-line{
 	margin-top: 1.4rem;
 	width: 80%;
 	border-bottom: 1px solid #b4b4b4;
 }
+
+@media (max-width: 760px){
+	.product-grid-placeholder{
+		display: none;
+	}
+}
+
 /**************** END of product grid section ****************/
 
 /**************** START of categories section ****************/
@@ -936,14 +959,15 @@ footer img{
 	padding: 1rem 2rem 0.5rem 2rem;
 }
 
-.category-grid-item:hover{ 
+.category-grid-item:hover, .category-grid-item:focus{ 
 	background-color: rgb(230, 230, 230);
 	border-radius: 6px;
 	transition: 0.4s ease-in-out;
 }
 
-.category-grid-item:active{
-	background-color: rgb(240, 240, 240);
+/* Grey box for te current active html*/
+.active-2{
+	background-color: rgb(230, 230, 230);
 	border-radius: 6px;
 }
 
@@ -970,7 +994,6 @@ footer img{
 /* For Iphone 5/SE and Galaxy S5*/
 @media(max-width: 30em){
 	.category-grid-item{
-		padding: auto;
 		cursor: pointer;
 		padding: 0;
 	}

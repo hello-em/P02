@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -42,7 +43,7 @@
 	<!-- Start of store and delivery module -->
 	<section class="selection box">
 		<form class="box">
-			<label for="select-store" class="select-store"><h3><a href="store.html">Select Store:</a></h3></label>
+			<label for="select-store" class="select-store"><a href="store.html">Select Store:</a></label>
 			<select name="store" id="select-store"  onchange="location = this.value">
 				<option value="#">Choose Store Location</option>
 				<option value="#">Walmart</option>
@@ -52,7 +53,7 @@
 		</form>
 
 		<form class="box">
-			<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
+			<label for="address"><a href="address.html">Delivery to:</a></label>
 			<select name="address" id="address" onchange="location = this.value">
 				<option value="address.html">Choose Delivery Address</option>
 				<option value="address.html">Add new address</option>
@@ -130,7 +131,7 @@
 			
 			<!-- Placed everything into form so reset button actually works -->
 			<form id="filter">
-				<button href="#" type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
+				<button type="reset" form="filter" class="clear-filter-btn">Clear filter</button>
 				<h3>Categories</h3>
 				<div class="filter-checkbox">
 					<input type="checkbox" id="Veggies">
@@ -138,68 +139,87 @@
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Fruits</label>
+					<input type="checkbox" id="Fruits">
+					<label for="Fruits">Fruits</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Herbs</label>
+					<input type="checkbox" id="Herbs">
+					<label for="Herbs">Herbs</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Seasonal</label>
+					<input type="checkbox" id="Seasonal">
+					<label for="Seasonal">Seasonal</label>
 				</div>
 
 				<div class="divider-line"></div>
 				<h3>Brands</h3>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Store Brand</label>
+					<input type="checkbox" id="Brand">
+					<label for="Brand">Store Brand</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Farmer's Market</label>
+					<input type="checkbox" id="Market">
+					<label for="Market">Farmer's Market</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Legunord</label>
+					<input type="checkbox" id="Legunord">
+					<label for="Legunord">Legunord</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Dole</label>
+					<input type="checkbox" id="Dole">
+					<label for="Dole">Dole</label>
 				</div>
 
 				<div class="divider-line"></div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Organic</label>
+					<input type="checkbox" id="Organic">
+					<label for="Organic">Organic</label>
 				</div>
 
 				<div class="filter-checkbox">
-					<input type="checkbox" id="Veggies">
-					<label for="Veggies">Frozen</label>
+					<input type="checkbox" id="Frozen">
+					<label for="Frozen">Frozen</label>
 				</div>
 
 				
 			</form>
 		</section>
+
+
+		<!--Pop up window when clicking "add to cart" button-->
+		<section class="cart-popup">
+			<div class="popup-content">
+				<h3>Item added to cart!</h3>
+				<div id="close">+</div>
+
+				<span>Change quantity:</span>
+				<input type="number" placeholder="1" min="0">
+				<div class="box">
+					<button class="btn" id="confirm-btn">Confirm</button>
+					<button class="btn" onclick="location='cart.html'">View cart</button>
+				</div>
+			</div>
+		</section>
+		<!--End of popup window-->
+
+
+
 		<!--End of product filter section-->
 	
-	<!-- -->
-		<section class="product-grid ">
+		<section class="product-grid">
 			<div class="box product-title">
 				<h1 class="box-left-align">All Groceries</h1>
 
 				<form class="sort-by text-right-align">				
 					<label for="sort" class="sort">
-						<h3>Sort By:</h3></label>
+						<span>Sort By:</span></label>
 					<select name="sort" id="sort">
 						<option>High to Low</option>
 						<option>Low to High</option>
@@ -210,7 +230,7 @@
 			</div>
 
 			<!--Start of product grid-->
-			<section class=" box product-white-background shadow">
+			<section class="box product-white-background shadow">
 
 				<section class="product-grid-item box-grid-item">
 					<a href="product-detail-broccoli.html">
@@ -219,7 +239,7 @@
 						<span class="product-weight">200g each</span>
 						<p class="grid-price">$2.97</p>
 					</a>
-					<button class="btn add-to-cart">Add to cart</button>
+					<button class="btn add-to-cart" id="cart-btn">Add to cart</button>
 				</section>
 
 				<section class="product-grid-item box-grid-item">
@@ -316,6 +336,17 @@
 					<button class="btn add-to-cart">Add to cart</button>
 				</section>
 
+				<section class="product-grid-item box-grid-item">
+				 <!-- Empty Content to have more even spacing of products -->
+				</section>
+				<section class="product-grid-item box-grid-item">
+				 <!-- Empty Content to have more even spacing of products -->
+				</section>
+				<section class="product-grid-item box-grid-item">
+				 <!-- Empty Content to have more even spacing of products -->
+				</section>
+
+
 			</section>
 			<!--End of product grid-->
 			</section>
@@ -329,7 +360,10 @@
 	<!--contact section-->
 	<section class="contact-section" id="contact-section">
 		<h2>Contact Us</h2>
-		<span class="phone-number">778-123-4567</span>
+		<div class="phone-number">778-123-4567</div>
+		<div>350 SE Marine Dr</div>
+		<div>Vancouver, BC V5X 2S5</div>
+		<div>email: delivery@groceryvancouver.com</div>
 		<form action="">
 			<label for="" placeholder>Send us an email if you have any question</label>
 			<input type="text">
@@ -343,6 +377,7 @@
 		<img src="images/logo-greyscale.svg" alt="Grocery Vancouver Logo">
 		<div class="footer-link">
 			<a href="styleguide/index.html">Styleguide</a>
+			<a href="https://github.com/vanilla-98/P02.git">Git Repo</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>

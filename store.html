@@ -5,7 +5,9 @@
 	<link rel="icon" href="images/carrot-logo.svg" type="image/svg+xml">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -25,7 +27,7 @@
 
 		<!--Cart button for mobile version-->
 		<a href="cart.html">
-			<img src="images/cart-btn-mobile.svg" alt="" id="cart-btn-mobile" >
+			<img src="images/cart-btn-mobile.svg" alt="cart button" id="cart-btn-mobile" >
 		</a>
 
 		<a href="product.html" class="nav-link" id="product-btn"><span class="line-hover">PRODUCT</span></a>
@@ -39,10 +41,10 @@
 
 	<div class="container"> 
 		<h1>Stores Near You</h1>
-		<section class=" box">
+		<section class="box">
 
 			<form class="box">
-				<label for="delivery-address"><h3><a href="address.html">Delivery to:</a></h3></label>
+				<label for="select-store" class="select-store"><a href="store.html">Select Store:</a></label>
 				<select name="address" id="address" onchange="location = this.value">
 					<option value="address.html">Choose Delivery Address</option>
 					<option value="address.html">Add new address</option>
@@ -53,27 +55,24 @@
 		</section>
 
 		<section class="store-section box-flex-start">
-
-
-
 			<!--store-flex-item class is not used, keep it for later use-->
 			<div class="store store-flex-item">
 				<a href="index.html">
-					<img src="styleguide/images/walmart logo.png" alt="">
+					<img src="styleguide/images/walmart logo.png" alt="walmart">
 					<h3>Walmart</h3>
 					<span>Delivery in 1h</span>
 				</a>
 			</div>
 
 			<div class="store store-flex-item">
-				<img src="images/superstore-logo.png" alt="">
+				<img src="images/superstore-logo.png" alt="superstore">
 				<h3>Superstore</h3>
 				<span>Delivery in 45m</span>
 			</div>
 
 			<div class="store store-flex-item">
 				<a href="index.html">
-					<img src="images/T&T-logo.png" alt="">
+					<img src="images/T&T-logo.png" alt="T&T">
 					<h3>T&T</h3>
 					<span>Delivery in 1.5h</span>
 				</a>
@@ -81,7 +80,7 @@
 
 			<div class="store store-flex-item">
 				<a href="index.html">
-					<img src="images/safeway-logo.png" alt="">
+					<img src="images/safeway-logo.png" alt="Safeway">
 					<h3>Safeway</h3>
 					<span>Delivery in 1h</span>
 				</a>
@@ -89,7 +88,7 @@
 
 			<div class="store store-flex-item">
 				<a href="index.html">
-					<img src="images/costco-logo.png" alt="">
+					<img src="images/costco-logo.png" alt="Costco">
 					<h3>Costco</h3>
 					<span>Delivery in 1h</span>
 				</a>
@@ -97,7 +96,7 @@
 
 			<div class="store store-flex-item">
 				<a href="index.html">
-					<img src="images/nofrills-logo.png" alt="">
+					<img src="images/nofrills-logo.png" alt="No frills">
 					<h3>No Frills</h3>
 					<span>Delivery in 1h</span>
 				</a>
@@ -105,7 +104,7 @@
 
 			<div class="store store-flex-item">
 				<a href="index.html">
-					<img src="images/save-on-foods-logo.png" alt="">
+					<img src="images/save-on-foods-logo.png" alt="Save on foods">
 					<h3>Save On Foods</h3>
 					<span>Delivery in 30m</span>
 				</a>
@@ -113,7 +112,7 @@
 
 			<div class="store store-flex-item">
 				<a href="index.html">
-					<img src="images/loblaws-logo.png" alt="">
+					<img src="images/loblaws-logo.png" alt="Loblaws">
 					<h3>Loblaws</h3>
 					<span>Delivery in 1h</span>
 				</a>
@@ -130,7 +129,10 @@
 	<!--contact section-->
 	<section class="contact-section" id="contact-section">
 		<h2>Contact Us</h2>
-		<span class="phone-number">778-123-4567</span>
+		<div class="phone-number">778-123-4567</div>
+		<div>350 SE Marine Dr</div>
+		<div>Vancouver, BC V5X 2S5</div>
+		<div>email: delivery@groceryvancouver.com</div>
 		<form action="">
 			<label for="" placeholder>Send us an email if you have any question</label>
 			<input type="text">
@@ -138,12 +140,12 @@
 		</form>
 	</section>
 
-
 	<!-- Footer  -->
 	<footer>
 		<img src="images/logo-greyscale.svg" alt="">
 		<div class="footer-link">
 			<a href="styleguide/index.html">Styleguide</a>
+			<a href="https://github.com/vanilla-98/P02.git">Git Repo</a>
 			<a href="#">Help</a>
 			<a href="#">Privacy</a>
 			<a href="#">Term</a>
